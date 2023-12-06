@@ -11,6 +11,7 @@ export default function Home({menuItems}) {
 				title="ClearDigital"
 				description="ClearDigital"
 			/>
+			
 				<HomepageHero/>
 
 		</Layout>

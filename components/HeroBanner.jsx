@@ -6,16 +6,16 @@ import Image from 'next/image';
 // Create your Next.js component
 const HomepageHero = () => {
   return (
-    <section id="HomepageHero" className="hero-banner blade has-video-bg dark has-grid-bg" data-astro-cid-ptadmqhn="">
-      <div className="container blade-content" data-astro-cid-ptadmqhn="">
-        <div className="content-wrap" data-astro-cid-ptadmqhn="">
-          <div className="subtitle" data-astro-cid-ptadmqhn="">
+    <section id="HomepageHero" className="hero-banner blade has-video-bg dark has-grid-bg">
+      <div className="container blade-content">
+        <div className="content-wrap">
+          <div className="subtitle">
             Hello! We are Clear Digital.
           </div>
-          <h1 className="h1" data-astro-cid-mn5gggo5="">
+          <h1 className="h1">
             We build B2B websites and <span className="marker-effect marker-underline on">digital</span> brand experiences!!!
           </h1>
-          <Link href="/approach/" className="cta-button button-large text margin-start-30 white-active" target="_self" data-astro-cid-se6vzaun="">
+          <Link href="/approach/" className="cta-button button-large text margin-start-30 white-active" target="_self">
             Our Approach!
           </Link>
         </div>
