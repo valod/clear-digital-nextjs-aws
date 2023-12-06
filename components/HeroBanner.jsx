@@ -29,5 +29,4 @@ const HomepageHero = () => {
   );
 };
 
-// Export the component for use in your Next.js application
 export default HomepageHero;

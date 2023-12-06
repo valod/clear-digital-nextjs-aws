@@ -1,5 +1,6 @@
 // components/Header.jsx
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -7,11 +8,12 @@ const Header = () => {
       <div className="container">
         <div className="imgWrap">
           <Link href="/set-1/homepage/" className="sitelogolink" data-cursor-expand>
-            <img src="/Clear_black.svg" alt="Clear Digital" />
-            <img src="/Clear_logo_pink.svg" alt="Cleardigital" />
+            <Image src="/Clear_black.svg" alt="Clear Digital" />
+            <Image src="/Clear_logo_pink.svg" alt="Cleardigital" />
           </Link>
         </div>
         <div className="linksOuter">
+			
         <nav>
 			<ul>
 				<li><span><Link href="/work" data-cursor-expand>Work</Link></span>
@@ -21,8 +23,7 @@ const Header = () => {
 								<div className="title-description">
 									<h2 className="graphic-effect-underline" data-underline-image="black-1">Work</h2>
 									<p>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel
-										nunc
-										non, tempus blandit enim. Vivamus gravida velit lorem ipsum dolor sit
+										nunc non, tempus blandit enim. Vivamus gravida velit lorem ipsum dolor sit
 										amet.</p>
 									<Link className="link-default link-black" href="/" data-cursor-expand>Overview</Link>
 								</div>
@@ -167,15 +168,6 @@ const Header = () => {
 		</nav>
         </div>
         <div id="toggleButton" className="toggler">
-            <svg width="35" height="35" viewBox="0 0 35 26" fill="none" xmlns="http://www.w3.org/2000/svg" className="open">
-                <rect x="5" width="30" height="4" rx="2" fill="white"></rect>
-                <rect y="11" width="35" height="4" rx="2" fill="white"></rect>
-                <rect x="11" y="22" width="24" height="4" rx="2" fill="white"></rect>
-                </svg>
-                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" className="close">
-            <path d="M26.25 8.75L8.75 26.25" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M8.75 8.75L26.25 26.25" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
         </div>
       </div>
     </header>

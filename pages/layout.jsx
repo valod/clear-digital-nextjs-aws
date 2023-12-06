@@ -1,6 +1,5 @@
 import { Inter } from 'next/font/google';
 import { NextSeo } from 'next-seo';
-
 const inter = Inter({ subsets: ['latin'] });
 
 const RootLayout = ({ children }) => {
@@ -8,7 +7,7 @@ const RootLayout = ({ children }) => {
     <>
       <NextSeo
         title="Clear Digital"
-        description="Clear Digital"
+        description="Clear Digital "
       />
       <html lang="en">
         <body className={inter.className}>{children}</body>
@@ -16,5 +15,4 @@ const RootLayout = ({ children }) => {
     </>
   );
 };
-
 export default RootLayout;

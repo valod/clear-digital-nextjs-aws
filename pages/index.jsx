@@ -9,11 +9,10 @@ export default function Home({menuItems}) {
     <Layout footerMenu={menuItems}>
 			<NextSeo
 				title="ClearDigital"
-				description="ClearDigital"
+				description="ClearDigital "
 			/>
-			
 				<HomepageHero/>
-
 		</Layout>
+		
   )
 }
