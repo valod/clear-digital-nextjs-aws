@@ -8,8 +8,8 @@ const Header = () => {
       <div className="container">
         <div className="imgWrap">
           <Link href="/set-1/homepage/" className="sitelogolink" data-cursor-expand>
-            <Image src="/Clear_black.svg" alt="Clear Digital" />
-            <Image src="/Clear_logo_pink.svg" alt="Cleardigital" />
+            <Image src="/Clear_black.svg" alt="Clear Digital" height={100} width={100}/>
+            <Image src="/Clear_logo_pink.svg" alt="Cleardigital" height={100} width={100}/>
           </Link>
         </div>
         <div className="linksOuter">
@@ -23,8 +23,7 @@ const Header = () => {
 								<div className="title-description">
 									<h2 className="graphic-effect-underline" data-underline-image="black-1">Work</h2>
 									<p>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel
-										nunc non, tempus blandit enim. Vivamus gravida velit lorem ipsum dolor sit
-										amet.</p>
+										nunc non, tempus blandit enim. Vivamus gravida velit lorem ipsum dolor sit amet.</p>
 									<Link className="link-default link-black" href="/" data-cursor-expand>Overview</Link>
 								</div>
 							</div>
