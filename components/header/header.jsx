@@ -1,23 +1,24 @@
 // components/Header.jsx
 import Link from "next/link";
 import Image from "next/image";
+import styles from './header.module.css';
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className={`${styles['header']}`}>
       <div className="container">
-        <div className="imgWrap">
+        <div className={`${styles['main-menu-wrap']}`}>
+		<div className={`${styles['imgWrap']}`}>
           <Link href="/set-1/homepage/" className="sitelogolink" data-cursor-expand>
-            <Image src="/Clear_black.svg" alt="Clear Digital" height={100} width={100}/>
-            <Image src="/Clear_logo_pink.svg" alt="Cleardigital" height={100} width={100}/>
+            <Image src="/Clear_black.svg" alt="Clear Digital" height={100} width={100} />
+            <Image src="/Clear_logo_pink.svg" alt="Cleardigital" height={100} width={100} />
           </Link>
         </div>
-        <div className="linksOuter">
-			
-        <nav>
+        <div className={`${styles['links-outer']}`}>	
+         <nav>
 			<ul>
 				<li><span><Link href="/work" data-cursor-expand>Work</Link></span>
-					<div className="sub-menu">
+					<div className={`${styles['sub-menu']}`}>
 						<div className="outer-wrapper">
 							<div className="col-two">
 								<div className="title-description">
@@ -41,7 +42,7 @@ const Header = () => {
 					</div>
 				</li>
 				<li><span><Link href="/approach" data-cursor-expand>Approach</Link></span>
-					<div className="sub-menu">
+					<div className={`${styles['sub-menu']}`}>
 						<div className="outer-wrapper">
 							<div className="col-two">
 								<div className="title-description">
@@ -66,7 +67,7 @@ const Header = () => {
 					</div>
 				</li>
 				<li><span><Link href="/services" data-cursor-expand>Services</Link></span>
-					<div className="sub-menu">
+					<div className={`${styles['sub-menu']}`}>
 						<div className="outer-wrapper">
 							<div className="col-two">
 								<div className="title-description">
@@ -99,7 +100,7 @@ const Header = () => {
 					</div>
 				</li>
 				<li><span><Link href="/insights" data-cursor-expand>Insights</Link></span>
-					<div className="sub-menu">
+					<div className={`${styles['sub-menu']}`}>
 						<div className="outer-wrapper">
 							<div className="col-two">
 								<div className="title-description">
@@ -129,7 +130,7 @@ const Header = () => {
 					</div>
 				</li>
 				<li><span><Link href="/about" data-cursor-expand>About</Link></span>
-					<div className="sub-menu">
+					<div className={`${styles['sub-menu']}`}>
 						<div className="outer-wrapper">
 							<div className="col-two">
 								<div className="title-description">
@@ -166,8 +167,9 @@ const Header = () => {
 			</div>
 		</nav>
         </div>
-        <div id="toggleButton" className="toggler">
+        <div id="toggleButton" className={`${styles['toggler']}`}>
         </div>
+		</div>
       </div>
     </header>
   );
