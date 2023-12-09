@@ -15,11 +15,17 @@
     color: #000;
 }
 
-.header:hover .imgWrap img:first-child{
+.header:hover .imgWrap img:first-child {
+    display: block;
+}
+.header.active .imgWrap img:first-child {
     display: block;
 }
 
-.header:hover .imgWrap img:last-child{
+.header:hover .imgWrap img:last-child {
+    display: none;
+}
+.header.active .imgWrap img:last-child {
     display: none;
 }
 

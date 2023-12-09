@@ -1,19 +1,43 @@
-// components/Header.jsx
+import { useEffect, useState } from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import styles from './header.module.css';
 
 const Header = () => {
+	const [isScrolled, setIsScrolled] = useState(false);
+
+	useEffect(() => {
+	  const handleScroll = () => {
+		const scrollY = window.scrollY;
+		// You can adjust the scroll threshold based on your design
+		const scrollThreshold = 10;
+  
+		if (scrollY > scrollThreshold && !isScrolled) {
+		  setIsScrolled(true);
+		} else if (scrollY <= scrollThreshold && isScrolled) {
+		  setIsScrolled(false);
+		}
+	  };
+  
+	  // Attach the scroll event listener when the component mounts
+	  window.addEventListener('scroll', handleScroll);
+  
+	  // Remove the scroll event listener when the component unmounts
+	  return () => {
+		window.removeEventListener('scroll', handleScroll);
+	  };
+	}, [isScrolled]);
   return (
-    <header className={`${styles['header']}`}>
+<header className={`${styles.header} ${isScrolled ? styles.active : ''}`}>
       <div className="container">
         <div className={`${styles['main-menu-wrap']}`}>
-		<div className={`${styles['imgWrap']}`}>
-          <Link href="/set-1/homepage/" className="sitelogolink" data-cursor-expand>
-            <Image src="/Clear_black.svg" alt="Clear Digital" height={100} width={100} />
-            <Image src="/Clear_logo_pink.svg" alt="Cleardigital" height={100} width={100} />
-          </Link>
-        </div>
+		<div className={`${styles['imgWrap']} `}>
+		  <Link href="/set-1/homepage/" className="sitelogolink" data-cursor-expand>
+			<Image src="/Clear_black.svg" alt="Clear Digital" height={100} width={100} />
+			<Image src="/Clear_logo_pink.svg" alt="Cleardigital" height={100} width={100} />
+		  </Link>
+       </div>
+	   
         <div className={`${styles['links-outer']}`}>	
          <nav>
 			<ul>
