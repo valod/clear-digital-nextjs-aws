@@ -7,8 +7,8 @@ const Footer = () => {
     <>
       <div className="footer-clear-digital bg-black">
         <div className="container">
-          <div className="outer-wrap">
-          <div className="item small">
+          <div className="outer-wrap flex flex-wrap pb-[250px]">
+          <div className="item small w-[34%]">
                 <div className="img-wrap">
                     <Link href="/" data-cursor-expand>
                         <Image src="/cleardigital-logo.png" alt="Cleardigital Logo" height={100} width={100}/>
@@ -56,7 +56,7 @@ const Footer = () => {
                     </Link> 
                 </div>
             </div>
-            <div className="item medium">
+            <div className="item medium w-[17%]">
                 <div className="list-item">
                     <ul>
                         <li>
@@ -77,14 +77,14 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className="item large">
-                <div className="content-wrap">
-                    <div className="img-box">
+            <div className="item large w-[49%]">
+                <div className="content-wrap flex">
+                    <div className="img-box w-[30%]">
                         <div className="bg-img">
                             <Image src="/red_circle.png" alt="Red Circle" height={100} width={100}/>
                         </div>
                     </div>
-                    <div className="intro">
+                    <div className="intro w-[70%] pl-4">
                         <h2 className="h4 text-white">2023 Fortune 500 B2B Homepage Rankings Report</h2>
                         <p className="body-default">Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel
                             nunc non, tempus
@@ -103,7 +103,7 @@ const Footer = () => {
           </div>
           <div className="wrapper">
             <div className="title-wrap">
-              <h4>
+              <h4 className='text-white'>
                 Confidently navigating <span className="text-pink">change</span>.
               </h4>
             </div>
@@ -111,7 +111,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer-myrious">
+      <div className="footer-myrious bg-black">
         <div className="container">
           <div className="content-wrapper">
           <div className="logo-wrap">
@@ -120,7 +120,7 @@ const Footer = () => {
                 </Link>
             </div>
             <div className="title-wrap">
-                <p className="subtitle">Clear Digital is a founding member of Myrious Group’s expertise-driven agencies.</p>
+                <p className="subtitle text-white">Clear Digital is a founding member of Myrious Group’s expertise-driven agencies.</p>
                 <p className="body-default">Myrious Group is an independent holding company enabling forward-thinking brands
                     to achieve breakthrough performance through power of orchestration. </p>
                 <div className="bten-wrap">
@@ -136,18 +136,18 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer-bottom">
+      <div className="footer-bottom py-10">
         <div className="container">
-          <div className="wrapper">
+          <div className="wrapper flex justify-between">
             <div className="logo-outer">
               <div className="logo-inner-wrap">
                 <Link href="/" passHref data-cursor-expand="">
-                    <Image src="/clear.svg" alt="clear" height={100} width={100}/>
+                    <Image src="/clear.svg" alt="clear" height={100} width={100} className='max-w-[35px]'/>
                 </Link>
               </div>
             </div>
-            <div className="copyright-list">
-              <ul>
+            <div className="copyright-list flex flex-wrap items-center">
+              <ul className='flex align-middle'>
                 <li>
                   <Link href="/" className="footer-links-small" data-cursor-expand="">
                     © 2023 Clear Digital, Inc.
@@ -186,5 +186,6 @@ const Footer = () => {
     </>
   );
 };
+
 
 export default Footer;
