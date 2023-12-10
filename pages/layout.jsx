@@ -7,7 +7,7 @@ const RootLayout = ({ children }) => {
     <>
       <NextSeo
         title="Clear Digital"
-        description="Clear Digital "
+        description="Clear Digital Web Agency"
       />
       <html lang="en">
         <body className={inter.className}>{children}</body>
