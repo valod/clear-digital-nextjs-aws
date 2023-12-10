@@ -19,7 +19,6 @@ const Header = () => {
 		}
 	  };
   
-	  // Attach the scroll event listener when the component mounts
 	  window.addEventListener('scroll', handleScroll);
   
 	  // Remove the scroll event listener when the component unmounts
@@ -37,7 +36,7 @@ const Header = () => {
 			<Image src="/Clear_logo_pink.svg" alt="Cleardigital" height={100} width={100} />
 		  </Link>
        </div>
-	   
+
         <div className={`${styles['links-outer']}`}>	
          <nav>
 			<ul>
@@ -47,8 +46,8 @@ const Header = () => {
 							<div className="col-two">
 								<div className="title-description">
 									<h2 className="graphic-effect-underline" data-underline-image="black-1">Work</h2>
-									<p>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel
-										nunc non, tempus blandit enim. Vivamus gravida velit lorem ipsum dolor sit amet.</p>
+									<p>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel nunc non, tempus blandit enim. 
+										Vivamus gravida velit lorem ipsum dolor sit amet.</p>
 									<Link className="link-default link-black" href="/" data-cursor-expand>Overview</Link>
 								</div>
 							</div>
