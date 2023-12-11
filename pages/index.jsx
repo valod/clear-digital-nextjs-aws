@@ -6,8 +6,8 @@ import ColTwoSlider from '../components/colTwoSlider';
 import HomepageHero
 	from '../components/HeroBanner';
 import Footercta from '../components/Footercta';
-import IntroWithColThree from '../components/introWithColThree'
-import Accordian from '../components/accordian'
+import IntroWithColThree from '../components/introWithColThree';
+import Accordian from '../components/accordian';
 
 export default function Home({ menuItems }) {
 	return (
