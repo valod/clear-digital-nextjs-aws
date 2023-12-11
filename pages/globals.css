@@ -481,3 +481,10 @@ section {
   background: url("/../Black Grid.png");
   background-size: cover;
 }
+.slick-list{
+  width: 100% !important;
+}
+.slick-track{
+  width: 100% !important;
+  display: flex !important;
+}
