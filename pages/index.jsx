@@ -4,6 +4,7 @@ import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
 import HomepageHero
  from '../components/HeroBanner';
+ import Footercta from '../components/Footercta';
 export default function Home({menuItems}) {
   return (
     <Layout footerMenu={menuItems}>
@@ -12,6 +13,7 @@ export default function Home({menuItems}) {
 				description="ClearDigital "
 			/>
 				<HomepageHero/>
+				<Footercta/>
 		</Layout>
   )
 }

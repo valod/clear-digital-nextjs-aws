@@ -331,4 +331,19 @@ section {
     padding-block: var(--padding-unit-150);
 }
 
+.subtitle{
+  font-size: 25px;
+  color: #FFF;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.btn{
+  background:  #FA198C;
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color:#FFF;
+}
+
 
