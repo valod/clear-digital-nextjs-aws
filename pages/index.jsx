@@ -6,6 +6,8 @@ import ColTwoSlider from '../components/colTwoSlider';
 import HomepageHero
 	from '../components/HeroBanner';
 import Footercta from '../components/Footercta';
+import IntroWithColThree from '../components/introWithColThree'
+
 export default function Home({ menuItems }) {
 	return (
 		<Layout footerMenu={menuItems}>
@@ -15,6 +17,7 @@ export default function Home({ menuItems }) {
 			/>
 			<HomepageHero />
 			<ColTwoSlider />
+			<IntroWithColThree />
 			<Footercta />
 		</Layout>
 	)

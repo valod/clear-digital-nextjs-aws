@@ -60,9 +60,12 @@ module.exports = {
         threeCard: "calc(33.33% - 20px)",
         halfWidth: "calc(50% - 20px)",
       },
-      colors:{
-				'black': '#000',
-			},
+      colors: {
+        black: "#000",
+        white: "#FFF",
+        pink: "#FA198C",
+        gray: "#E5E4E7",
+      },
     },
   },
   plugins: [],

@@ -21,7 +21,7 @@ function ColTwoSlider() {
     return (
         <section className={`${Styles.ColTwoSlider} relative bg-black`}>
             <div className="slideWrap">
-                <div className="absolute w-full flex z-0 top-0 left-0">
+                <div className="absolute w-full h-full flex z-0 top-0 left-0">
                     <div className="w-1/2">
                         <Image className={`w-full h-full`} width={800} height={1090} src='/man-holding-phone.webp' alt="logo" />
                     </div>

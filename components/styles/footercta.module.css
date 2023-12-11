@@ -1,13 +1,3 @@
-.footercta::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background: url("/../White Grid.png");
-  background-size: cover;
-}
 .p {
   color: #fff;
   font-size: 25px;
