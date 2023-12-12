@@ -508,61 +508,6 @@ section {
   --black: #000;
 }
 
-.underline-text {
-  position: relative;
-}
-
-.underline-text:after {
-  content: "";
-  position: absolute;
-  bottom: -10%;
-  left: 0;
-  height: 41%;
-  width: 102%;
-  background: url(/images/marker-underline-white.svg) no-repeat;
-  background-size: contain;
-}
-
-.eyebrow__text {
-  font-size: clamp(20px, 3vw, 28px);
-  color: var(--black);
-  font-weight: 100;
-  letter-spacing: 0;
-  margin-bottom: 1.25rem;
-}
-
-.grid__parallax {
-  min-height: 100vh;
-}
-
-.grid__parallax:before {
-  position: absolute;
-  content: " ";
-  background: url('/Grid_Pattern_White.svg') center repeat fixed;
-  background-size: 4rem;
-  height: 100%;
-  width: 100%;
-  inset: 0;
-  opacity: .5;
-  z-index: 1;
-  background-attachment: fixed;
-}
-
-.grid__parallax.dark:before {
-  background: url('/Grid_Pattern_Black.svg') center repeat fixed;
-  background-size: 4rem;
-}
-
-.bg-black h1,
-.bg-black h2,
-.bg-black h3,
-.bg-black h4,
-.bg-black h5,
-.bg-black h6,
-.bg-black p {
-  color:#fff;
-}
-
 section {
   position: relative;
   padding: 150px 0;
@@ -635,6 +580,14 @@ h1 {
   letter-spacing: -.05em;
 }
 
+.h1 { 
+  font-size: clamp(60px, 8.8vw, 140px);
+  color: var(--white);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -.05em;
+}
+
 h2 {
   font-size: clamp(40px, 8.8vw, 80px);
   font-weight: 700;
@@ -648,9 +601,114 @@ h3 {
   line-height: 1.1;
 }
 
+h6 {
+  font-size: clamp(20px, 2.5vw, 25px);
+  letter-spacing: -.02em;
+  line-height: 1.1;
+}
+
 p {
-  /* color: #000; */
   font-size: clamp(18px, 2vw, 21px);
+}
+
+.bg-black h1,
+.bg-black h2,
+.bg-black h3,
+.bg-black h4,
+.bg-black h5,
+.bg-black h6,
+.bg-black p {
+  color:#fff;
+}
+
+
+/* miscellaneous */
+
+.underline-text {
+  position: relative;
+}
+
+.underline-text:after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  height: 41%;
+  width: 102%;
+  background: url(/images/marker-underline-white.svg) no-repeat;
+  background-size: contain;
+}
+
+.eyebrow__text {
+  font-size: clamp(20px, 3vw, 28px);
+  color: var(--black);
+  font-weight: 100;
+  letter-spacing: 0;
+  margin-bottom: 1.25rem;
+}
+
+.height__full {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.height__full-nav {
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 104px);
+}
+
+@media only screen and (max-width: 991px) {
+  .height__full-nav {
+    min-height: calc(100vh - 95px);
+  }
+}
+
+.grid__parallax:before {
+  position: absolute;
+  content: " ";
+  background: url('/Grid_Pattern_White.svg') center repeat fixed;
+  background-size: 4rem;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  opacity: .5;
+  z-index: 1;
+  background-attachment: fixed;
+}
+
+.grid__parallax.dark:before {
+  background: url('/Grid_Pattern_Black.svg') center repeat fixed;
+  background-size: 4rem;
+}
+
+.bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bg-img img,
+.bg-img video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dark__overlay:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--black);
+  opacity: 0.5;
+  /* z-index: -1; */
 }
 
 
@@ -691,16 +749,16 @@ p {
   margin-top: 2rem;
 }
 
-.hero__bg {
+/* .hero__bg {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   z-index: -1;
-}
+} */
 
-.hero__bg:after {
+/* .hero__bg:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -709,13 +767,13 @@ p {
   left: 0;
   background-color: var(--black);
   opacity: 0.5;
-}
+} */
 
-.hero__bg video {
+/* .hero__bg video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 /* intro */
 

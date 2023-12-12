@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const ContentGrid = () => {
     return (
-        <section className='contentGrid grid__parallax dark'>
+        <section className='contentGrid grid__parallax dark height__full'>
             <div className='container'>
                 <Intro />
                 <div className='wrapper'>

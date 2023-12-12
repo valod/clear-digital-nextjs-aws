@@ -72,15 +72,15 @@ const logoImage = [
 
 const Logowithslider = () => {
     return (
-        <section className={`slider ${style.slider} no-padding bg-black`}>
-            <div className= {`slidetrack ${style.slidetrack} relative`}>
-            <div className= {`slide ${style.slide} flex laptop-landscape:mt-[30px] w-[fit-content`} >
-                {logoImage.map((item, index) => (
-                    <div className="logowrap w-[210px] h-[84px] mx-[25px]" key={index}>
-                        <Image src={item.image} alt={item.alt} width={184} height={100}  className='w-full h-full object-contain'/>
-                    </div>
-                ))}
-            </div>
+        <section className={`slider ${style.slider} no-padding-top bg-black`}>
+            <div className={`slidetrack ${style.slidetrack} relative`}>
+                <div className={`slide ${style.slide} flex laptop-landscape:mt-[30px] w-[fit-content`} >
+                    {logoImage.map((item, index) => (
+                        <div className="logowrap w-[210px] h-[84px] mx-[25px]" key={index}>
+                            <Image src={item.image} alt={item.alt} width={184} height={100} className='w-full h-full object-contain' />
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     );

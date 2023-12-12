@@ -4,7 +4,7 @@ import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
 // import ColTwoSlider from '../components/colTwoSlider';
 import HomepageHero from '../components/HeroBanner';
-import Footercta from '../components/Footercta';
+import Footercta from '../components/FooterCta';
 import IntroWithColThree from '../components/introWithColThree';
 import Accordian from '../components/accordian';
 import Tabwithslider from '../components/tabwithslider';
@@ -13,6 +13,7 @@ import Halfslider from '../components/halfslider';
 import ContentGrid from '@/components/ContentGrid';
 import ColTwoSlider from '@/components/colTwoSlider';
 import SpaceFiller from '@/components/SpaceFiller';
+import FooterCta from '../components/FooterCta';
 
 export default function Home({ menuItems }) {
 	return (
@@ -28,12 +29,13 @@ export default function Home({ menuItems }) {
 			<ColTwoSlider />
 			<Logowithslider />
 			<SpaceFiller className={"bg-[#e5e4e7]"} />
+			<FooterCta />
 			{/* <ColTwoSlider /> */}
 			{/* <IntroWithColThree /> */}
 			<Accordian />
 			{/* <Tabwithslider /> */}
 			<Halfslider />
-			<Footercta />
+			{/* <Footercta /> */}
 		</Layout>
 	)
 }

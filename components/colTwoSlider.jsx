@@ -28,7 +28,7 @@ const ColTwoSlider = () => {
 
     Object.assign(settings);
     return (
-        <section className='colTwoSlider bg-black'>
+        <section className='colTwoSlider bg-black height__full-nav'>
             <div className='container'>
                 <div className='wrapper'>
                     <Slider {...settings}>

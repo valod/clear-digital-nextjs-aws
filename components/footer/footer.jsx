@@ -80,7 +80,7 @@ const Footer = () => {
             <div className="item large w-[49%]">
               <div className="content-wrap flex">
                 <div className="img-box w-[30%]">
-                  <div className="bg-img">
+                  <div className="footer__img">
                     <Image src="/red_circle.png" alt="Red Circle" height={100} width={100} />
                   </div>
                 </div>
