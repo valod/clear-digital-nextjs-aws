@@ -62,7 +62,7 @@ const SlickSlider = ({ slides }) => {
           <div className={`imgwrapper ${style.imgwrapper} relative`} key={index}>
             <div className={`imgwrap ${style.imgwrap} relative`}>
               <div className={`bgimg ${style.bgimg} relative`}>
-                <img src={slide.bgimg} alt="" />
+                <Image src={slide.bgimg} alt="" width={400} height={400} />
               </div>
               <div className={`ctwrapper ${style.ctwrapper}`}>
                 <h5 className={`cardcontent ${style.cardcontent}`}>{slide.cardcontent}</h5>
