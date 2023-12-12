@@ -1,46 +1,93 @@
-// import React from 'react';
-// import Image from 'next/image';
-// import Link from 'next/link';
-// import Styles from './styles/colTwoSlider.module.css';
+import React from 'react'
+import Image from 'next/image';
+import Link from 'next/link';
+import Slider from 'react-slick';
 
-// function ColTwoSlider() {
-//     return (
-//         <section className={`${Styles.ColTwoSlider} relative bg-black p-0`}>
-//             {/* <Slider {...settings} className='w-full flex'> */}
-//             <div className="flex">
-//                 <div className="slideWrap relative w-1/2 min-h-[1090px] py-40 px-28">
-//                     <div className="absolute w-full h-full z-0 top-0 left-0">
-//                         <Image className={`w-full h-full`} width={800} height={1090} src='/man-holding-phone.webp' alt="logo" />
-//                     </div>
-//                     <div className="w-full h-full relative flex flex-col justify-end mx-2.5">
-//                         <div className={`${Styles.logoWrap} w-full h-full mb-10`}>
-//                             <Image width={176} height={16} src='/logo-digimarc.webp' alt="digimarc_ogo" />
-//                         </div>
-//                         <h2 className='text-white max-w-[370px]'><span className='circle-around'>27%</span> increase on click-through rates.</h2>
-//                         <div className="btn-wrap mt-10">
-//                             <Link href='#' className='link-btn'>View case study</Link>
-//                         </div>
-//                     </div>
-//                 </div>
-//                 <div className="slideWrap relative w-1/2 min-h-[1090px] py-40 px-28">
-//                     <div className="absolute w-full h-full z-0 top-0 left-0">
-//                         <Image className={`w-full h-full`} width={220} height={500} src='/office-discussion.webp' alt="logo" />
-//                     </div>
-//                     <div className="w-full h-full relative flex flex-col justify-end mx-2.5">
-//                         <div className={`${Styles.logoWrap} w-full h-full mb-10`}>
-//                             <Image width={176} height={16} src='/logo-leadspace.webp' alt="digimarc_ogo" />
-//                         </div>
-//                         <h2 className='text-white max-w-[470px]'>53% <span className='zigzag more-wow'>increase</span> on engagement metrics.</h2>
-//                         <div className="btn-wrap mt-10">
-//                             <Link href='#' className='link-btn'>View case study</Link>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//             {/* </Slider> */}
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-//         </section>
-//     )
-// }
+const ColTwoSlider = () => {
+    const settings = {
+        arrows: false,
+        dots: true,
+        infinite: false,
+        speed: 500,
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        appendDots: (dots) => (
+            <div>
+                <ul className={`btnDots`}>{dots}</ul>
+            </div>
+        ),
+        customPaging: function (i) {
+            return (
+                <button className={'slickDotButton'} />
+            );
+        },
+    };
 
-// export default ColTwoSlider
+    Object.assign(settings);
+    return (
+        <section className='colTwoSlider bg-black'>
+            <div className='container'>
+                <div className='wrapper'>
+                    <Slider {...settings}>
+                        <div className='colTwoSlider__item'>
+                            <div className='colTwoSlider__item--inner'>
+                                <div className='colTwoSlider__left'>
+                                    <Image src={"/hex.jpg"} alt="" width={608} height={523} />
+                                </div>
+                                <div className='colTwoSlider__right'>
+                                    <h3>Aenean aliquet malesuada quam et placerat. Suspendisse pellentesque. Interdum et malesuada fames ac ante ipsum primis in.</h3>
+                                    <span><strong>Jane Doe,</strong> CEO</span>
+                                    <div className='colTwoSlider__logo'>
+                                        <Image src={"/cohesity.svg"} alt="" width={166} height={24} />
+                                    </div>
+                                    <Link href={"/"} className="btn-default" target="_self">
+                                        View case study
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='colTwoSlider__item'>
+                            <div className='colTwoSlider__item--inner'>
+                                <div className='colTwoSlider__left'>
+                                    <div className='counter'>
+                                        <span className='count'>113</span><span>%</span>
+                                        <p>Aenean aliquet malesuada quam et placerat.</p>
+                                    </div>
+                                </div>
+                                <div className='colTwoSlider__right'>
+                                    <h3>Aenean aliquet malesuada quam et placerat. Suspendisse pellentesque. Interdum et malesuada fames ac ante ipsum primis in.</h3>
+                                    <span><strong>Jane Doe,</strong> CEO</span>
+                                    <div className='colTwoSlider__logo'>
+                                        <Image src={"/cohesity.svg"} alt="" width={166} height={24} />
+                                    </div>
+                                    <Link href={"/"} className="btn-default" target="_self">
+                                        View case study
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='colTwoSlider__item'>
+                            <div className='colTwoSlider__item--inner'>
+                                <div className='colTwoSlider__right'>
+                                    <h3>Aenean aliquet malesuada quam et placerat. Suspendisse pellentesque. Interdum et malesuada fames ac ante ipsum primis in.</h3>
+                                    <span><strong>Jane Doe,</strong> CEO</span>
+                                    <div className='colTwoSlider__logo'>
+                                        <Image src={"/cohesity.svg"} alt="" width={166} height={24} />
+                                    </div>
+                                    <Link href={"/"} className="btn-default" target="_self">
+                                        View case study
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </Slider>
+                </div>
+            </div>
+        </section>
+    )
+}
+
+export default ColTwoSlider

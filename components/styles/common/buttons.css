@@ -45,3 +45,38 @@
 .link-btn:hover:after {
   right: -10px;
 }
+
+
+.btn-default {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-size: clamp(16px, 2vw, 20px);
+  color: var(--white);
+  font-weight: 700;
+  line-height: 1;
+  padding-right: 2rem;
+}
+
+.btn-default:hover {
+  color: var(--pink);
+}
+
+.btn-default:hover:after {
+  background-image: url(/hover_right.svg);
+  right: 0;
+}
+
+.btn-default:after {
+  content: "";
+  height: 1.2rem;
+  width: 1.2rem;
+  position: absolute;
+  right: 0.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(/white_link.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: right .3s ease-in-out, background-image .3s ease-in-out;
+}

@@ -10,6 +10,9 @@ import Accordian from '../components/accordian';
 import Tabwithslider from '../components/tabwithslider';
 import Logowithslider from '../components/logowithslider';
 import Halfslider from '../components/halfslider';
+import ContentGrid from '@/components/ContentGrid';
+import ColTwoSlider from '@/components/colTwoSlider';
+import SpaceFiller from '@/components/SpaceFiller';
 
 export default function Home({ menuItems }) {
 	return (
@@ -19,12 +22,17 @@ export default function Home({ menuItems }) {
 				description="ClearDigital "
 			/>
 			<HomepageHero />
+			<SpaceFiller className={"bg-black"} />
+			<ContentGrid />
+			<SpaceFiller className={"bg-[#e5e4e7]"} />
+			<ColTwoSlider />
+			<Logowithslider />
+			<SpaceFiller className={"bg-[#e5e4e7]"} />
 			{/* <ColTwoSlider /> */}
-			<IntroWithColThree />
+			{/* <IntroWithColThree /> */}
 			<Accordian />
-			<Tabwithslider/>
-			<Logowithslider/>
-			<Halfslider/>
+			{/* <Tabwithslider /> */}
+			<Halfslider />
 			<Footercta />
 		</Layout>
 	)
