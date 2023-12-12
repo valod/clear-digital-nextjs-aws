@@ -60,7 +60,9 @@ const SlickSlider = ({ slides }) => {
           </div>
           </div>
         ))}
+
       </Slider>
+
     );
   };
   

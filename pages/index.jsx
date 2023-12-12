@@ -8,6 +8,7 @@ import Footercta from '../components/Footercta';
 import IntroWithColThree from '../components/introWithColThree';
 import Accordian from '../components/accordian';
 import Tabwithslider from '../components/tabwithslider';
+import Logowithslider from '../components/logowithslider';
 
 export default function Home({ menuItems }) {
 	return (
@@ -21,6 +22,7 @@ export default function Home({ menuItems }) {
 			<IntroWithColThree />
 			<Accordian />
 			<Tabwithslider/>
+			<Logowithslider/>
 			<Footercta />
 		</Layout>
 	)
