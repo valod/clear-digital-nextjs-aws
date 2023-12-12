@@ -5,10 +5,14 @@ import styles from './header.module.css';
 
 const Header = () => {
 	const [isScrolled, setIsScrolled] = useState(false);
+	const [activeMenuItem, setActiveMenuItem] = useState(null);
 	const toggleCross = () => {
 		const svg = document.getElementById('hamSvg');
 		svg.classList.toggle(`${styles.clicked}`);
 	}
+	const toggleSubMenu = (menuItem) => {
+		setActiveMenuItem(activeMenuItem === menuItem ? null : menuItem);
+	};
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -44,31 +48,34 @@ const Header = () => {
 					<div className={`${styles['links-outer']}`}>
 						<nav>
 							<ul>
-								<li><span><Link href="/work" data-cursor-expand>Work</Link></span>
+								<li className={`${styles.subActive}`}>
+									<span><Link className={`${styles.menulink}`} href="/work" data-cursor-expand>Work</Link></span>
 									<div className={`${styles['sub-menu']}`}>
-										<div className="outer-wrapper">
-											<div className="col-two">
-												<div className="title-description">
-													<h2 className="graphic-effect-underline" data-underline-image="black-1">Work</h2>
-													<p>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel nunc non, tempus blandit enim.
-														Vivamus gravida velit lorem ipsum dolor sit amet.</p>
-													<Link className="link-default link-black" href="/" data-cursor-expand>Overview</Link>
+										<div className="container">
+											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
+												<div className="col-two w-[30%]">
+													<div className={`${styles.titleDescription}`}>
+														<h2 className="graphic-effect-underline mb-5" data-underline-image="black-1">Work</h2>
+														<p>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel nunc non, tempus blandit enim.
+															Vivamus gravida velit lorem ipsum dolor sit amet.</p>
+														<Link className="link-btn black" href="/" data-cursor-expand>Overview</Link>
+													</div>
 												</div>
-											</div>
-											<div className="col-two">
-												<div className="links-container">
-													<div className="col-wrapper">
-														<span><Link href="/" data-cursor-expand >Case Studies</Link></span>
-														<span><Link href="/" data-cursor-expand>Clients</Link></span>
-														<span><Link href="/" data-cursor-expand>Industry Focus</Link></span>
-														<span><Link href="/" data-cursor-expand>Outcomes</Link></span>
+												<div className="col-two w-[53%]">
+													<div className={`${styles.linksContainer}`}>
+														<ul className="col-wrapper">
+															<li className='w-full block'><Link href="/" data-cursor-expand >Case Studies</Link></li>
+															<li className='w-full block'><Link href="/" data-cursor-expand>Clients</Link></li>
+															<li className='w-full block'><Link href="/" data-cursor-expand>Industry Focus</Link></li>
+															<li className='w-full block'><Link href="/" data-cursor-expand>Outcomes</Link></li>
+														</ul>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</li>
-								<li><span><Link href="/approach" data-cursor-expand>Approach</Link></span>
+								<li><span><Link className={`${styles.menulink}`} href="/approach" data-cursor-expand>Approach</Link></span>
 									<div className={`${styles['sub-menu']}`}>
 										<div className="outer-wrapper">
 											<div className="col-two">
@@ -93,7 +100,7 @@ const Header = () => {
 										</div>
 									</div>
 								</li>
-								<li><span><Link href="/services" data-cursor-expand>Services</Link></span>
+								<li><span><Link className={`${styles.menulink}`} href="/services" data-cursor-expand>Services</Link></span>
 									<div className={`${styles['sub-menu']}`}>
 										<div className="outer-wrapper">
 											<div className="col-two">
@@ -126,7 +133,7 @@ const Header = () => {
 										</div>
 									</div>
 								</li>
-								<li><span><Link href="/insights" data-cursor-expand>Insights</Link></span>
+								<li><span><Link className={`${styles.menulink}`} href="/insights" data-cursor-expand>Insights</Link></span>
 									<div className={`${styles['sub-menu']}`}>
 										<div className="outer-wrapper">
 											<div className="col-two">
@@ -156,7 +163,7 @@ const Header = () => {
 										</div>
 									</div>
 								</li>
-								<li><span><Link href="/about" data-cursor-expand>About</Link></span>
+								<li><span><Link className={`${styles.menulink}`} href="/about" data-cursor-expand>About</Link></span>
 									<div className={`${styles['sub-menu']}`}>
 										<div className="outer-wrapper">
 											<div className="col-two">

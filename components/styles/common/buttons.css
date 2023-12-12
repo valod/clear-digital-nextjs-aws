@@ -14,8 +14,19 @@
   display: inline-block;
   padding-right: 30px;
   width: fit-content;
-  color: #fff;
   font-size: 20px;
+}
+.link-btn.black {
+  color: #000;
+}
+.link-btn.black::after {
+  background-image: url("/r_arrow_black.svg");
+}
+.link-btn.white::after {
+  background-image: url("/r_arrow_white.svg");
+}
+.link-btn.white {
+  color: #fff;
 }
 .link-btn::after {
   content: "";
