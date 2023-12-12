@@ -5,6 +5,10 @@ import styles from './header.module.css';
 
 const Header = () => {
 	const [isScrolled, setIsScrolled] = useState(false);
+	const toggleCross = () => {
+		const svg = document.getElementById('hamSvg');
+		svg.classList.toggle(`${styles.clicked}`);
+	}
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -185,12 +189,19 @@ const Header = () => {
 									</div>
 								</li>
 							</ul>
-							<div className="btn-wrap mt-0 ml-[50px]">
-								<Link href="/" className="pink-btn" data-cursor-expand>Let&#39;s talk</Link>
+							<div className="btn-wrap mt-0 ml-[50px] desktop:ml-[35px] lg:ml-0 lg:mt-[30px]">
+								<Link href="/" className="pink-btn lg:w-full lg:text-center" data-cursor-expand>Let&#39;s talk</Link>
 							</div>
 						</nav>
 					</div>
-					<div id="toggleButton" className={`${styles['toggler']}`}>
+					<div id="toggleButton" className={`${styles['toggler']}`} onClick={toggleCross}>
+						<svg id="hamSvg" width="35" height="26" viewBox="0 0 35 26" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="toggleCross()">
+							<g id="Menu">
+								<rect id="Rectangle 8387" x="5" width="30" height="4" rx="2" fill="white" />
+								<rect id="Rectangle 8388" y="11" width="35" height="4" rx="2" fill="white" />
+								<rect id="Rectangle 8389" x="11" y="22" width="24" height="4" rx="2" fill="white" />
+							</g>
+						</svg>
 					</div>
 				</div>
 			</div>

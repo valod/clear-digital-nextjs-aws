@@ -43,8 +43,17 @@
 .header.active .img-wrap a img:last-child {
   display: none;
 }
+.header.active .toggler svg {
+  fill: #000;
+}
+.header.active .toggler svg rect {
+  fill: #000;
+}
 .header:hover .toggler svg {
   fill: #000;
+}
+.header .toggler {
+  display: none;
 }
 
 .header:hover svg rect {
@@ -85,10 +94,9 @@
   border-bottom: 0;
   margin-left: 50px;
   padding: 4rem 0;
-
-  @media (min-width: var(--breakpoint-tablet-horizontal)) and (max-width: var(--breakpoint-desktop)) {
-    font-size: 18px;
-  }
+}
+.links-outer ul li:first-child {
+  margin-left: 0;
 }
 
 .imgWrap {
@@ -98,4 +106,48 @@
 }
 .imgWrap img:first-child {
   display: none;
+}
+
+#toggleButton svg {
+  transition: transform 0.3s ease;
+}
+.clicked {
+  transform: rotate(45deg);
+}
+@media (min-width: 992px) and (max-width: 1279px) {
+  .links-outer ul li {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .header {
+    height: 95px;
+    padding: 30px 0;
+  }
+  .header .toggler {
+    display: block;
+  }
+
+  .links-outer nav {
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 95px;
+    padding: 0 18px 85px;
+  }
+
+  .links-outer ul {
+    display: block;
+    padding-left: 0;
+  }
+  .links-outer ul li {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    padding: 30px 0;
+    border-bottom: 1px #989898 solid;
+  }
 }
