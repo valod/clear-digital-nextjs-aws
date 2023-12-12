@@ -89,13 +89,14 @@ const Footer = () => {
                   <p className="medium">Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel
                     nunc non, tempus
                     blandit enim. Vivamus gravida velit lorem ipsum dolor sit amet.</p>
-
-
+                  <div className="btnWrap mt-5">
+                    <Link href='#' className='link-btn white'>Download</Link>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="wrapper">
+          <div className="wrapper pb-20 mb-20 border-b border-white">
             <div className="title-wrap">
               <h4 className='text-white'>
                 Confidently navigating <span className="text-pink">change</span>.
@@ -105,26 +106,19 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer-myrious bg-black">
+      <div className="footer-myrious bg-black pb-24">
         <div className="container">
-          <div className="content-wrapper">
+          <div className="content-wrapper flex">
             <div className="logo-wrap">
               <Link href="/" data-cursor-expand="">
                 <Image src="/myrious_logo.png" alt="Myrious" height={100} width={100} />
               </Link>
             </div>
-            <div className="title-wrap">
-              <p className="subtitle text-white">Clear Digital is a founding member of Myrious Group’s expertise-driven agencies.</p>
+            <div className="title-wrap text-white pl-20">
+              <p className="subtitle ">Clear Digital is a founding member of Myrious Group’s expertise-driven agencies.</p>
               <p className="body-default">Myrious Group is an independent holding company enabling forward-thinking brands
                 to achieve breakthrough performance through power of orchestration. </p>
-              <div className="bten-wrap">
-                {/* <CTAButton
-                  label = "Learn More"
-                  href = "/"
-                  target = "_self"
-
-                /> */}
-              </div>
+              <div className="btnWrap mt-5"><Link href='#' className='link-btn white font-bold'>Learn more</Link></div>
             </div>
           </div>
         </div>
