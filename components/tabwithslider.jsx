@@ -33,7 +33,8 @@ const SlickSlider = ({ slides }) => {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      
+      centerMode: true,  // Enable center mode
+      centerPadding: '0', 
     };
   
     return (
