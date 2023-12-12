@@ -3,8 +3,7 @@
 import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
 import ColTwoSlider from '../components/colTwoSlider';
-import HomepageHero
-	from '../components/HeroBanner';
+import HomepageHero from '../components/HeroBanner';
 import Footercta from '../components/Footercta';
 import IntroWithColThree from '../components/introWithColThree';
 import Accordian from '../components/accordian';
@@ -19,7 +18,7 @@ export default function Home({ menuItems }) {
 			<HomepageHero />
 			<ColTwoSlider />
 			<IntroWithColThree />
-			<Accordian/>
+			<Accordian />
 			<Footercta />
 		</Layout>
 	)
