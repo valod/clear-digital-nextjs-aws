@@ -11,6 +11,7 @@ body {
 :root {
   --font-family-heading: "Poppins", sans-serif;
   --font-family-text: "Poppins", sans-serif;
+  --font-permanent-marker: "Permanent Marker";
   --font-size-body: 1.6rem;
   --font-size-body-small: 1rem;
   --flow-space: 1.5rem;
@@ -162,6 +163,9 @@ h6,
   font-family: var(--font-family-heading);
   font-weight: 700;
   line-height: 1.1;
+}
+.font-marker {
+  font-family: var(--font-permanent-marker);
 }
 
 h1,
@@ -481,10 +485,10 @@ section {
   background: url("/../Black Grid.png");
   background-size: cover;
 }
-.slick-list{
+.slick-list {
   width: 100% !important;
 }
-.slick-track{
+.slick-track {
   width: 100% !important;
   display: flex !important;
 }
