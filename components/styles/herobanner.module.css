@@ -48,11 +48,6 @@
     }
   }
   
-  .content_wrap {
-    position: relative;
-    z-index: 2;
-    max-width: 1286px;
-  }
   
   .content_wrap h1,
   .content_wrap h2,

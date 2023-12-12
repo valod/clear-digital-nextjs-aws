@@ -6,15 +6,15 @@ const HomepageHero = () => {
   return (
     <section id="HomepageHero" className={`${styles.herobanner} white_square_pattern min-h-screen`}>
       <div className="container">
-        <div className={`${styles.content_wrap}`}>
-          <div className="subtitle">
+        <div className={`${styles.content_wrap} relative z-[2] max-w-[1380px]`}>
+          <span className="subtitle text-white mb-5 inline-block">
             Hello! We are Clear Digital.
-          </div>
+          </span>
           <h1 className="h1">
             We build B2B websites and <span className="marker-effect marker-underline on">digital</span> brand experiences!!!
           </h1>
-          <Link href="/approach/" className="cta-button button-large text margin-start-30 white-active" target="_self">
-            Our Approach!
+          <Link href="/approach/" className="link-btn white font-bold" target="_self">
+            Our Approach
           </Link>
         </div>
       </div>

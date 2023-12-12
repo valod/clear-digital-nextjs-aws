@@ -49,7 +49,7 @@ const Header = () => {
 						<nav>
 							<ul>
 								<li>
-								{/* <li className={`${styles.subActive}`}> */}
+									{/* <li className={`${styles.subActive}`}> */}
 									<span><Link className={`${styles.menulink}`} href="/work" data-cursor-expand>Work</Link></span>
 									<div className={`${styles['sub-menu']}`}>
 										<div className="container">
@@ -80,10 +80,10 @@ const Header = () => {
 									<div className={`${styles['sub-menu']}`}>
 										<div className="container">
 											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
-												<div className="col-two w-[30%]">
+												<div className="col-two w-[33%]">
 													<div className={`${styles.titleDescription}`}>
-														<h2 className="graphic-effect-underline mb-5" data-underline-image="black-1">Work</h2>
-														<p>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel nunc non, tempus blandit enim.
+														<h2 className="graphic-effect-underline mb-5" data-underline-image="black-1">Approach</h2>
+														<p className='medium'>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel nunc non, tempus blandit enim.
 															Vivamus gravida velit lorem ipsum dolor sit amet.</p>
 														<Link className="link-btn black" href="/" data-cursor-expand>Overview</Link>
 													</div>
@@ -106,10 +106,10 @@ const Header = () => {
 									<div className={`${styles['sub-menu']}`}>
 										<div className="container">
 											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
-												<div className="col-two w-[30%]">
+												<div className="col-two w-[33%]">
 													<div className={`${styles.titleDescription}`}>
-														<h2 className="graphic-effect-underline mb-5" data-underline-image="black-1">Work</h2>
-														<p>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel nunc non, tempus blandit enim.
+														<h2 className="graphic-effect-underline mb-5" data-underline-image="black-1">Services</h2>
+														<p className='medium'>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel nunc non, tempus blandit enim.
 															Vivamus gravida velit lorem ipsum dolor sit amet.</p>
 														<Link className="link-btn black" href="/" data-cursor-expand>Overview</Link>
 													</div>
@@ -132,10 +132,10 @@ const Header = () => {
 									<div className={`${styles['sub-menu']}`}>
 										<div className="container">
 											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
-												<div className="col-two w-[30%]">
+												<div className="col-two w-[33%]">
 													<div className={`${styles.titleDescription}`}>
-														<h2 className="graphic-effect-underline mb-5" data-underline-image="black-1">Work</h2>
-														<p>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel nunc non, tempus blandit enim.
+														<h2 className="graphic-effect-underline mb-5" data-underline-image="black-1">Insights</h2>
+														<p className='medium'>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel nunc non, tempus blandit enim.
 															Vivamus gravida velit lorem ipsum dolor sit amet.</p>
 														<Link className="link-btn black" href="/" data-cursor-expand>Overview</Link>
 													</div>
@@ -158,10 +158,10 @@ const Header = () => {
 									<div className={`${styles['sub-menu']}`}>
 										<div className="container">
 											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
-												<div className="col-two w-[30%]">
+												<div className="col-two w-[33%]">
 													<div className={`${styles.titleDescription}`}>
-														<h2 className="graphic-effect-underline mb-5" data-underline-image="black-1">Work</h2>
-														<p>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel nunc non, tempus blandit enim.
+														<h2 className="graphic-effect-underline mb-5" data-underline-image="black-1">Insights</h2>
+														<p className='medium'>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel nunc non, tempus blandit enim.
 															Vivamus gravida velit lorem ipsum dolor sit amet.</p>
 														<Link className="link-btn black" href="/" data-cursor-expand>Overview</Link>
 													</div>
