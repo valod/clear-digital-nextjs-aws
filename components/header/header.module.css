@@ -6,6 +6,8 @@
   color: #fff;
   z-index: 9;
   transition: all 0.3s linear;
+  padding: 50px 0;
+  height: 195px;
 }
 
 .header.active,
@@ -69,7 +71,7 @@
   display: none;
   position: absolute;
   left: 0;
-  top: 95px;
+  top: 195px;
   width: 100%;
   height: auto;
   background-color: #fff;
@@ -85,6 +87,7 @@
   margin-left: 0;
   padding: 0;
   margin-bottom: 30px;
+  font-weight: 700;
 }
 .links-outer ul li.subActive .sub-menu {
   display: block;
@@ -121,6 +124,7 @@
 
 .links-outer ul li > span {
   cursor: pointer;
+  font-weight: 700;
 }
 .links-outer ul .menulink {
   pointer-events: none;
@@ -146,13 +150,17 @@
 }
 @media (min-width: 992px) and (max-width: 1279px) {
   .links-outer ul li {
-    margin-left: 40px;
+    margin-left: 34px;
   }
 }
 @media (max-width: 991px) {
   .header {
     height: 95px;
     padding: 30px 0;
+  }
+  .header .sub-menu {
+    position: relative;
+    display: none !important;
   }
   .header .toggler {
     display: block;

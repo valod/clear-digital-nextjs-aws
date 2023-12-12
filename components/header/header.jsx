@@ -48,8 +48,8 @@ const Header = () => {
 					<div className={`${styles['links-outer']}`}>
 						<nav>
 							<ul>
-								<li>
-									{/* <li className={`${styles.subActive}`}> */}
+								{/* <li> */}
+									<li className={`${styles.subActive}`}>
 									<span><Link className={`${styles.menulink}`} href="/work" data-cursor-expand>Work</Link></span>
 									<div className={`${styles['sub-menu']}`}>
 										<div className="container">
@@ -59,7 +59,7 @@ const Header = () => {
 														<h2 className="graphic-effect-underline mb-5" data-underline-image="black-1">Work</h2>
 														<p className='medium'>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel nunc non, tempus blandit enim.
 															Vivamus gravida velit lorem ipsum dolor sit amet.</p>
-														<Link className="link-btn black" href="/" data-cursor-expand>Overview</Link>
+														<Link className="link-btn black font-bold" href="/" data-cursor-expand>Overview</Link>
 													</div>
 												</div>
 												<div className="col-two w-[53%]">
@@ -76,7 +76,9 @@ const Header = () => {
 										</div>
 									</div>
 								</li>
-								<li><span><Link className={`${styles.menulink}`} href="/approach" data-cursor-expand>Approach</Link></span>
+								<li>
+										{/* <li className={`${styles.subActive}`}> */}
+									<span><Link className={`${styles.menulink}`} href="/approach" data-cursor-expand>Approach</Link></span>
 									<div className={`${styles['sub-menu']}`}>
 										<div className="container">
 											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
