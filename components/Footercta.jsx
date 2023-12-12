@@ -1,4 +1,3 @@
-'use client'
 import style from './styles/footercta.module.css';
 import Image from "next/image";
 import Link from "next/link";

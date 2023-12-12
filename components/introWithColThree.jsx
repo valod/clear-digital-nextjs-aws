@@ -1,15 +1,13 @@
-import React from 'react';
-import Styles from './styles/introWithColThree.module.css';
-import Image from 'next/image';
+import React from 'react'
+import Styles from './styles/introWithColThree.module.css'
+import Image from 'next/image'
 
 function IntroWithColThree() {
 
     return (<>
         <style jsx>{`
 
-.slick-list{
-    width: 100% !important;
-  }
+
         /* Add more media queries as needed */
       `}</style>
 
@@ -24,7 +22,7 @@ function IntroWithColThree() {
                     <div className={`${Styles.threeCard} text-black mx-[60px]`}>
                         <div className="w-full max-w-[360px] pr-[75px]">
                             <div className={`mb-5 w-full h-full max-h-[90px] max-w-[85px]`}>
-                                <Image className={``} width={80} height={90} src='/bulb.svg' alt="bulb" />
+                                <Image width={80} height={90} src='/bulb.svg' alt="bulb" />
                             </div>
                             <h5 className='mb-2'>Collaboration focus lorem ipsum.</h5>
                             <p>Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.</p>
@@ -33,7 +31,7 @@ function IntroWithColThree() {
                     <div className={`${Styles.threeCard} text-black mx-[60px]`}>
                         <div className="w-full max-w-[360px] pr-[75px]">
                             <div className={`mb-5 w-full h-full max-h-[90px] max-w-[85px]`}>
-                                <Image className={``} width={80} height={90} src='/graph_up.svg' alt="bulb" />
+                                <Image width={80} height={90} src='/graph_up.svg' alt="bulb" />
                             </div>
                             <h5 className='mb-2'>B2B performance driven.</h5>
                             <p>Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.</p>
@@ -42,7 +40,7 @@ function IntroWithColThree() {
                     <div className={`${Styles.threeCard} text-black mx-[60px]`}>
                         <div className="w-full max-w-[360px] pr-[75px]">
                             <div className={`mb-5 w-full h-full max-h-[90px] max-w-[85px]`}>
-                                <Image className={``} width={80} height={90} src='/trophy.svg' alt="bulb" />
+                                <Image width={80} height={90} src='/trophy.svg' alt="bulb" />
                             </div>
                             <h5 className='mb-2'>Design + development excellence.</h5>
                             <p>Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.</p>

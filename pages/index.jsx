@@ -2,7 +2,7 @@
 // import styles from './page.module.css';
 import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
-import ColTwoSlider from '../components/colTwoSlider';
+// import ColTwoSlider from '../components/colTwoSlider';
 import HomepageHero from '../components/HeroBanner';
 import Footercta from '../components/Footercta';
 import IntroWithColThree from '../components/introWithColThree';
@@ -16,7 +16,7 @@ export default function Home({ menuItems }) {
 				description="ClearDigital "
 			/>
 			<HomepageHero />
-			<ColTwoSlider />
+			{/* <ColTwoSlider /> */}
 			<IntroWithColThree />
 			<Accordian />
 			<Footercta />
