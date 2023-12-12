@@ -7,6 +7,7 @@ import HomepageHero from '../components/HeroBanner';
 import Footercta from '../components/Footercta';
 import IntroWithColThree from '../components/introWithColThree';
 import Accordian from '../components/accordian';
+import Tabwithslider from '../components/tabwithslider';
 
 export default function Home({ menuItems }) {
 	return (
@@ -19,6 +20,7 @@ export default function Home({ menuItems }) {
 			{/* <ColTwoSlider /> */}
 			<IntroWithColThree />
 			<Accordian />
+			<Tabwithslider/>
 			<Footercta />
 		</Layout>
 	)

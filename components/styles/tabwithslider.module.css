@@ -1,0 +1,43 @@
+.imgwrapper{
+    width: calc(50% - 75px);
+    margin-right: 150px;
+    position: relative;
+    max-width: 570px;
+    max-height: 490px;
+}
+
+.contentwrapper{
+  width: calc(50% - 75px);
+  margin-left: 0;
+}
+
+.wrapper{
+    display: flex !important;
+}
+
+.h3{
+    font-size: 55px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -1.1px;
+}
+
+.content{
+    color:#fff;
+}
+
+.slick-list {
+    width: 100% !important;
+    overflow: hidden;
+}
+.slick-track {
+    display: flex;
+}
+.slick-prev {
+    display: none !important;
+    z-index: 2;
+}
+.slick-next {
+    display: none !important;
+}
