@@ -1,0 +1,36 @@
+/* Buttons  */
+
+.pink-btn {
+  display: inline-block;
+  background: #fa198c;
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.link-btn {
+  position: relative;
+  display: inline-block;
+  padding-right: 30px;
+  width: fit-content;
+  color: #fff;
+  font-size: 20px;
+}
+.link-btn::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("/r_arrow_white.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: right 0.3s ease-in-out;
+}
+.link-btn:hover:after {
+  right: -10px;
+}

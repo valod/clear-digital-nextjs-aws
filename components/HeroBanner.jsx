@@ -4,7 +4,7 @@ import styles from './styles/herobanner.module.css';
 
 const HomepageHero = () => {
   return (
-    <section id="HomepageHero" className={`${styles.herobanner} min-h-screen`}>
+    <section id="HomepageHero" className={`${styles.herobanner} white_square_pattern min-h-screen`}>
       <div className="container">
         <div className={`${styles.content_wrap}`}>
           <div className="subtitle">
