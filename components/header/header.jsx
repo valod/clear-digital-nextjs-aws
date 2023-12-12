@@ -6,16 +6,22 @@ import styles from './header.module.css';
 const Header = () => {
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [activeMenuItem, setActiveMenuItem] = useState(null);
+	const [showmenu, setshowmenu] = useState(false)
 	const toggleCross = () => {
-		const svg = document.getElementById('hamSvg');
-		svg.classList.toggle(`${styles.clicked}`);
-	}
+		const svg = document.getElementById('hamburger');
+		if (svg) {
+			svg.classList.toggle(`${styles.clicked}`);
+			setshowmenu(svg.classList.contains(styles.clicked));
+		}
+		console.log(showmenu);
+	};
 	const toggleSubMenu = (event) => {
 		const parentListItem = event.target.closest('li');
-
+		const header = document.querySelector('header')
 		if (parentListItem) {
 			const parentList = parentListItem.parentNode;
 			const hasOpenSiblings = parentList.querySelectorAll(':scope > li');
+			// const hasOpenSiblingsactive = parentList.querySelectorAll(':scope > li.header_subActive__JYh33');
 
 			for (let i = 0; i < hasOpenSiblings.length; i++) {
 				const sibling = hasOpenSiblings[i];
@@ -23,6 +29,16 @@ const Header = () => {
 					sibling.classList.remove(styles.subActive);
 				}
 			}
+			// setTimeout(() => {
+			// 	console.log(header);
+			// 	for (let j = 0; j < hasOpenSiblings.length; j++) {
+			// 		const element = hasOpenSiblings[j];
+			// 		if (element.classList.contains('header_subActive__JYh33')) {
+			// 			header.classList.add(styles.active)
+			// 		}
+			// 	}
+			// }, 300);
+
 		}
 
 		parentListItem.classList.toggle(styles.subActive);
@@ -62,7 +78,7 @@ const Header = () => {
 					</div>
 
 					<div className={`${styles['links-outer']}`}>
-						<nav>
+						<nav className={showmenu ? styles.nav_active : ''}>
 							<ul>
 								<li>
 									{/* <li className={`${styles.subActive}`}> */}
@@ -210,7 +226,7 @@ const Header = () => {
 							</div>
 						</nav>
 					</div>
-					<div id="toggleButton" className={`${styles['toggler']}`} onClick={toggleCross}>
+					<div id="hamburger" className={`${styles['toggler']}`} onClick={toggleCross}>
 						<svg id="hamSvg" width="35" height="26" viewBox="0 0 35 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g id="Menu">
 								<rect id="Rectangle 8387" x="5" width="30" height="4" rx="2" fill="white" />

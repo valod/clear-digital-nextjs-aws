@@ -36,7 +36,7 @@ const sliderdata = [
 const SlickSlider = ({ slides }) => {
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -69,14 +69,14 @@ const SlickSlider = ({ slides }) => {
 
 const Tabwithslider = () => {
 
-  useEffect(() => {
-    const section = document.getElementsByClassName('tabwithslider')[0]
-    const prev = section.getElementsByClassName('slick-prev')[0]
-    const next = section.getElementsByClassName('slick-next')[0]
-    prev.classList.add(`${style.prevArrow}`)
-    next.classList.add(`${style.nextArrow}`)
-    console.log(next);
-  }, [])
+  // useEffect(() => {
+  //   const section = document.getElementsByClassName('tabwithslider')[0]
+  //   const prev = section.getElementsByClassName('slick-prev')[0]
+  //   const next = section.getElementsByClassName('slick-next')[0]
+  //   prev.classList.add(`${style.prevArrow}`)
+  //   next.classList.add(`${style.nextArrow}`)
+  //   console.log(next);
+  // }, [])
 
 
   return (<>

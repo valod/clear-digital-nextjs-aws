@@ -92,6 +92,11 @@
 .links-outer ul li.subActive .sub-menu {
   display: block;
 }
+.links-outer ul li.subActive::after{
+position: absolute;
+height: 3px;
+width: 100%;
+}
 
 .main-menu-wrap {
   display: flex;
@@ -111,6 +116,9 @@
 .links-outer nav {
   display: flex;
   align-items: center;
+}
+.links-outer nav.nav_active{
+display: block;
 }
 .links-outer ul {
   display: flex;
@@ -142,9 +150,10 @@
   display: none;
 }
 
-#toggleButton svg {
+#hamburger svg {
   transition: transform 0.3s ease;
 }
+
 .clicked {
   transform: rotate(45deg);
 }
@@ -168,7 +177,7 @@
 
   .links-outer nav {
     background-color: #fff;
-    display: block;
+    display: none;
     position: absolute;
     width: 100%;
     left: 0;

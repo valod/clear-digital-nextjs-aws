@@ -508,5 +508,50 @@ section {
   margin: 0 30px;
 }
 
-
 /* custom */
+
+.slick-prev {
+  position: relative;
+  left: 0;
+  top: 260px;
+  z-index: 22;
+  font-size: 0;
+  width: 80px;
+  height: 80px;
+  background-image: url("/circle.png");
+  background-size: cover;
+}
+.slick-prev::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("/arrow-right.png");
+  background-size: contain;
+}
+.slick-next {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  z-index: 22;
+  font-size: 0;
+  width: 80px;
+  height: 80px;
+  background-image: url("/circle.png");
+  background-size: cover;
+}
+
+.slick-next::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("/arrow-left.png");
+  background-size: contain;
+}
