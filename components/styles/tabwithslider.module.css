@@ -11,20 +11,36 @@
   margin-left: 0;
 }
 
+.contentwrapper::after{
+    content: '';
+    position: absolute;
+    left: -49px;
+    top:-23px;
+    z-index: 2;
+    width: 72px;
+    height: 60px;
+    background-image: url('/Quotations.png');
+    background-size: cover;
+}
+
 .wrapper{
     display: flex !important;
 }
 
-.h3{
-    font-size: 55px;
-    color: #fff;
-    font-weight: 700;
-    line-height: 110%;
-    letter-spacing: -1.1px;
-}
 
 .content{
     color:#fff;
+    margin-bottom: 40px;
+}
+
+.imgwrap{
+    max-width: 156px;
+    max-height: 21px;
+    margin-top: 20px;
+}
+
+.txt{
+    color: #FA198C;
 }
 
 .slick-list {
