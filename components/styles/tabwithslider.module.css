@@ -57,3 +57,6 @@
 .slick-next {
     display: none !important;
 }
+.prevArrow{
+    background-color: red;
+}

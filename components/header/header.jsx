@@ -48,8 +48,35 @@ const Header = () => {
 					<div className={`${styles['links-outer']}`}>
 						<nav>
 							<ul>
-								<li className={`${styles.subActive}`}>
+								<li>
+								{/* <li className={`${styles.subActive}`}> */}
 									<span><Link className={`${styles.menulink}`} href="/work" data-cursor-expand>Work</Link></span>
+									<div className={`${styles['sub-menu']}`}>
+										<div className="container">
+											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
+												<div className="col-two w-[33%]">
+													<div className={`${styles.titleDescription}`}>
+														<h2 className="graphic-effect-underline mb-5" data-underline-image="black-1">Work</h2>
+														<p className='medium'>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel nunc non, tempus blandit enim.
+															Vivamus gravida velit lorem ipsum dolor sit amet.</p>
+														<Link className="link-btn black" href="/" data-cursor-expand>Overview</Link>
+													</div>
+												</div>
+												<div className="col-two w-[53%]">
+													<div className={`${styles.linksContainer}`}>
+														<ul className="col-wrapper">
+															<li className='w-full block'><Link href="/" data-cursor-expand >Case Studies</Link></li>
+															<li className='w-full block'><Link href="/" data-cursor-expand>Clients</Link></li>
+															<li className='w-full block'><Link href="/" data-cursor-expand>Industry Focus</Link></li>
+															<li className='w-full block'><Link href="/" data-cursor-expand>Outcomes</Link></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li><span><Link className={`${styles.menulink}`} href="/approach" data-cursor-expand>Approach</Link></span>
 									<div className={`${styles['sub-menu']}`}>
 										<div className="container">
 											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
@@ -75,58 +102,26 @@ const Header = () => {
 										</div>
 									</div>
 								</li>
-								<li><span><Link className={`${styles.menulink}`} href="/approach" data-cursor-expand>Approach</Link></span>
-									<div className={`${styles['sub-menu']}`}>
-										<div className="outer-wrapper">
-											<div className="col-two">
-												<div className="title-description">
-													<h2 className="graphic-effect-underline" data-underline-image="black-1">Approach</h2>
-													<p>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel
-														nunc
-														non, tempus blandit enim. Vivamus gravida velit lorem ipsum dolor sit
-														amet.</p>
-													<Link className="link-default link-black" href="/" data-cursor-expand>Overview</Link>
-												</div>
-											</div>
-											<div className="col-two">
-												<div className="links-container">
-													<div className="col-wrapper">
-														<span><Link href="/" data-cursor-expand>Collaboration Focus</Link></span>
-														<span><Link href="/" data-cursor-expand>Driving B2B Results</Link></span>
-														<span><Link href="/" data-cursor-expand>Design & Development Excellence</Link></span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
 								<li><span><Link className={`${styles.menulink}`} href="/services" data-cursor-expand>Services</Link></span>
 									<div className={`${styles['sub-menu']}`}>
-										<div className="outer-wrapper">
-											<div className="col-two">
-												<div className="title-description">
-													<h2 className="graphic-effect-underline" data-underline-image="black-1">Services</h2>
-													<p>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel
-														nunc
-														non, tempus blandit enim. Vivamus gravida velit lorem ipsum dolor sit
-														amet.</p>
-													<Link className="link-default link-black" href="/" data-cursor-expand>Overview</Link>
-												</div>
-											</div>
-											<div className="col-two">
-												<div className="links-container">
-													<div className="col-wrapper">
-														<span><Link href="/" data-cursor-expand>Brand Strategy</Link></span>
-														<span><Link href="/" data-cursor-expand>Content Development</Link></span>
-														<span><Link href="/" data-cursor-expand>Creative Services</Link></span>
-														<span><Link href="/" data-cursor-expand>Digital Marketing</Link></span>
-														<span><Link href="/" data-cursor-expand>Digital Strategy</Link></span>
+										<div className="container">
+											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
+												<div className="col-two w-[30%]">
+													<div className={`${styles.titleDescription}`}>
+														<h2 className="graphic-effect-underline mb-5" data-underline-image="black-1">Work</h2>
+														<p>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel nunc non, tempus blandit enim.
+															Vivamus gravida velit lorem ipsum dolor sit amet.</p>
+														<Link className="link-btn black" href="/" data-cursor-expand>Overview</Link>
 													</div>
-													<div className="col-wrapper">
-														<span><Link href="/" data-cursor-expand>Motion Graphics</Link></span>
-														<span><Link href="/" data-cursor-expand>Systems Support</Link></span>
-														<span><Link href="/" data-cursor-expand>UX/UI Design</Link></span>
-														<span><Link href="/" data-cursor-expand>Web Development</Link></span>
+												</div>
+												<div className="col-two w-[53%]">
+													<div className={`${styles.linksContainer}`}>
+														<ul className="col-wrapper">
+															<li className='w-full block'><Link href="/" data-cursor-expand >Case Studies</Link></li>
+															<li className='w-full block'><Link href="/" data-cursor-expand>Clients</Link></li>
+															<li className='w-full block'><Link href="/" data-cursor-expand>Industry Focus</Link></li>
+															<li className='w-full block'><Link href="/" data-cursor-expand>Outcomes</Link></li>
+														</ul>
 													</div>
 												</div>
 											</div>
@@ -135,28 +130,24 @@ const Header = () => {
 								</li>
 								<li><span><Link className={`${styles.menulink}`} href="/insights" data-cursor-expand>Insights</Link></span>
 									<div className={`${styles['sub-menu']}`}>
-										<div className="outer-wrapper">
-											<div className="col-two">
-												<div className="title-description">
-													<h2 className="graphic-effect-underline" data-underline-image="black-1">Insights</h2>
-													<p>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel
-														nunc
-														non, tempus blandit enim. Vivamus gravida velit lorem ipsum dolor sit
-														amet.</p>
-													<Link className="link-default link-black" href="/" data-cursor-expand>Overview</Link>
-												</div>
-											</div>
-											<div className="col-two">
-												<div className="links-container">
-													<div className="col-wrapper">
-														<span><Link href="/" data-cursor-expand>White Papers</Link></span>
-														<span><Link href="/" data-cursor-expand>Videos</Link></span>
-														<span><Link href="/" data-cursor-expand>Infographics</Link></span>
+										<div className="container">
+											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
+												<div className="col-two w-[30%]">
+													<div className={`${styles.titleDescription}`}>
+														<h2 className="graphic-effect-underline mb-5" data-underline-image="black-1">Work</h2>
+														<p>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel nunc non, tempus blandit enim.
+															Vivamus gravida velit lorem ipsum dolor sit amet.</p>
+														<Link className="link-btn black" href="/" data-cursor-expand>Overview</Link>
 													</div>
-													<div className="col-wrapper">
-														<span><Link href="/" data-cursor-expand>Podcasts</Link></span>
-														<span><Link href="/" data-cursor-expand>Client in the News</Link></span>
-														<span><Link href="/" data-cursor-expand>Press Releases</Link></span>
+												</div>
+												<div className="col-two w-[53%]">
+													<div className={`${styles.linksContainer}`}>
+														<ul className="col-wrapper">
+															<li className='w-full block'><Link href="/" data-cursor-expand >Case Studies</Link></li>
+															<li className='w-full block'><Link href="/" data-cursor-expand>Clients</Link></li>
+															<li className='w-full block'><Link href="/" data-cursor-expand>Industry Focus</Link></li>
+															<li className='w-full block'><Link href="/" data-cursor-expand>Outcomes</Link></li>
+														</ul>
 													</div>
 												</div>
 											</div>
@@ -165,30 +156,24 @@ const Header = () => {
 								</li>
 								<li><span><Link className={`${styles.menulink}`} href="/about" data-cursor-expand>About</Link></span>
 									<div className={`${styles['sub-menu']}`}>
-										<div className="outer-wrapper">
-											<div className="col-two">
-												<div className="title-description">
-													<h2 className="graphic-effect-underline" data-underline-image="black-1">About Clear</h2>
-													<p>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel
-														nunc
-														non, tempus blandit enim. Vivamus gravida velit lorem ipsum dolor sit
-														amet.</p>
-													<Link className="link-default link-black" href="/" data-cursor-expand>Overview</Link>
-												</div>
-											</div>
-											<div className="col-two">
-												<div className="links-container">
-													<div className="col-wrapper">
-														<span><Link href="/" data-cursor-expand>Brand Story</Link></span>
-														<span><Link href="/" data-cursor-expand >History</Link></span>
-														<span><Link href="/" data-cursor-expand>Team</Link></span>
-														<span><Link href="/" data-cursor-expand>Awards</Link></span>
+										<div className="container">
+											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
+												<div className="col-two w-[30%]">
+													<div className={`${styles.titleDescription}`}>
+														<h2 className="graphic-effect-underline mb-5" data-underline-image="black-1">Work</h2>
+														<p>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel nunc non, tempus blandit enim.
+															Vivamus gravida velit lorem ipsum dolor sit amet.</p>
+														<Link className="link-btn black" href="/" data-cursor-expand>Overview</Link>
 													</div>
-													<div className="col-wrapper">
-														<span><Link href="/" data-cursor-expand>Partners</Link></span>
-														<span><Link href="/" data-cursor-expand>News</Link></span>
-														<span><Link href="/" data-cursor-expand>Careers</Link></span>
-														<span><Link href="/" data-cursor-expand>Contact Us</Link></span>
+												</div>
+												<div className="col-two w-[53%]">
+													<div className={`${styles.linksContainer}`}>
+														<ul className="col-wrapper">
+															<li className='w-full block'><Link href="/" data-cursor-expand >Case Studies</Link></li>
+															<li className='w-full block'><Link href="/" data-cursor-expand>Clients</Link></li>
+															<li className='w-full block'><Link href="/" data-cursor-expand>Industry Focus</Link></li>
+															<li className='w-full block'><Link href="/" data-cursor-expand>Outcomes</Link></li>
+														</ul>
 													</div>
 												</div>
 											</div>
