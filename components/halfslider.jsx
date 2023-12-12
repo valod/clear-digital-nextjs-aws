@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import style from './styles/halfslider.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect } from 'react';
 
 // slides.json
 const sliderdata = [
@@ -33,13 +34,13 @@ const sliderdata = [
 
 const SlickSlider = ({ slides }) => {
     const settings = {
-      dots: true,
+      dots: false,
       infinite: false,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
       centerMode: true,  // Enable center mode
-      centerPadding: '0',
+      centerPadding: '0 0 150px',
     };
   
     return (
@@ -76,6 +77,19 @@ const SlickSlider = ({ slides }) => {
   };
   
   const Halfslider = () => {
+
+    useEffect(() => {
+        const section = document.getElementsByClassName('halfslider')[0]
+        const slide = section.getElementsByClassName('slick-slider')[0]
+        const prev = section.getElementsByClassName('slick-prev')[0]
+        const next = section.getElementsByClassName('slick-next')[0]
+        prev.classList.add(`${style.prevArrow}`)
+        next.classList.add(`${style.nextArrow}`)
+        slide.classList.add(`${style.slide}`)
+        console.log(slide);
+      }, [])
+
+
     return (
       <section className={`halfslider ${style.halfslider} py-40`}>
         <div className="container">

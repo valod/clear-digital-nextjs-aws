@@ -4,12 +4,27 @@
     position: relative;
     max-width: 570px;
     max-height: 490px;
+
+}
+
+@media (desktop) {
+  .imgwrapper{
+    width: calc(50% - 50px);
+    margin-right: 100px;
+  }   
 }
 
 .contentwrapper{
   width: calc(50% - 75px);
   margin-left: 0;
 }
+
+@media (desktop) {
+    .contentwrapper{
+      width: calc(50% - 50px);
+      margin-right: 100px;
+    }   
+  }
 
 .contentwrapper::after{
     content: '';
@@ -58,5 +73,48 @@
     display: none !important;
 }
 .prevArrow{
-    background-color: red;
+    position: relative;
+    left: 0;
+    top:260px;
+    z-index: 22;
+    font-size: 0;
+    width: 80px;
+    height: 80px;
+    background-image: url('/circle.png');
+    background-size: cover;
+    
+}
+.prevArrow::after{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    background-image: url('/arrow-right.png');
+    background-size: contain;
+}
+.nextArrow{
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+    z-index: 22;
+    font-size: 0;
+    width: 80px;
+    height: 80px;
+    background-image: url('/circle.png');
+    background-size: cover;
+}
+
+.nextArrow::after{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    background-image: url('/arrow-left.png');
+    background-size: contain;
 }

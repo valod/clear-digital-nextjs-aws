@@ -528,6 +528,15 @@ section {
 .tabwithslider .slick-slide {
   margin: 0 30px;
 }
+ .slick-prev{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 80px;
+  height: 80px;
+  background-image: url('/circle.png');
+  background-size: cover;
+}
 .halfslider .slider_wrapper .slick-slider{
   width: calc(100% - 573px ) !important;
   overflow: hidden;

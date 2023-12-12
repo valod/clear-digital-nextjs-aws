@@ -72,8 +72,10 @@ const Tabwithslider = () => {
   useEffect(() => {
     const section = document.getElementsByClassName('tabwithslider')[0]
     const prev = section.getElementsByClassName('slick-prev')[0]
+    const next = section.getElementsByClassName('slick-next')[0]
     prev.classList.add(`${style.prevArrow}`)
-    console.log(prev);
+    next.classList.add(`${style.nextArrow}`)
+    console.log(next);
   }, [])
 
 
