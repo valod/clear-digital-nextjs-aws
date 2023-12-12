@@ -10,9 +10,25 @@ const Header = () => {
 		const svg = document.getElementById('hamSvg');
 		svg.classList.toggle(`${styles.clicked}`);
 	}
-	const toggleSubMenu = (menuItem) => {
-		setActiveMenuItem(activeMenuItem === menuItem ? null : menuItem);
+	const toggleSubMenu = (event) => {
+		const parentListItem = event.target.closest('li');
+
+		if (parentListItem) {
+			const parentList = parentListItem.parentNode;
+			const hasOpenSiblings = parentList.querySelectorAll(':scope > li');
+
+			for (let i = 0; i < hasOpenSiblings.length; i++) {
+				const sibling = hasOpenSiblings[i];
+				if (sibling !== parentListItem) {
+					sibling.classList.remove(styles.subActive);
+				}
+			}
+		}
+
+		parentListItem.classList.toggle(styles.subActive);
 	};
+
+
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -48,9 +64,9 @@ const Header = () => {
 					<div className={`${styles['links-outer']}`}>
 						<nav>
 							<ul>
-								{/* <li> */}
-									<li className={`${styles.subActive}`}>
-									<span><Link className={`${styles.menulink}`} href="/work" data-cursor-expand>Work</Link></span>
+								<li>
+									{/* <li className={`${styles.subActive}`}> */}
+									<span onClick={toggleSubMenu}><Link className={`${styles.menulink}`} href="/work" data-cursor-expand>Work</Link></span>
 									<div className={`${styles['sub-menu']}`}>
 										<div className="container">
 											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
@@ -77,8 +93,8 @@ const Header = () => {
 									</div>
 								</li>
 								<li>
-										{/* <li className={`${styles.subActive}`}> */}
-									<span><Link className={`${styles.menulink}`} href="/approach" data-cursor-expand>Approach</Link></span>
+									{/* <li className={`${styles.subActive}`}> */}
+									<span onClick={toggleSubMenu}><Link className={`${styles.menulink}`} href="/approach" data-cursor-expand>Approach</Link></span>
 									<div className={`${styles['sub-menu']}`}>
 										<div className="container">
 											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
@@ -104,7 +120,9 @@ const Header = () => {
 										</div>
 									</div>
 								</li>
-								<li><span><Link className={`${styles.menulink}`} href="/services" data-cursor-expand>Services</Link></span>
+								<li>
+									<span onClick={toggleSubMenu}>
+										<Link className={`${styles.menulink}`} href="/services" data-cursor-expand>Services</Link></span>
 									<div className={`${styles['sub-menu']}`}>
 										<div className="container">
 											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
@@ -130,7 +148,9 @@ const Header = () => {
 										</div>
 									</div>
 								</li>
-								<li><span><Link className={`${styles.menulink}`} href="/insights" data-cursor-expand>Insights</Link></span>
+								<li>
+									<span onClick={toggleSubMenu}>
+										<Link className={`${styles.menulink}`} href="/insights" data-cursor-expand>Insights</Link></span>
 									<div className={`${styles['sub-menu']}`}>
 										<div className="container">
 											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
@@ -156,7 +176,9 @@ const Header = () => {
 										</div>
 									</div>
 								</li>
-								<li><span><Link className={`${styles.menulink}`} href="/about" data-cursor-expand>About</Link></span>
+								<li>
+									<span onClick={toggleSubMenu}>
+										<Link className={`${styles.menulink}`} href="/about" data-cursor-expand>About</Link></span>
 									<div className={`${styles['sub-menu']}`}>
 										<div className="container">
 											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
@@ -189,7 +211,7 @@ const Header = () => {
 						</nav>
 					</div>
 					<div id="toggleButton" className={`${styles['toggler']}`} onClick={toggleCross}>
-						<svg id="hamSvg" width="35" height="26" viewBox="0 0 35 26" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="toggleCross()">
+						<svg id="hamSvg" width="35" height="26" viewBox="0 0 35 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g id="Menu">
 								<rect id="Rectangle 8387" x="5" width="30" height="4" rx="2" fill="white" />
 								<rect id="Rectangle 8388" y="11" width="35" height="4" rx="2" fill="white" />
