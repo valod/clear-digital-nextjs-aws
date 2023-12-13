@@ -15,13 +15,13 @@ const Header = () => {
 		}
 		console.log(showmenu);
 	};
-	const toggleSubMenu = (event) => {
+
+	const toggleSubMenuOnMouseEnter = (event) => {
+		console.log('Mouse enter triggered');
 		const parentListItem = event.target.closest('li');
-		const header = document.querySelector('header')
 		if (parentListItem) {
 			const parentList = parentListItem.parentNode;
 			const hasOpenSiblings = parentList.querySelectorAll(':scope > li');
-			// const hasOpenSiblingsactive = parentList.querySelectorAll(':scope > li.header_subActive__JYh33');
 
 			for (let i = 0; i < hasOpenSiblings.length; i++) {
 				const sibling = hasOpenSiblings[i];
@@ -29,21 +29,18 @@ const Header = () => {
 					sibling.classList.remove(styles.subActive);
 				}
 			}
-			// setTimeout(() => {
-			// 	console.log(header);
-			// 	for (let j = 0; j < hasOpenSiblings.length; j++) {
-			// 		const element = hasOpenSiblings[j];
-			// 		if (element.classList.contains('header_subActive__JYh33')) {
-			// 			header.classList.add(styles.active)
-			// 		}
-			// 	}
-			// }, 300);
-
 		}
 
-		parentListItem.classList.toggle(styles.subActive);
+		parentListItem.classList.add(styles.subActive);
 	};
 
+	const toggleSubMenuOnMouseLeave = (event) => {
+		console.log('Mouse leave triggered');
+		const parentListItem = event.target.closest('li');
+		if (parentListItem) {
+			parentListItem.classList.remove(styles.subActive);
+		}
+	};
 
 
 	useEffect(() => {
@@ -80,9 +77,9 @@ const Header = () => {
 					<div className={`${styles['links-outer']}`}>
 						<nav className={showmenu ? styles.nav_active : ''}>
 							<ul>
-								<li>
-									{/* <li className={`${styles.subActive}`}> */}
-									<span onClick={toggleSubMenu}><Link className={`${styles.menulink}`} href="/work" data-cursor-expand>Work</Link></span>
+								<li onMouseEnter={toggleSubMenuOnMouseEnter} onMouseLeave={toggleSubMenuOnMouseLeave}>
+									<span className={styles.menuSpan}>
+										<Link href="/work" data-cursor-expand>Work</Link></span>
 									<div className={`${styles['sub-menu']}`}>
 										<div className="container">
 											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
@@ -108,9 +105,9 @@ const Header = () => {
 										</div>
 									</div>
 								</li>
-								<li>
-									{/* <li className={`${styles.subActive}`}> */}
-									<span onClick={toggleSubMenu}><Link className={`${styles.menulink}`} href="/approach" data-cursor-expand>Approach</Link></span>
+								<li onMouseEnter={toggleSubMenuOnMouseEnter} onMouseLeave={toggleSubMenuOnMouseLeave}>
+									<span className={styles.menuSpan}>
+										<Link href="/approach" data-cursor-expand>Approach</Link></span>
 									<div className={`${styles['sub-menu']}`}>
 										<div className="container">
 											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
@@ -137,8 +134,8 @@ const Header = () => {
 									</div>
 								</li>
 								<li>
-									<span onClick={toggleSubMenu}>
-										<Link className={`${styles.menulink}`} href="/services" data-cursor-expand>Services</Link></span>
+									<span className={styles.menuSpan}>
+										<Link href="/services" data-cursor-expand>Services</Link></span>
 									<div className={`${styles['sub-menu']}`}>
 										<div className="container">
 											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
@@ -165,8 +162,8 @@ const Header = () => {
 									</div>
 								</li>
 								<li>
-									<span onClick={toggleSubMenu}>
-										<Link className={`${styles.menulink}`} href="/insights" data-cursor-expand>Insights</Link></span>
+									<span className={styles.menuSpan}>
+										<Link href="/insights" data-cursor-expand>Insights</Link></span>
 									<div className={`${styles['sub-menu']}`}>
 										<div className="container">
 											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
@@ -193,8 +190,8 @@ const Header = () => {
 									</div>
 								</li>
 								<li>
-									<span onClick={toggleSubMenu}>
-										<Link className={`${styles.menulink}`} href="/about" data-cursor-expand>About</Link></span>
+									<span className={styles.menuSpan}>
+										<Link href="/about" data-cursor-expand>About</Link></span>
 									<div className={`${styles['sub-menu']}`}>
 										<div className="container">
 											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
@@ -221,7 +218,7 @@ const Header = () => {
 									</div>
 								</li>
 							</ul>
-							<div className="btn-wrap mt-0 ml-[50px] desktop:ml-[35px] lg:ml-0 lg:mt-[30px]">
+							<div className="btn-wrap mt-0 mb-[12px] ml-[50px] desktop:ml-[35px] lg:ml-0 lg:mt-[30px]">
 								<Link href="/" className="pink-btn lg:w-full lg:text-center" data-cursor-expand>Let&#39;s talk</Link>
 							</div>
 						</nav>

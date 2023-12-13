@@ -6,8 +6,8 @@
   color: #fff;
   z-index: 9;
   transition: all 0.3s linear;
-  padding: 50px 0;
-  height: 195px;
+  height: 154px;
+  padding-top: 12px;
 }
 
 .header.active,
@@ -17,9 +17,21 @@
   color: #000;
 }
 
+.imgWrap {
+  width: 100%;
+  height: 100%;
+  max-width: 110px;
+  max-height: 35px;
+}
+
+.imgWrap img:first-child {
+  display: none;
+}
+
 .header:hover .imgWrap img:first-child {
   display: block;
 }
+
 .header.active .imgWrap img:first-child {
   display: block;
 }
@@ -27,6 +39,7 @@
 .header:hover .imgWrap img:last-child {
   display: none;
 }
+
 .header.active .imgWrap img:last-child {
   display: none;
 }
@@ -42,60 +55,13 @@
 .header.active .img-wrap a img:first-child {
   display: block;
 }
+
 .header.active .img-wrap a img:last-child {
   display: none;
 }
-.header.active .toggler svg {
-  fill: #000;
-}
-.header.active .toggler svg rect {
-  fill: #000;
-}
-.header:hover .toggler svg {
-  fill: #000;
-}
-.header .toggler {
-  display: none;
-}
 
-.header:hover svg rect {
-  fill: #000;
-}
 .header.slide-up {
   top: -130px;
-  @media screen and (max-width: 992px) {
-    top: 0;
-  }
-}
-.header .sub-menu {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 195px;
-  width: 100%;
-  height: auto;
-  background-color: #fff;
-  border-top: 1px #e5e4e7 solid;
-}
-.header .sub-menu .titleDescription {
-  position: relative;
-}
-.header .sub-menu .linksContainer ul {
-  display: block;
-}
-.header .sub-menu .linksContainer ul li {
-  margin-left: 0;
-  padding: 0;
-  margin-bottom: 30px;
-  font-weight: 700;
-}
-.links-outer ul li.subActive .sub-menu {
-  display: block;
-}
-.links-outer ul li.subActive::after{
-position: absolute;
-height: 3px;
-width: 100%;
 }
 
 .main-menu-wrap {
@@ -103,7 +69,31 @@ width: 100%;
   align-items: center;
 }
 
-.links-outer {
+/* Toggler */
+
+.header .toggler {
+  display: none;
+}
+
+.header.active .toggler svg {
+  fill: #000;
+}
+
+.header.active .toggler svg rect {
+  fill: #000;
+}
+
+.header:hover .toggler svg {
+  fill: #000;
+}
+
+.header:hover svg rect {
+  fill: #000;
+}
+
+/* Links Outer */
+
+.header .links-outer {
   align-items: center;
   background-color: var(--header-background-color);
   transition: var(--header-color-transition);
@@ -113,41 +103,83 @@ width: 100%;
   max-width: calc(100% - 11.1rem);
 }
 
-.links-outer nav {
+.header .links-outer ul {
   display: flex;
   align-items: center;
-}
-.links-outer nav.nav_active{
-display: block;
-}
-.links-outer ul {
-  display: flex;
-  align-items: center;
-}
-.links-outer ul li {
-  border-bottom: 0;
-  margin-left: 50px;
-  padding: 4rem 0;
 }
 
-.links-outer ul li > span {
-  cursor: pointer;
-  font-weight: 700;
+.header .links-outer ul li {
+  margin-left: 50px;
+  margin-top: 50px;
+  padding-bottom: 62px;
 }
-.links-outer ul .menulink {
-  pointer-events: none;
-}
-.links-outer ul li:first-child {
+
+.header .links-outer ul li:first-child {
   margin-left: 0;
 }
 
-.imgWrap {
-  width: 100%;
-  height: 100%;
-  max-width: 200px;
+.header .links-outer ul li > span {
+  position: relative;
 }
-.imgWrap img:first-child {
+.header .links-outer ul li > span > a {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.header .links-outer ul li.subActive .sub-menu {
+  display: block;
+}
+
+.header .links-outer ul li > span::after {
+  content: "";
+  position: absolute;
+  height: 7px;
+  width: 0;
+  left: 0;
+  bottom: -67px;
+  background-color: #fa198c;
+  transition: width 0.3s ease-in-out;
+  z-index: 10;
+}
+.header .links-outer ul li.subActive > span::after {
+  width: 100%;
+}
+
+/* Sub Menu */
+
+.header .sub-menu {
   display: none;
+  position: absolute;
+  left: 0;
+  top: 153px;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border-top: 1px #e5e4e7 solid;
+}
+
+.header .sub-menu .titleDescription {
+  position: relative;
+}
+
+.header .sub-menu .linksContainer ul {
+  display: block;
+}
+
+.header .sub-menu .linksContainer ul li {
+  margin-left: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+}
+
+.header nav.nav_active {
+  display: block;
 }
 
 #hamburger svg {
@@ -157,20 +189,28 @@ display: block;
 .clicked {
   transform: rotate(45deg);
 }
+
 @media (min-width: 992px) and (max-width: 1279px) {
   .links-outer ul li {
     margin-left: 34px;
   }
 }
+
 @media (max-width: 991px) {
   .header {
     height: 95px;
     padding: 30px 0;
   }
+
+  .header.slide-up {
+    top: 0;
+  }
+
   .header .sub-menu {
     position: relative;
     display: none !important;
   }
+
   .header .toggler {
     display: block;
   }
@@ -189,6 +229,7 @@ display: block;
     display: block;
     padding-left: 0;
   }
+
   .links-outer ul li {
     color: #000;
     font-size: 24px;
