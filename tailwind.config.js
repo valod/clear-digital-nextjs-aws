@@ -13,47 +13,25 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       screens: {
-        xl: { max: "1279px" },
-        // => @media (max-width: 1279px) { ... }
+        'desktop': { 'min': '1281px', 'max': '1600px' },
+        'xl': { 'max': '1280px' },
+        'xl-up': { 'min': '1281px' },
 
-        "xl-up": { min: "1280px" },
-        // => @media (min-width: 1280px) { ... }
+        'laptop': { 'min': '992px', 'max': '1280px' },
+        'lg': { 'max': '991px' },
+        'lg-up': { 'min': '992px' },
 
-        "c-up": { min: "1205px" },
-        // => @media (min-width: 1280px) { ... }  container up
+        'tablet': { 'min': '768px', 'max': '991px' },
+        'md': { 'max': '767px' },
+        'md-up': { 'min': '768px' },
 
-        "c-down": { max: "1205px" },
-        // => @media (max-width: 1280px) { ... } container down
+        'phablet': { 'min': '596px', 'max': '767px' },
+        'sm': { 'max': '595px' },
+        'sm-up': { 'min': '596px' },
 
-        desktop: { min: "992px", max: "1279px" },
-        // => @media (min-width: 992px and max-width: 1279px) { ... }
-
-        lg: { max: "991px" },
-        // => @media (max-width: 991px) { ... }
-
-        "lg-up": { min: "992px" },
-        // => @media (min-width: 1280px) { ... }
-
-        tablet: { min: "768px", max: "991px" },
-        // => @media (min-width: 768px and max-width: 991px) { ... }
-
-        md: { max: "767px" },
-        // => @media (max-width: 767px) { ... }
-
-        "md-up": { min: "768px" },
-        // => @media (min-width: 768px) { ... }
-
-        phablet: { min: "596px", max: "767px" },
-        // => @media (min-width: 596px and max-width: 767px) { ... }
-
-        sm: { max: "595px" },
-        // => @media (max-width: 595px) { ... }
-
-        "sm-up": { min: "596px" },
-        // => @media (min-width: 596px) { ... }
-
-        xs: { max: "480px" },
-        // => @media (max-width: 480px) { ... }
+        'phone': { 'min': '376px', 'max': '595px' },
+        'xs': { 'max': '375px' },
+        'xs-up': { 'min': '376px' },
       },
       width: {
         mainRow: "calc(100% + 20px)",

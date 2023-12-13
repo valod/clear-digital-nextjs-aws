@@ -34,7 +34,7 @@ export default function Home({ menuItems }) {
 			{/* <IntroWithColThree /> */}
 			<Accordian />
 			{/* <Tabwithslider /> */}
-			<Halfslider />
+			{/* <Halfslider /> */}
 			{/* <Footercta /> */}
 		</Layout>
 	)
