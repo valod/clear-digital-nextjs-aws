@@ -141,13 +141,13 @@ const Halfslider = () => {
         </div>
 
         <div className={`logowrapper ${style.logowrapper} w-full relative flex flex-wrap justify-between`}>
-          <div className="headingwrap relative">
+          <div className="headingwrap relative w-[25%]">
             <h3>Featured in:</h3>
           </div>
 
-          <div className="logowrapper relative flex flex-wrap">
+          <div className="logowrapper relative flex flex-wrap w-[65%]">
             {logos.map((logo, index) => (
-              <div className="imgwrapcase max-w-[153px] max-h-[46px]" key={index}>
+              <div className="imgwrapcase max-w-[153px] max-h-[46px] w-full h-full" key={index}>
                 <Image
                   src={logo.img}
                   width={100}

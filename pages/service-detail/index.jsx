@@ -23,7 +23,7 @@ export default function serviceDetail({ menuItems }) {
             <ScrollableContent/>
             <Logowithcontent/>
             <IntroWithCards content={'serviceDetail'}/>
-            {/* <Halfslider/> */}
+            <Halfslider/>
             <FooterCta/>
         </Layout>
     )
