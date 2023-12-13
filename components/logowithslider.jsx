@@ -3,6 +3,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import style from './styles/logowithslider.module.css';
 import Image from 'next/image';
+import Head from 'next/head'
 
 const logoImage = [
     {
@@ -71,18 +72,68 @@ const logoImage = [
 // export default Logowithslider;
 
 const Logowithslider = () => {
-    return (
-        <section className={`slider ${style.slider} no-padding-top bg-black`}>
-            <div className={`slidetrack ${style.slidetrack} relative`}>
-                <div className={`slide ${style.slide} flex laptop-landscape:mt-[30px] w-[fit-content`} >
+    return (<>
+    <Head>
+
+    </Head>
+    <section className={`slidera ${style.slider} no-padding-top bg-black`}>
+            <div className={`slide-track ${style.slidetrack} relative`}>
+                {/* <div className={`slide ${style.slide} flex laptop-landscape:mt-[30px] w-[fit-content`} > */}
                     {logoImage.map((item, index) => (
-                        <div className="logowrap w-[210px] h-[84px] mx-[25px]" key={index}>
+                        <div className="slide logowrap w-[210px] h-[84px] mx-[25px]" key={index}>
                             <Image src={item.image} alt={item.alt} width={184} height={100} className='w-full h-full object-contain' />
                         </div>
                     ))}
-                </div>
+                {/* </div> */}
             </div>
         </section>
+        {/* <div class="slidera">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                </div>
+            </div>
+        </div> */}
+    </>
     );
 }
 
