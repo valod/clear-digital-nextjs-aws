@@ -925,3 +925,31 @@ p {
 .colTwoSlider .btnDots li button:before {
   display: none;
 }
+
+.halfslider .slick-dots{
+  bottom:-50px;
+}
+
+.halfslider .slick-dots .btnDots {
+  display: flex;
+}
+
+.halfslider .btnDots li {
+  display: block;
+  background-color: transparent;
+  flex: 1;
+  height: 9px;
+}
+
+.halfslider .btnDots li.slick-active {
+  background-color: var(--pink);
+}
+
+.halfslider .btnDots li button {
+  width: 100%;
+  height: 100%;
+}
+
+.halfslider .btnDots li button:before {
+  display: none;
+}

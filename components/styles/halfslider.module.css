@@ -39,6 +39,10 @@
     margin-bottom: 40px;
 }
 
+.btnwrap{
+    margin-top: 30px;
+}
+
 .imgwrap{
     max-width: 570px;
     height: 540px;
@@ -47,6 +51,9 @@
 
 .medium{
     color:#fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
 }
 .bgimg{
     position: absolute;
@@ -107,6 +114,9 @@
 .cardcontent{
     color:#fff;
     margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+
 }
 
 .ctwrapper{
@@ -116,9 +126,17 @@
 .txt{
     color: #FA198C;
 }
+
+.slider{
+    width: calc(100% - 573px);
+    position:relative;
+    right:-100px;
+}
+
 .slick-slider{
-    width: calc(100% - 573px );
-    overflow: hidden;
+    /* width: calc(100% - 573px );
+    overflow: hidden; */
+    /* top:-100px; */
   }
 .slick-list {
     width: 100% !important;
@@ -134,7 +152,7 @@
 .slick-next {
     display: none !important;
 }
-.slide{
+/* .slide{
     width: calc(100% - 573px);
     overflow: hidden;
-}
+} */
