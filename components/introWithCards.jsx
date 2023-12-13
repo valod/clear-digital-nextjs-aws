@@ -5,29 +5,20 @@ export default function introWithCards({ content }) {
 
     const serviceOverview = [
         {
-            title: 'Branding for Theme Designer',
-            blurb: 'Digital Marketing',
+            title: 'Digital marketing',
+            blurb: 'Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+            img: '/service-detail/shape1.svg'
         },
         {
-            title: 'Button Designs Free',
-            blurb: 'Search Engine',
+            title: 'Digital strategy',
+            blurb: 'Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+            img: '/service-detail/shape2.svg'
         },
         {
-            title: 'Branding & Co Agency',
-            blurb: 'Admin templates',
-        },
-        {
-            title: 'Zukandre Phoniex',
-            blurb: 'Branding',
-        },
-        {
-            title: 'Sionage Mokcup',
-            blurb: 'Wll Mockup',
-        },
-        {
-            title: 'Hard Cover Book Mock',
-            blurb: 'Book Covers',
-        },
+            title: 'Motion graphics',
+            blurb: 'Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+            img: '/service-detail/shape3.svg'
+        }
         // Add other card items as needed
     ];
 
