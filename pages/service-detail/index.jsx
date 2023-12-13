@@ -2,8 +2,8 @@ import Image from 'next/image';
 import styles from '../page.module.css';
 import { NextSeo } from 'next-seo';
 import Layout from '../../components/layout';
-import HomepageHero
-    from '../../components/HeroBanner';
+import BannerSecond
+    from '../../components/bannerSecond';
 export default function serviceDetail({ menuItems }) {
     return (
         <Layout footerMenu={menuItems}>
@@ -11,7 +11,7 @@ export default function serviceDetail({ menuItems }) {
                 title="Services"
                 description="ClearDigital"
             />
-            <HomepageHero />
+            <BannerSecond content='serviceDetail' />
         </Layout>
     )
 }

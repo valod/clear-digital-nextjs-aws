@@ -169,8 +169,8 @@ const Header = () => {
 												<div className="col-two w-[53%]">
 													<div className={`${styles.linksContainer}`}>
 														<ul className="col-wrapper">
-															<li className='w-full block'><Link href="/" data-cursor-expand >Case Studies</Link></li>
-															<li className='w-full block'><Link href="/" data-cursor-expand>Clients</Link></li>
+															<li className='w-full block'><Link href="/service-detail" data-cursor-expand >Service Detail</Link></li>
+															<li className='w-full block'><Link href="/service-overview" data-cursor-expand>Service Overview</Link></li>
 															<li className='w-full block'><Link href="/" data-cursor-expand>Industry Focus</Link></li>
 															<li className='w-full block'><Link href="/" data-cursor-expand>Outcomes</Link></li>
 														</ul>

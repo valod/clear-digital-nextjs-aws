@@ -163,7 +163,6 @@
   height: auto;
   background-color: #fff;
   transition: max-height 0.3s ease-in-out, border-top 0.3s ease-in-out;
-  border-top: 1px solid #e5e4e7;
 }
 
 .header .sub-menu .titleDescription {
