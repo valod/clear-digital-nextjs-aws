@@ -8,6 +8,7 @@ import Footercta from '../../components/Footercta';
 import Coltwoslider from '../../components/Coltwoslider'; 
 import Slider from '../../components/logowithslider';
 import Halfslider from '../../components/halfslider';
+import Logowithcontent from '../../components/logowithcontent';
 export default function Work({ menuItems }) {
     return (
         <Layout footerMenu={menuItems}>
@@ -16,6 +17,7 @@ export default function Work({ menuItems }) {
                 description="ClearDigital"
             />
             <HomepageHero />
+            <Logowithcontent/>
             <Coltwoslider/>
             <Slider/>
             <Halfslider/>
