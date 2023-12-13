@@ -3,11 +3,22 @@
 .pink-btn {
   display: inline-block;
   background: #fa198c;
-  padding: 13px 20px;
+  padding: 10px 20px;
   font-size: 20px;
   font-weight: 700;
   color: #fff;
   letter-spacing: 0.008em;
+  border: 2px solid #fa198c;
+  transition: all 0.3s ease-in-out;
+}
+.pink-btn:hover {
+  background: transparent;
+  border: 2px solid #fff;
+}
+.pink-btn.pink-border:hover {
+  background: transparent;
+  border: 2px solid #fa198c;
+  color: #fa198c;
 }
 
 .link-btn {
@@ -47,7 +58,6 @@
   right: -10px;
 }
 
-
 .btn-default {
   position: relative;
   display: inline-block;
@@ -79,5 +89,5 @@
   background-image: url(/white_link.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  transition: right .3s ease-in-out, background-image .3s ease-in-out;
+  transition: right 0.3s ease-in-out, background-image 0.3s ease-in-out;
 }

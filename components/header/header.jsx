@@ -133,7 +133,7 @@ const Header = () => {
 										</div>
 									</div>
 								</li>
-								<li>
+								<li onMouseEnter={toggleSubMenuOnMouseEnter} onMouseLeave={toggleSubMenuOnMouseLeave}>
 									<span className={styles.menuSpan}>
 										<Link href="/services" data-cursor-expand>Services</Link></span>
 									<div className={`${styles['sub-menu']}`}>
@@ -161,7 +161,7 @@ const Header = () => {
 										</div>
 									</div>
 								</li>
-								<li>
+								<li onMouseEnter={toggleSubMenuOnMouseEnter} onMouseLeave={toggleSubMenuOnMouseLeave}>
 									<span className={styles.menuSpan}>
 										<Link href="/insights" data-cursor-expand>Insights</Link></span>
 									<div className={`${styles['sub-menu']}`}>
@@ -189,7 +189,7 @@ const Header = () => {
 										</div>
 									</div>
 								</li>
-								<li>
+								<li onMouseEnter={toggleSubMenuOnMouseEnter} onMouseLeave={toggleSubMenuOnMouseLeave}>
 									<span className={styles.menuSpan}>
 										<Link href="/about" data-cursor-expand>About</Link></span>
 									<div className={`${styles['sub-menu']}`}>
@@ -218,8 +218,8 @@ const Header = () => {
 									</div>
 								</li>
 							</ul>
-							<div className="btn-wrap mt-0 mb-[12px] ml-[50px] desktop:ml-[35px] lg:ml-0 lg:mt-[30px]">
-								<Link href="/" className="pink-btn lg:w-full lg:text-center" data-cursor-expand>Let&#39;s talk</Link>
+							<div className="btn-wrap mt-0 mb-[8px] ml-[50px] desktop:ml-[35px] lg:ml-0 lg:mt-[30px]">
+								<Link href="/" className="pink-btn pink-border lg:w-full lg:text-center" data-cursor-expand>Let&#39;s talk</Link>
 							</div>
 						</nav>
 					</div>

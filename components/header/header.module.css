@@ -22,6 +22,7 @@
   height: 100%;
   max-width: 110px;
   max-height: 35px;
+  margin-bottom: 12px;
 }
 
 .imgWrap img:first-child {
@@ -110,8 +111,11 @@
 
 .header .links-outer ul li {
   margin-left: 50px;
-  margin-top: 50px;
+  margin-top: 54px;
   padding-bottom: 62px;
+}
+.header .links-outer ul li:hover > span {
+  color: #fa198c;
 }
 
 .header .links-outer ul li:first-child {
@@ -120,6 +124,7 @@
 
 .header .links-outer ul li > span {
   position: relative;
+  transition: color 0.3s ease-in-out;
 }
 .header .links-outer ul li > span > a {
   font-size: 20px;
@@ -127,7 +132,8 @@
 }
 
 .header .links-outer ul li.subActive .sub-menu {
-  display: block;
+  max-height: 44rem;
+  border-top: 1px #e5e4e7 solid;
 }
 
 .header .links-outer ul li > span::after {
@@ -148,14 +154,16 @@
 /* Sub Menu */
 
 .header .sub-menu {
-  display: none;
   position: absolute;
+  display: block;
+  max-height: 0;
+  overflow: hidden;
   left: 0;
-  top: 153px;
+  top: 142px;
   width: 100%;
   height: auto;
   background-color: #fff;
-  border-top: 1px #e5e4e7 solid;
+  transition: max-height 0.3s ease-in-out, border-top 0.3s ease-in-out;
 }
 
 .header .sub-menu .titleDescription {
