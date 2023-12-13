@@ -15,30 +15,49 @@ const Header = () => {
 		}
 		console.log(showmenu);
 	};
-
-	const toggleSubMenuOnMouseEnter = (event) => {
-		console.log('Mouse enter triggered');
-		const parentListItem = event.target.closest('li');
-		if (parentListItem) {
-			const parentList = parentListItem.parentNode;
-			const hasOpenSiblings = parentList.querySelectorAll(':scope > li');
-
-			for (let i = 0; i < hasOpenSiblings.length; i++) {
-				const sibling = hasOpenSiblings[i];
-				if (sibling !== parentListItem) {
-					sibling.classList.remove(styles.subActive);
+	const toggleSubMenu = (event) => {
+		if (window.innerWidth < 992) {
+			const parentListItem = event.target.closest('li');
+			if (parentListItem) {
+				const parentList = parentListItem.parentNode;
+				const hasOpenSiblings = parentList.querySelectorAll(':scope > li');
+				for (let i = 0; i < hasOpenSiblings.length; i++) {
+					const sibling = hasOpenSiblings[i];
+					if (sibling !== parentListItem) {
+						sibling.classList.remove(styles.subActive);
+					}
 				}
 			}
+			parentListItem.classList.toggle(styles.subActive);
 		}
+	};
+	const toggleSubMenuOnMouseEnter = (event) => {
+		if (window.innerWidth > 991) {
+			console.log('Mouse enter triggered');
+			const parentListItem = event.target.closest('li');
+			if (parentListItem) {
+				const parentList = parentListItem.parentNode;
+				const hasOpenSiblings = parentList.querySelectorAll(':scope > li');
 
-		parentListItem.classList.add(styles.subActive);
+				for (let i = 0; i < hasOpenSiblings.length; i++) {
+					const sibling = hasOpenSiblings[i];
+					if (sibling !== parentListItem) {
+						sibling.classList.remove(styles.subActive);
+					}
+				}
+			}
+
+			parentListItem.classList.add(styles.subActive);
+		}
 	};
 
 	const toggleSubMenuOnMouseLeave = (event) => {
-		console.log('Mouse leave triggered');
-		const parentListItem = event.target.closest('li');
-		if (parentListItem) {
-			parentListItem.classList.remove(styles.subActive);
+		if (window.innerWidth > 991) {
+			console.log('Mouse leave triggered');
+			const parentListItem = event.target.closest('li');
+			if (parentListItem) {
+				parentListItem.classList.remove(styles.subActive);
+			}
 		}
 	};
 
@@ -77,21 +96,21 @@ const Header = () => {
 					<div className={`${styles['links-outer']}`}>
 						<nav className={showmenu ? styles.nav_active : ''}>
 							<ul>
-								<li onMouseEnter={toggleSubMenuOnMouseEnter} onMouseLeave={toggleSubMenuOnMouseLeave}>
+								<li onMouseEnter={toggleSubMenuOnMouseEnter} onMouseLeave={toggleSubMenuOnMouseLeave} onClick={toggleSubMenu}>
 									<span className={styles.menuSpan}>
 										<Link href="/work" data-cursor-expand>Work</Link></span>
 									<div className={`${styles['sub-menu']}`}>
-										<div className="container">
-											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px]">
-												<div className="col-two w-[33%]">
+										<div className="container lg:px-0">
+											<div className="outer-wrapper text-black flex justify-between pt-[50px] pb-[100px] lg:block lg:py-0">
+												<div className="col-two w-[33%] lg:w-full">
 													<div className={`${styles.titleDescription}`}>
-														<h2 className="graphic-effect-underline mb-5" data-underline-image="black-1">Work</h2>
+														<h2 className="graphic-effect-underline mb-5 lg:hidden" data-underline-image="black-1">Work</h2>
 														<p className='medium'>Sed sollicitudin odio ac ornare consequat. Ut massa justo, hendrerit vel nunc non, tempus blandit enim.
 															Vivamus gravida velit lorem ipsum dolor sit amet.</p>
 														<Link className="link-btn black font-bold" href="/" data-cursor-expand>Overview</Link>
 													</div>
 												</div>
-												<div className="col-two w-[53%]">
+												<div className="col-two w-[53%] lg:w-full">
 													<div className={`${styles.linksContainer}`}>
 														<ul className="col-wrapper">
 															<li className='w-full block'><Link href="/" data-cursor-expand >Case Studies</Link></li>
@@ -105,7 +124,7 @@ const Header = () => {
 										</div>
 									</div>
 								</li>
-								<li onMouseEnter={toggleSubMenuOnMouseEnter} onMouseLeave={toggleSubMenuOnMouseLeave}>
+								<li onMouseEnter={toggleSubMenuOnMouseEnter} onMouseLeave={toggleSubMenuOnMouseLeave} onClick={toggleSubMenu}>
 									<span className={styles.menuSpan}>
 										<Link href="/approach" data-cursor-expand>Approach</Link></span>
 									<div className={`${styles['sub-menu']}`}>
@@ -133,7 +152,7 @@ const Header = () => {
 										</div>
 									</div>
 								</li>
-								<li onMouseEnter={toggleSubMenuOnMouseEnter} onMouseLeave={toggleSubMenuOnMouseLeave}>
+								<li onMouseEnter={toggleSubMenuOnMouseEnter} onMouseLeave={toggleSubMenuOnMouseLeave} onClick={toggleSubMenu}>
 									<span className={styles.menuSpan}>
 										<Link href="/services" data-cursor-expand>Services</Link></span>
 									<div className={`${styles['sub-menu']}`}>
@@ -161,7 +180,7 @@ const Header = () => {
 										</div>
 									</div>
 								</li>
-								<li onMouseEnter={toggleSubMenuOnMouseEnter} onMouseLeave={toggleSubMenuOnMouseLeave}>
+								<li onMouseEnter={toggleSubMenuOnMouseEnter} onMouseLeave={toggleSubMenuOnMouseLeave} onClick={toggleSubMenu}>
 									<span className={styles.menuSpan}>
 										<Link href="/insights" data-cursor-expand>Insights</Link></span>
 									<div className={`${styles['sub-menu']}`}>
@@ -189,7 +208,7 @@ const Header = () => {
 										</div>
 									</div>
 								</li>
-								<li onMouseEnter={toggleSubMenuOnMouseEnter} onMouseLeave={toggleSubMenuOnMouseLeave}>
+								<li onMouseEnter={toggleSubMenuOnMouseEnter} onMouseLeave={toggleSubMenuOnMouseLeave} onClick={toggleSubMenu}>
 									<span className={styles.menuSpan}>
 										<Link href="/about" data-cursor-expand>About</Link></span>
 									<div className={`${styles['sub-menu']}`}>
@@ -218,7 +237,7 @@ const Header = () => {
 									</div>
 								</li>
 							</ul>
-							<div className="btn-wrap mt-0 mb-[8px] ml-[50px] desktop:ml-[35px] lg:ml-0 lg:mt-[30px]">
+							<div className="btn-wrap mt-0 mb-[8px] ml-[50px] laptop:ml-[35px] lg:ml-0 lg:mt-[30px]">
 								<Link href="/" className="pink-btn pink-border lg:w-full lg:text-center" data-cursor-expand>Let&#39;s talk</Link>
 							</div>
 						</nav>
