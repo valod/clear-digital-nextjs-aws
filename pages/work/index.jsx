@@ -9,6 +9,7 @@ import Coltwoslider from '../../components/Coltwoslider';
 import Slider from '../../components/logowithslider';
 import Halfslider from '../../components/halfslider';
 import Logowithcontent from '../../components/logowithcontent';
+import Cta from '../../components/ctaoverlay';
 export default function Work({ menuItems }) {
     return (
         <Layout footerMenu={menuItems}>
@@ -18,6 +19,7 @@ export default function Work({ menuItems }) {
             />
             <HomepageHero />
             <Logowithcontent/>
+            <Cta/>
             <Coltwoslider/>
             <Slider/>
             <Halfslider/>
