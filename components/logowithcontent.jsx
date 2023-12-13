@@ -64,7 +64,7 @@ const Logowithcontent = () => {
       </div>
 
       {data.map((wrap, index) => (
-        <div className={`${wrap.border==true? `border-t border-gray`: ''}area w-full relative`}key={index}>
+        <div className={`${wrap.border == true ? `border-t border-gray` : ''}area w-full relative`} key={index}>
           {/* Use wrap.bgimg instead of bgimg */}
           {wrap.bgimg && (
             <div className={`bgimg ${style.bgimg}`}>
@@ -80,7 +80,7 @@ const Logowithcontent = () => {
                 </div>
               </div>
               <div className="contentwrapper w-[50%]">
-                <div className="content max-w-[570px]">
+                <div className={`content max-w-[570px] ${wrap.bgimg ? 'text-white' : ''}`}>
                   <h6 className={`heading ${style.heading}`}>{wrap.heading}</h6>
                   <p className={`para ${style.para}`}>{wrap.para}</p>
                 </div>

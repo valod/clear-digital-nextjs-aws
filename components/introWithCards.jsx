@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-export default function introWithCards() {
+export default function introWithCards({ content }) {
 
 
-    const serviceDetail = [
+    const serviceOverview = [
         {
             title: 'Branding for Theme Designer',
             blurb: 'Digital Marketing',
@@ -31,44 +31,52 @@ export default function introWithCards() {
         // Add other card items as needed
     ];
 
-    const serviceOverview = [
+    const serviceDetail = [
         {
-            title: 'Michael Doe',
-            profession: 'Property Specialist',
-            blurb: 'You can rely on our amazing features list and also our customer services will be a great experience.',
+            title: 'Digital marketing',
+            blurb: 'Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+            img: '/service-detail/shape1.svg'
         },
         {
-            title: 'Michael Doe',
-            profession: 'Property Specialist',
-            blurb: 'You can relay on our amazing features list and also our customer services will be great experience.'
+            title: 'Digital strategy',
+            blurb: 'Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+            img: '/service-detail/shape2.svg'
         },
         {
-            title: 'Michael Doe',
-            profession: 'Property Specialist',
-            blurb: 'You can relay on our amazing features list and also our customer services will be great experience.'
-        },
-        {
-            title: 'Michael Doe',
-            profession: 'Property Specialist',
-            blurb: 'You can relay on our amazing features list and also our customer services will be great experience.'
-        },
+            title: 'Motion graphics',
+            blurb: 'Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+            img: '/service-detail/shape3.svg'
+        }
         // Add other team items as needed
     ];
 
     const contentData = content === 'serviceDetail' ? serviceDetail : serviceOverview;
     return (
-        <section className="introWithCards py-32">
+        <section className="introWithCards pt-[406px]">
+            <div class="bg-text-lines absolute text-[122px] text-gray font-bold top-0 -left-[10px]">
+                <div class="pb-12 animate-marquee whitespace-nowrap ">
+                    Brand strategy & <span className='text-black'>Website</span>
+                </div>
+                <div class="pb-12 animate-marquee whitespace-nowrap ">
+                    <span className='text-black'>graphics</span>  & Content devel
+                </div>
+                <div class="pb-12 animate-marquee whitespace-nowrap ">
+                    <span className='text-black'>Support subscriptions</span> & De
+                </div>
+            </div>
             <div className="container">
                 <div className="w-mainRow flex flex-wrap">
                     {contentData.map((data, index) => (
-                        <div key={index} className={`${col4 ? 'w-colFour' : 'w-threeCard'} mx-2.5 mb-5`}>
-                            <div className="card bg-white shadow-slate-100 shadow-lg">
-                                <div className="imageWrap">
-                                    <img src="/img1.jpg" alt="image" />
+                        <div key={index} className={`w-threeCard bg-white border border-darkGray mx-2.5 mb-5`}>
+                            <div className="card pt-[97px] px-[50px] pb-[120px]">
+                                <a href="/"></a>
+                                <div class="logo-wrap mb-7 h-full w-full max-w-[100px] max-h-[100px]">
+                                    <img src={data.img} alt="image" />
                                 </div>
-                                <div className="textWrap p-4">
-                                    <h5 className='text-darkGray'>{data.title}</h5>
-                                    <span className='text-gray mt-2 inline-block'>{data.blurb}</span>
+                                <h4 className='mb-5'>{data.title}</h4>
+                                <p>{data.blurb}</p>
+                                <div class="btn-wrap mt-8">
+                                    <a href="#" class="link-btn black">Learn more</a>
                                 </div>
                             </div>
                         </div>
