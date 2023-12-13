@@ -4,6 +4,10 @@ import { NextSeo } from 'next-seo';
 import Layout from '../../components/layout';
 import HomepageHero
     from '../../components/HeroBanner';
+import Footercta from '../../components/Footercta';   
+import Coltwoslider from '../../components/Coltwoslider'; 
+import Slider from '../../components/logowithslider';
+import Halfslider from '../../components/halfslider';
 export default function Work({ menuItems }) {
     return (
         <Layout footerMenu={menuItems}>
@@ -12,6 +16,10 @@ export default function Work({ menuItems }) {
                 description="ClearDigital"
             />
             <HomepageHero />
+            <Coltwoslider/>
+            <Slider/>
+            <Halfslider/>
+            <Footercta/>
         </Layout>
     )
 }

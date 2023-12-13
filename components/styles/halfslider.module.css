@@ -31,6 +31,7 @@
 
 .wrapper{
     display: flex !important;
+    margin-bottom:190px;
 }
 
 
@@ -156,3 +157,7 @@
     width: calc(100% - 573px);
     overflow: hidden;
 } */
+.headingwrap{
+    width:calc(10% - 103px);
+    margin-left:206px;
+}

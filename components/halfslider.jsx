@@ -28,6 +28,15 @@ const sliderdata = [
   },
 ];
 
+const  logos = [
+  {
+     img1 : "",
+     img2 : "",
+     img3 : "",
+     img4 : "",
+  },
+];
+
 // ... (other imports)
 
 const SlickSlider = ({ slides }) => {
@@ -124,6 +133,12 @@ const Halfslider = () => {
       <div className="container">
         <div className="slider_wrapper relative w-full">
           <SlickSlider slides={sliderdata} />
+        </div>
+
+        <div className={`logowrapper ${style.logowrapper} w-full relative`}>
+           <div className="headingwrap">
+               
+            </div>
         </div>
       </div>
     </section>
