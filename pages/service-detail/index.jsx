@@ -6,6 +6,9 @@ import BannerSecond from '../../components/bannerSecond';
 import Sticky from '../../components/sticky'
 import ContentGrid from '../../components/ContentGrid';
 import ScrollableContent from '../../components/scrollableContent'
+import Logowithcontent from '../../components/logowithcontentServiceDetail';
+import FooterCta from '@/components/Footercta';
+import Halfslider from '@/components/halfslider';
 export default function serviceDetail({ menuItems }) {
     return (
         <Layout footerMenu={menuItems}>
@@ -17,6 +20,9 @@ export default function serviceDetail({ menuItems }) {
             <Sticky/>
             <ContentGrid />
             <ScrollableContent/>
+            <Logowithcontent/>
+            {/* <Halfslider/> */}
+            <FooterCta/>
         </Layout>
     )
 }
