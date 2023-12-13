@@ -29,12 +29,10 @@ const sliderdata = [
 ];
 
 const  logos = [
-  {
-     img1 : "",
-     img2 : "",
-     img3 : "",
-     img4 : "",
-  },
+  { img: "/forbus.png" },
+  { img: "/medium.png" },
+  { img: "/ipsum.png" },
+  { img: "/group.png" },
 ];
 
 // ... (other imports)
@@ -48,17 +46,15 @@ const SlickSlider = ({ slides }) => {
     slidesToScroll: 1,
     centerMode: true, // Enable center mode
     centerPadding: "110px 0 0",
-    appendDots: (dots) => (
-      <div>
-          <ul className={`btnDots`}>{dots}</ul>
-      </div>
-  ),
-  customPaging: function (i) {
-      return (
-          <button className={'slickDotButton'} />
-      );
-  },
+  //   afterChange: (index) => {
+  //     setCurrentSlide(index);
+  // },
+  // prevArrow: <CustomPrevArrow />,
+  // nextArrow: <CustomNextArrow />,
+  // },
   };
+  // const progressBarWidth = `${((currentSlide + 1) / totalSlides) * 100}%`;
+
 
   return (
     <div className={`wrapper ${style.wrapper} w-full relative flex flex-wrap`}>
@@ -144,10 +140,23 @@ const Halfslider = () => {
           <SlickSlider slides={sliderdata} />
         </div>
 
-        <div className={`logowrapper ${style.logowrapper} w-full relative`}>
-           <div className="headingwrap">
-               
-            </div>
+        <div className={`logowrapper ${style.logowrapper} w-full relative flex flex-wrap justify-between`}>
+          <div className="headingwrap relative">
+            <h3>Featured in:</h3>
+          </div>
+
+          <div className="logowrapper relative flex flex-wrap">
+            {logos.map((logo, index) => (
+              <div className="imgwrapcase max-w-[153px] max-h-[46px]" key={index}>
+                <Image
+                  src={logo.img}
+                  width={100}
+                  height={100}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
