@@ -947,3 +947,8 @@ p {
 .colTwoSlider .slick-slider {
   position: unset;
 }
+
+.halfslider .slick-slide{
+  max-width:600px;
+
+}

@@ -11,20 +11,20 @@ const data = [
     border: true
   },
   {
-    logo: '/vmare.svg',
+    logo: '/mcafeewhite.png',
     heading: '80% vel consequat est. Donec semper neque quam eget.',
     para: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
     border: true
   },
   {
-    logo: '/vmare.svg',
+    logo: '/cisco.svg',
     heading: '80% vel consequat est. Donec semper neque quam eget.',
     para: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
     border: true
   },
   {
     bgimg: '/cardsbg.svg',
-    logo: '/vmare.svg',
+    logo: '/vmarewhite.svg',
     heading: '80% vel consequat est. Donec semper neque quam eget.',
     para: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
     border: false

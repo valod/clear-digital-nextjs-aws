@@ -131,7 +131,7 @@
 .slider{
     width: calc(100% - 573px);
     position:relative;
-    right:-100px;
+    right:-150px;
 }
 
 .slick-slider{
