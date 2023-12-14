@@ -8,7 +8,7 @@ const data = [
     logo: '/cisco.svg',
     heading: '80% vel consequat est. Donec semper neque quam eget.',
     para: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
-    border: true
+    border: false
   },
   {
     bgimg: '/cardsbg.svg',
@@ -33,7 +33,7 @@ const data = [
 
 const Logowithcontent = () => {
   return (
-    <section className="logowithcontent pb-0">
+    <section className="logowithcontent py-0">
   
 
       {data.map((wrap, index) => (
