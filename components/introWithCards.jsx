@@ -1,3 +1,4 @@
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -90,11 +91,11 @@ export default function introWithCards({ content }) {
             <div className="container">
                 <div className="w-mainRow flex flex-wrap relative z-[2]">
                     {contentData.map((data, index) => (
-                        <div key={index} className={`w-threeCard bg-white border border-darkGray mx-2.5 mb-5`}>
+                        <div key={index} className={`w-threeCard bg-white border border-darkGray mx-2.5 mb-5 laptop:w-halfWidth tablet:w-halfWidth phablet:w-halfWidth sm:w-[100%]`}>
                             <div className="card pt-[97px] px-[50px] pb-[120px]">
                                 <Link href="/" className="text-0">.</Link>
                                 <div class="logo-wrap mb-7 h-full w-full max-w-[100px] max-h-[100px]">
-                                    <Image src={data.img} width={100} height={100} alt="image" />
+                                    <img src={data.img} alt="image" />
                                 </div>
                                 <h4 className='mb-5'>{data.title}</h4>
                                 <p>{data.blurb}</p>
@@ -109,3 +110,6 @@ export default function introWithCards({ content }) {
         </section>
     );
 }
+
+
+

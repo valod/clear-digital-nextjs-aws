@@ -1,9 +1,7 @@
 .pink{
     color:#FA198C;
 }
-.wrapper{
- height:363px;
-}
+
 .wrapper:::after{
     content:'';
     position:absolute;
