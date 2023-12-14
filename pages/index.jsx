@@ -17,12 +17,12 @@ export default function Home({ menuItems }) {
 				description="ClearDigital "
 			/>
 			<HomepageHero />
-			<ImageSlider />
+			{/* <ImageSlider />
 			<ContentGrid />
 			<TabsContent />
 			<ColTwoSlider />
 			<LogoSlider />
-			<ColTwoImageSlider />
+			<ColTwoImageSlider /> */}
 			<FooterCta />
 		</Layout>
 	)
