@@ -94,7 +94,7 @@ export default function introWithCards({ content }) {
                             <div className="card pt-[97px] px-[50px] pb-[120px]">
                                 <Link href="/" className="text-0">.</Link>
                                 <div class="logo-wrap mb-7 h-full w-full max-w-[100px] max-h-[100px]">
-                                    <img src={data.img} alt="image" />
+                                    <Image src={data.img} alt="image" />
                                 </div>
                                 <h4 className='mb-5'>{data.title}</h4>
                                 <p>{data.blurb}</p>

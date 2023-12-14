@@ -1,16 +1,15 @@
 import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
-// import ColTwoSlider from '../components/colTwoSlider';
+// // import ColTwoSlider from '../components/colTwoSlider';
 import HomepageHero from '../components/HeroBanner';
-import IntroWithColThree from '../components/introWithColThree';
-import Accordian from '../components/accordian';
-// import Tabwithslider from '../components/tabwithslider';
-import Logowithslider from '../components/logowithslider';
-// import Halfslider from '../components/halfslider';
-import ContentGrid from '@/components/ContentGrid';
-import ColTwoSlider from '@/components/colTwoSlider';
-import SpaceFiller from '@/components/SpaceFiller';
-import FooterCta from '../components/FooterCta';
+// import IntroWithColThree from '../components/introWithColThree';
+// import Accordian from '../components/accordian';
+// // import Tabwithslider from '../components/tabwithslider';
+// import Logowithslider from '../components/logowithslider';
+// // import Halfslider from '../components/halfslider';
+// import ContentGrid from '@/components/ContentGrid';
+// import ColTwoSlider from '@/components/colTwoSlider';
+// import FooterCta from '../components/FooterCta';
 
 export default function Home({ menuItems }) {
 	return (
@@ -20,16 +19,6 @@ export default function Home({ menuItems }) {
 				description="ClearDigital "
 			/>
 			<HomepageHero />
-			<ContentGrid />
-			{/* <ColTwoSlider /> */}
-			<Logowithslider />
-			<FooterCta />
-			{/* <ColTwoSlider /> */}
-			{/* <IntroWithColThree /> */}
-			<Accordian />
-			{/* <Tabwithslider /> */}
-			{/* <Halfslider /> */}
-			{/* <Footercta /> */}
 		</Layout>
 	)
 }
