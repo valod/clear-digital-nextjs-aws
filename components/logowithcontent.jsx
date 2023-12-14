@@ -73,10 +73,10 @@ const Logowithcontent = () => {
           )}
 
           <div className="container">
-            <div className={`wrapper ${style.wrapper} w-full relative flex items-center flex-wrap h-[363px] md:h-[310px]`}>
-              <div className="imgwrapper w-[50%] pl-[120px] laptop:pl-[60px] largedesktop:pl-[120px] tablet:pl-[50px] phablet:pl-[30px] sm:w-[100%] pl-[20px] ">
-                <div className="logowrapper max-w-[190px] max-h-[69px]">
-                  <Image className="w-full h-full object-cover" width={100} height={100} src={wrap.logo} />
+            <div className={`wrapper ${style.wrapper} w-full relative flex items-center flex-wrap h-[363px] phablet:h-[310px] sm:h-[290px]`}>
+              <div className="imgwrapper w-[50%] pl-[120px] laptop:pl-[80px] largedesktop:pl-[120px] tablet:pl-[50px] phablet:pl-[30px] sm:w-[100%] sm:pl-[20px] ">
+                <div className="logowrapper max-w-[190px] h-[69px]">
+                  <Image className="w-full h-full object-contain" width={100} height={100} src={wrap.logo} />
                 </div>
               </div>
               <div className="contentwrapper w-[50%] sm:w-[100%]">
