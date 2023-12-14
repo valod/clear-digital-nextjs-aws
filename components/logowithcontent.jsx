@@ -64,7 +64,7 @@ const Logowithcontent = () => {
       </div>
 
       {data.map((wrap, index) => (
-        <div className={`${wrap.border == true ? `border-t border-gray` : ''}area w-full relative`} key={index}>
+        <div className={`${wrap.border == true ? `border-t border-darkGray` : ''}area w-full relative`} key={index}>
           {/* Use wrap.bgimg instead of bgimg */}
           {wrap.bgimg && (
             <div className={`bgimg ${style.bgimg}`}>

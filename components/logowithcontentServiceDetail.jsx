@@ -54,8 +54,8 @@ const Logowithcontent = () => {
               </div>
               <div className="contentwrapper w-[50%] sm:w-[100%]">
                 <div className={`content max-w-[570px] ${wrap.bgimg ? 'text-white' : ''}`}>
-                  <h4 className={`heading ${style.heading}`}>{wrap.heading}</h4>
-                  <p className={`medium mt-10px para ${style.para}`}>{wrap.para}</p>
+                  <h4 className={`heading pr-[30px] ${style.heading}`}>{wrap.heading}</h4>
+                  <p className={`medium mt-[10px] para ${style.para}`}>{wrap.para}</p>
                 </div>
               </div>
             </div>

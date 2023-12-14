@@ -5,7 +5,7 @@ import Link from "next/link";
 const Cta = () => {
   return (
     <section className='cta flex items-center min-h-[1090px]'>
-      <div className='bg-img dark__overlay'>
+      <div className='bg-img dark__overlay semi_black'>
         <Image src="/service-detail/workshop.png" alt='image' height={1600} width={1090} className='w-full h-full object-cover' />
       </div>
       <div className='container'>

@@ -739,6 +739,9 @@ p.medium {
   opacity: 0.7;
   /* z-index: -1; */
 }
+.dark__overlay.semi_black:after {
+  opacity: 0.5;
+}
 
 /* spaceFiller */
 .spaceFiller {
