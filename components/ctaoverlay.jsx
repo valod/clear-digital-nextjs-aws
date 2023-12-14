@@ -12,7 +12,7 @@ const Cta = () => {
         <div className="content relative max-w-[1170px]">
 
           <h2 className='h1 mb-[20px]'>Over 100 awards.</h2>
-          <h6 className='text-white mb-[30px]'>The Clear Digital Velocity Workshops is our unique and dynamic methodology that flips the traditional agency models by transforming project discovery conversations into focused project planning and road mapping exercises.</h6>
+          <p className='text-white mb-[30px] max-w-[810px] font-normal'>The Clear Digital Velocity Workshops is our unique and dynamic methodology that flips the traditional agency models by transforming project discovery conversations into focused project planning and road mapping exercises.</p>
           <div>
             <Link className="pink-btn" href="#">View our awards</Link>
           </div>
