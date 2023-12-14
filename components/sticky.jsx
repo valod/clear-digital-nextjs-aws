@@ -229,7 +229,7 @@ export default function Sticky({ ribbonVisible }) {
         <>
             {
                 winWidth > 1024 ?
-                    <section className={`${isSticky ? 'sticky' : 'position-initial'} pt-[29px] ${StickyStyle.mainSticky} pb-[23px] z-50 bg-white  transition-all duration-300 ease-in-out shadow-bottom-white-shadow`} style={isScrolled ? height : { top: ribbonHeight }}>
+                    <section className={`${isSticky ? 'sticky' : 'position-initial'} py-[38px] ${StickyStyle.mainSticky} border-b border-black z-50 bg-white  transition-all duration-300 ease-in-out shadow-bottom-white-shadow`} style={isScrolled ? height : { top: ribbonHeight }}>
                         <div className="container">
                             <ul className="flex relative sm:justify-between">
                                 {stickyData.map((data, index) => {

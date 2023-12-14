@@ -2,7 +2,7 @@ import { NextSeo } from 'next-seo';
 import Layout from '../../components/layout';
 import BannerSecond from '../../components/bannerSecond';
 import Sticky from '../../components/sticky'
-import ContentGrid from '../../components/ContentGrid';
+import ContentGrid from '../../components/ContentGridserviceDetail';
 import ScrollableContent from '../../components/scrollableContent'
 import Logowithcontent from '../../components/logowithcontentServiceDetail';
 import FooterCta from '@/components/Footercta';

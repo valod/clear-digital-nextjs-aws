@@ -830,7 +830,7 @@ p.medium {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
-  margin-top: 48px;
+  /* margin-top: 48px; */
 }
 .contentGrid__item {
   flex: 0 0 calc(33.33% - 20px);
