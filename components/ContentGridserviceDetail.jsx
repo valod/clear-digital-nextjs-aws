@@ -19,33 +19,33 @@ const ContentGrid = () => {
                         </div>
                     </div>
                 </div>
-                <div className='wrapper mt-[52px]'>
-                    <div className='w-threeCard pr-[90px]'>
-                        <Link href={'/'}>
-                            <div className='max-w-[79px] max-h[79px] mb-[34px] w-full'>
-                                <Image src={"/overview-1.png"} alt='' width={80} height={80} />
-                            </div>
-                            <h4>Lorem ipsum amet dolor sit.</h4>
-                            <p className='medium'>Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.</p>
-                        </Link>
+                <div className='mainRow flex flex-wrap mt-[52px] -ml-[10px]'>
+                    <div className='w-threeCard relative pr-[90px] mx-2.5 md:w-full xl:pr-[50px] tablet:w-halfWidth tablet:mb-[50px] md:mb-[50px]'>
+                        <Link href={'#'} className='redirect'>  .  </Link>
+                        <div className='max-w-[79px] max-h[79px] mb-[34px] w-full'>
+                            <Image src={"/overview-1.png"} alt='' width={80} height={80} />
+                        </div>
+                        <h4>Lorem ipsum amet dolor sit.</h4>
+                        <p className='medium'>Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.</p>
+
                     </div>
-                    <div className='w-threeCard pr-[90px]'>
-                        <Link href={'/'}>
-                            <div className='max-w-[79px] max-h[79px] mb-[34px] w-full'>
-                                <Image src={"/overview-2.png"} alt='' width={80} height={80} />
-                            </div>
-                            <h4>Lorem ipsum amet dolor sit.</h4>
-                            <p className='medium'>Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.</p>
-                        </Link>
+                    <div className='w-threeCard relative pr-[90px] mx-2.5 md:w-full xl:pr-[50px] tablet:w-halfWidth tablet:mb-[50px] md:mb-[50px]'>
+                        <Link href={'#'} className='redirect'>  .  </Link>
+                        <div className='max-w-[79px] max-h[79px] mb-[34px] w-full'>
+                            <Image src={"/overview-2.png"} alt='' width={80} height={80} />
+                        </div>
+                        <h4>Lorem ipsum amet dolor sit.</h4>
+                        <p className='medium'>Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.</p>
+
                     </div>
-                    <div className='w-threeCard pr-[90px]'>
-                        <Link href={'/'}>
-                            <div className='max-w-[79px] max-h[79px] mb-[34px] w-full'>
-                                <Image src={"/overview-3.png"} alt='' width={80} height={80} />
-                            </div>
-                            <h4>Lorem ipsum amet dolor sit.</h4>
-                            <p className='medium'>Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.</p>
-                        </Link>
+                    <div className='w-threeCard relative pr-[90px] mx-2.5 md:w-full xl:pr-[50px] tablet:w-halfWidth'>
+                        <Link href={'#'} className='redirect'>  .  </Link>
+                        <div className='max-w-[79px] max-h[79px] mb-[34px] w-full'>
+                            <Image src={"/overview-3.png"} alt='' width={80} height={80} />
+                        </div>
+                        <h4>Lorem ipsum amet dolor sit.</h4>
+                        <p className='medium'>Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.</p>
+
                     </div>
                 </div>
             </div>
