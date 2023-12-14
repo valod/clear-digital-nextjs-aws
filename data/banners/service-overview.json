@@ -1,6 +1,6 @@
 {
   "subtitle": "Our services",
-  "title": "A solution for every challenge.",
+  "title": "A <span class='underline-text text-pink'>solution</span> for every challenge.",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   "backgroundImage": "/banners/service_overview_banner.jpeg",
   "black_overlay": true

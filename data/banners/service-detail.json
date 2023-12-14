@@ -1,6 +1,6 @@
 {
   "subtitle": "Brand strategy",
-  "title": "Analytics and innovation driving digital strategy.",
+  "title": "Analytics and <span class='underline-text text-pink'>innovation</span> driving digital strategy.",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   "buttonLink": "#",
   "buttonText": "Let's get started",

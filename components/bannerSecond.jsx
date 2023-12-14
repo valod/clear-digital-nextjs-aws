@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import serviceDetail from '../data/banners/service-detail.json';
 import serviceOverview from '../data/banners/service-overview.json';
+import work from '../data/banners/work.json';
 import Image from 'next/image';
 
 export default function BannerSecond({ content }) {
@@ -11,6 +12,8 @@ export default function BannerSecond({ content }) {
                 return serviceDetail;
             case 'serviceOverview':
                 return serviceOverview;
+            case 'work':
+                return work;
             // Add more cases for additional content names
             default:
                 return serviceDetail; // Default to a specific content if the name is not recognized
@@ -35,7 +38,7 @@ export default function BannerSecond({ content }) {
             <div className="container">
                 <div className="content-wrap relative z-[3]">
                     {subtitle && <p className="subtitle mb-5">{subtitle}</p>}
-                    {title && <h1 className="text-white">{title}</h1>}
+                    {title && <h1 className="text-white" dangerouslySetInnerHTML={{ __html: title }} />}
                     {description && <p className='mt-8'>{description}</p>}
                     {buttonLink && buttonText && (
                         <div className="btn-wrap mt-8">

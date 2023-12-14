@@ -1,8 +1,7 @@
 import { NextSeo } from 'next-seo';
 import Layout from '../../components/layout';
-import HomepageHero
-    from '../../components/HeroBanner';
-import Footercta from '../../components/Footercta';   
+import BannerSecond from '../../components/bannerSecond';
+import Footercta from '../../components/Footercta';
 // import Coltwoslider from '../../components/Coltwoslider'; 
 import Slider from '../../components/logowithslider';
 // import Halfslider from '../../components/halfslider';
@@ -15,13 +14,13 @@ export default function Work({ menuItems }) {
                 title="Services"
                 description="ClearDigital"
             />
-            <HomepageHero />
-            <Logowithcontent/>
-            <Cta/>
+            <BannerSecond content='work' />
+            <Logowithcontent />
+            <Cta />
             {/* <Coltwoslider/> */}
-            <Slider/>
+            <Slider />
             {/* <Halfslider/> */}
-            <Footercta/>
+            <Footercta />
         </Layout>
     )
 }
