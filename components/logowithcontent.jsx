@@ -47,7 +47,7 @@ const Logowithcontent = () => {
   return (
     <section className="logowithcontent pb-0">
       <div className="container">
-        <div className="intro w-full relative flex flex-wrap justify-between mb-[210px]">
+        <div className="intro w-full relative flex flex-wrap justify-between mb-[210px] laptop:mb-[190px] tablet:mb-[150px] md:mb-[130px]">
           <div className="contentwrapper max-w-[690px]">
             <h6 className="mb-[20px]">Case studies</h6>
             <h3>
@@ -73,8 +73,8 @@ const Logowithcontent = () => {
           )}
 
           <div className="container">
-            <div className={`wrapper ${style.wrapper} w-full relative flex items-center flex-wrap h-[363px]`}>
-              <div className="imgwrapper w-[50%] pl-[120px]">
+            <div className={`wrapper ${style.wrapper} w-full relative flex items-center flex-wrap h-[363px] phablet:h-[310px]`}>
+              <div className="imgwrapper w-[50%] pl-[120px] laptop: pl-[60px] tablet: pl-[50px] ">
                 <div className="logowrapper max-w-[190px] max-h-[69px]">
                   <Image className="w-full h-full object-cover" width={100} height={100} src={wrap.logo} />
                 </div>
@@ -94,3 +94,5 @@ const Logowithcontent = () => {
 };
 
 export default Logowithcontent;
+
+
