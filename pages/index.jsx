@@ -23,12 +23,9 @@ export default function Home({ menuItems }) {
 				description="ClearDigital "
 			/>
 			<HomepageHero />
-			{/* <SpaceFiller className={"bg-black"} /> */}
 			<ContentGrid />
-			{/* <SpaceFiller className={"bg-[#e5e4e7]"} /> */}
-			<ColTwoSlider />
+			{/* <ColTwoSlider /> */}
 			<Logowithslider />
-			{/* <SpaceFiller className={"bg-[#e5e4e7]"} /> */}
 			<FooterCta />
 			{/* <ColTwoSlider /> */}
 			{/* <IntroWithColThree /> */}

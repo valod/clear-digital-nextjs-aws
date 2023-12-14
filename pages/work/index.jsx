@@ -20,7 +20,7 @@ export default function Work({ menuItems }) {
             <HomepageHero />
             <Logowithcontent/>
             <Cta/>
-            <Coltwoslider/>
+            {/* <Coltwoslider/> */}
             <Slider/>
             <Halfslider/>
             <Footercta/>
