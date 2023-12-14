@@ -7,33 +7,33 @@ const data = [
   {
     logo: '/vmare.svg',
     heading: '80% vel consequat est. Donec semper neque quam eget.',
-    para: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
+    medium: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
     border: true
   },
   {
     logo: '/mcafeewhite.png',
     heading: '80% vel consequat est. Donec semper neque quam eget.',
-    para: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
+    medium: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
     border: true
   },
   {
     logo: '/cisco.svg',
     heading: '80% vel consequat est. Donec semper neque quam eget.',
-    para: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
+    medium: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
     border: true
   },
   {
     bgimg: '/cardsbg.svg',
     logo: '/vmarewhite.svg',
     heading: '80% vel consequat est. Donec semper neque quam eget.',
-    para: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
+    medium: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
     border: false
   },
   {
     bgimg: '',
     logo: '/mcafee_black.png',
     heading: '80% vel consequat est. Donec semper neque quam eget.',
-    para: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
+    medium: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
     border: false
   },
 ];
@@ -49,8 +49,8 @@ const Logowithcontent = () => {
       <div className="container">
         <div className="intro w-full relative flex flex-wrap justify-between mb-[210px] laptop:mb-[190px] tablet:mb-[150px] phablet:mb-[130px] sm:mb-[100px]">
           <div className="contentwrapper max-w-[690px]">
-            <h6 className="mb-[20px]">Case studies</h6>
-            <h3>
+            <h6 className="mb-[20px] ">Case studies</h6>
+            <h3 className="font-bold">
               Nisl <span className={`pink ${style.pink}`}>pulvinar</span> consectet nec lipsum dolor
             </h3>
           </div>
@@ -81,8 +81,8 @@ const Logowithcontent = () => {
               </div>
               <div className="contentwrapper w-[50%] sm:w-[100%]">
                 <div className={`content max-w-[570px] ${wrap.bgimg ? 'text-white' : ''}`}>
-                  <h6 className={`heading ${style.heading}`}>{wrap.heading}</h6>
-                  <p className={`para ${style.para}`}>{wrap.para}</p>
+                  <h4 className={`heading ${style.heading}mb-[5px]`}>{wrap.heading}</h4>
+                  <p className={`medium ${style.medium}`}>{wrap.medium}</p>
                 </div>
               </div>
             </div>
