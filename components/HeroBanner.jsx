@@ -9,7 +9,7 @@ const HomepageHero = () => {
           <h5 className="eyebrow__text">
             Hello! We are Clear Digital.
           </h5>
-          <h1> We build B2B websites and <span className="underline-text">digital</span> brand experiences.</h1>
+          <h1 className='text-white'> We build B2B websites and <span className="underline-text">digital</span> brand experiences.</h1>
           <Link href="/" className="btn-default" target="_self">
             Our Approach
           </Link>

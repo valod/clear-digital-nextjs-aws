@@ -2,9 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const FooterCta = ({props}) => {
-  const d = props
-  console.log(d);
+const FooterCta = ({ props }) => {
   return (
     <section className='footerCta grid__parallax height__full-nav '>
       <div className='bg-img dark__overlay'>
@@ -13,7 +11,7 @@ const FooterCta = ({props}) => {
       <div className='container'>
         <div className="">
           <h6 className='text-white font-normal mb-[20px]'>Lorem ipsum dolor.</h6>
-          <h2 className='h1 mb-[30px]'>Let&#39;s talk.</h2>
+          <h2 className='h1 text-white mb-[30px]'>Let&#39;s talk.</h2>
           <div>
             <Link className="pink-btn" href="#">Contact us</Link>
           </div>
