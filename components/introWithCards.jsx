@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function introWithCards({ content }) {
 
@@ -90,14 +92,14 @@ export default function introWithCards({ content }) {
                     {contentData.map((data, index) => (
                         <div key={index} className={`w-threeCard bg-white border border-darkGray mx-2.5 mb-5`}>
                             <div className="card pt-[97px] px-[50px] pb-[120px]">
-                                <a href="/"></a>
+                                <Link href="/" className="text-0">.</Link>
                                 <div class="logo-wrap mb-7 h-full w-full max-w-[100px] max-h-[100px]">
                                     <img src={data.img} alt="image" />
                                 </div>
                                 <h4 className='mb-5'>{data.title}</h4>
                                 <p>{data.blurb}</p>
                                 <div class="btn-wrap mt-8">
-                                    <a href="#" class="link-btn black">Learn more</a>
+                                    <Link href="#" class="link-btn black">Learn more</Link>
                                 </div>
                             </div>
                         </div>

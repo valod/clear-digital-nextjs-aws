@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import styles from '../page.module.css';
 import { NextSeo } from 'next-seo';
 import Layout from '../../components/layout';
 import BannerSecond from '../../components/bannerSecond';
@@ -8,7 +6,7 @@ import IntroWithCards from "../../components/introWithCards"
 import Cta from '../../components/ctaoverlayServiceOverview';
 import Footercta from '../../components/Footercta';
 import Accordian from '../../components/accordianServiceOverview'
-import ColTwoSlider from '@/components/colTwoSlider';
+// import ColTwoSlider from '@/components/colTwoSlider';
 export default function serviceOverview({ menuItems }) {
 	return (
 		<Layout footerMenu={menuItems}>

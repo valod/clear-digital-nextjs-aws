@@ -1,4 +1,6 @@
-import React from 'react'
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function ScrollableContent() {
     return (
@@ -19,7 +21,7 @@ export default function ScrollableContent() {
                     </div>
                     <div class="image-holder w-1/2">
                         <div class="img-wrap">
-                            <img className='w-full' src="/service-detail/img1.png" alt="pulvinar" />
+                            <Image width={800} height={1090} className='w-full' src="/service-detail/img1.png" alt="pulvinar" />
                         </div>
                     </div>
 
@@ -39,7 +41,7 @@ export default function ScrollableContent() {
                     </div>
                     <div class="image-holder w-1/2">
                         <div class="img-wrap">
-                            <img className='w-full' src="/service-detail/img2.png" alt="pulvinar" />
+                            <Image width={800} height={1090} className='w-full' src="/service-detail/img2.png" alt="pulvinar" />
                         </div>
                     </div>
 
@@ -59,7 +61,7 @@ export default function ScrollableContent() {
                     </div>
                     <div class="image-holder w-1/2">
                         <div class="img-wrap">
-                            <img className='w-full' src="/service-detail/img3.png" alt="pulvinar" />
+                            <Image width={800} height={1090} className='w-full' src="/service-detail/img3.png" alt="pulvinar" />
                         </div>
                     </div>
 

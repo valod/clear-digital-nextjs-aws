@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import serviceDetail from '../data/banners/service-detail.json'; // Adjust the path accordingly
-import serviceOverview from '../data/banners/service-overview.json'; // Adjust the path accordingly
+import serviceDetail from '../data/banners/service-detail.json';
+import serviceOverview from '../data/banners/service-overview.json';
+import Image from 'next/image';
 
 export default function BannerSecond({ content }) {
     const getContent = (name) => {
@@ -29,7 +30,7 @@ export default function BannerSecond({ content }) {
     return (
         <section className={`${black_overlay ? 'dark__overlay' : ''} bg-black banner-second grid__parallax min-h-[1090px] flex items-center`}>
             {backgroundImage && <div className="bg-img z-0">
-                <img src={backgroundImage} alt="vector" />
+                <Image src={backgroundImage} width={1600} height={1090} alt="vector" />
             </div>}
             <div className="container">
                 <div className="content-wrap relative z-[3]">

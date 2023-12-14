@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import styles from '../page.module.css';
 import { NextSeo } from 'next-seo';
 import Layout from '../../components/layout';
 import BannerSecond from '../../components/bannerSecond';
@@ -8,7 +6,7 @@ import ContentGrid from '../../components/ContentGrid';
 import ScrollableContent from '../../components/scrollableContent'
 import Logowithcontent from '../../components/logowithcontentServiceDetail';
 import FooterCta from '@/components/Footercta';
-import Halfslider from '@/components/halfslider';
+// import Halfslider from '@/components/halfslider';
 import IntroWithCards from "../../components/introWithCards"
 export default function serviceDetail({ menuItems }) {
     return (
@@ -23,7 +21,7 @@ export default function serviceDetail({ menuItems }) {
             <ScrollableContent/>
             <Logowithcontent/>
             <IntroWithCards content={'serviceDetail'}/>
-            <Halfslider/>
+            {/* <Halfslider/> */}
             <FooterCta/>
         </Layout>
     )

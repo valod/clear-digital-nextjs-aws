@@ -229,7 +229,7 @@ export default function Sticky({ ribbonVisible }) {
                                 {stickyData.map((data, index) => {
                                     return (
                                         <li key={index} datatype={data.id} className="pr-10 sm:px-1 relative tablet-mid:pr-[12px]">
-                                            <a href={`#${data.url}`} aria-label={`Navigate to ${data.title}`} className={`text-black ${visibleSections[0] === data.url ? 'border-b-4 border-pink activated' : ''} text-[18px] font-[500] transition-all hover:text-pink pb-[22px] ease-in-out`} onClick={(e) => handleStickyClick(e, data.url, index, data.url, 50)} >{data.title}</a>
+                                            <Link href={`#${data.url}`} aria-label={`Navigate to ${data.title}`} className={`text-black ${visibleSections[0] === data.url ? 'border-b-4 border-pink activated' : ''} text-[18px] font-[500] transition-all hover:text-pink pb-[22px] ease-in-out`} onClick={(e) => handleStickyClick(e, data.url, index, data.url, 50)} >{data.title}</Link>
                                         </li>
                                     )
                                 })}
