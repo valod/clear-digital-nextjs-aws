@@ -33,7 +33,7 @@ const data = [
 
 const Logowithcontent = () => {
   return (
-    <section className="logowithcontent py-0">
+    <section className="logowithcontent py-0 border-b border-darkGray">
   
 
       {data.map((wrap, index) => (
@@ -54,8 +54,8 @@ const Logowithcontent = () => {
               </div>
               <div className="contentwrapper w-[50%] sm:w-[100%]">
                 <div className={`content max-w-[570px] ${wrap.bgimg ? 'text-white' : ''}`}>
-                  <h6 className={`heading ${style.heading}`}>{wrap.heading}</h6>
-                  <p className={`para ${style.para}`}>{wrap.para}</p>
+                  <h4 className={`heading ${style.heading}`}>{wrap.heading}</h4>
+                  <p className={`medium mt-10px para ${style.para}`}>{wrap.para}</p>
                 </div>
               </div>
             </div>
