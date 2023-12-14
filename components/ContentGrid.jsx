@@ -1,5 +1,5 @@
 import React from 'react'
-import Intro from './intro'
+import Intro from '../components/Intro'
 import Link from 'next/link'
 import Image from 'next/image'
 
