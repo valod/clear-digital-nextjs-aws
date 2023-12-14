@@ -92,15 +92,15 @@ export default function introWithCards({ content }) {
                 <div className="w-mainRow flex flex-wrap relative z-[2]">
                     {contentData.map((data, index) => (
                         <div key={index} className={`w-threeCard bg-white border border-darkGray mx-2.5 mb-5 laptop:w-halfWidth tablet:w-halfWidth phablet:w-halfWidth sm:w-[100%]`}>
-                            <div className="card pt-[97px] px-[50px] pb-[120px]">
+                            <div className="card pt-[72px] px-[50px] pb-[100px]">
                                 <Link href="/" className="text-0">.</Link>
-                                <div class="logo-wrap mb-7 h-full w-full max-w-[100px] max-h-[100px]">
+                                <div class="logo-wrap mb-7 h-full w-full max-w-[101px] max-h-[100px]">
                                     <img src={data.img} alt="image" />
                                 </div>
-                                <h4 className='mb-5'>{data.title}</h4>
-                                <p>{data.blurb}</p>
-                                <div class="btn-wrap mt-8">
-                                    <Link href="#" class="link-btn black">Learn more</Link>
+                                <h4 className='mb-[22px]'>{data.title}</h4>
+                                <p className="medium">{data.blurb}</p>
+                                <div class="btn-wrap mt-[30px]">
+                                    <Link href="#" class="link-btn font-bold pink black">Learn more</Link>
                                 </div>
                             </div>
                         </div>

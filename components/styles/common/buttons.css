@@ -31,8 +31,14 @@
 .link-btn.black {
   color: #000;
 }
+.link-btn.pink {
+  color: #fa198c;
+}
 .link-btn.black::after {
   background-image: url("/r_arrow_black.svg");
+}
+.link-btn.pink::after {
+  background-image: url("/r_arrow_pink.svg");
 }
 .link-btn.white::after {
   background-image: url("/r_arrow_white.svg");
