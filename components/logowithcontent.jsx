@@ -34,7 +34,7 @@ const data = [
     hover_logo: '/vmarewhite.svg',
     heading: '80% vel consequat est. Donec semper neque quam eget.',
     medium: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
-    border: false
+    border: true
   },
   {
     bgimg: '/cardsbg.svg',
@@ -42,7 +42,7 @@ const data = [
     hover_logo: '/McAfee_white.svg',
     heading: '80% vel consequat est. Donec semper neque quam eget.',
     medium: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
-    border: false
+    border: true
   },
 ];
 
@@ -72,7 +72,7 @@ const Logowithcontent = () => {
         </div>
       </div>
       {data.map((wrap, index) => (
-        <div className={`${style.wrapper} group ${wrap.border === true ? `border-t border-gray` : ''} area w-full relative`} key={index}>
+        <div className={`${style.wrapper} group ${wrap.border === true ? `border-t border-gray` : ''} area w-full relative border-[#989898]`} key={index}>
           {/* Use wrap.bgimg instead of bgimg */}
           {wrap.bgimg && (
             <div className={`absolute top-0 left-0 w-full h-full ${style.bgimg} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
