@@ -20,7 +20,7 @@ export default function Work({ menuItems }) {
             {/* <Coltwoslider/> */}
             <Slider />
             {/* <Halfslider/> */}
-            <Footercta />
+            <Footercta overlay={'semi'}/>
         </Layout>
     )
 }
