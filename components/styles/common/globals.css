@@ -591,7 +591,7 @@ h1 {
   font-size: clamp(3.125rem, 8.8vw, 8.75rem);
   color: var(--white);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: -0.05em;
 }
 
@@ -599,7 +599,7 @@ h1 {
   font-size: clamp(3.125rem, 8.8vw, 8.75rem);
   color: var(--white);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: -0.05em;
 }
 
@@ -613,7 +613,15 @@ h2 {
 h3 {
   font-size: clamp(1.875rem, 4vw, 3.438rem);
   letter-spacing: -0.02em;
+  font-weight: 700;
   line-height: 1.1;
+}
+
+h4 {
+  font-size: clamp(1.563rem, 4vw, 1.875rem);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  font-weight: 700;
 }
 
 h6 {

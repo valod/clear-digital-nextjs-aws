@@ -2,7 +2,7 @@ import { NextSeo } from 'next-seo';
 import Layout from '../../components/layout';
 import BannerSecond from '../../components/bannerSecond';
 import Footercta from '../../components/Footercta';
-import Coltwoslider from '../../components/Coltwoslider'; 
+// import Coltwoslider from '../../components/Coltwoslider'; 
 import Slider from '../../components/logowithslider';
 // import Halfslider from '../../components/halfslider';
 import Logowithcontent from '../../components/logowithcontent';
@@ -17,7 +17,7 @@ export default function Work({ menuItems }) {
             <BannerSecond content='work' />
             <Logowithcontent />
             <Cta />
-            <Coltwoslider/>
+            {/* <Coltwoslider/> */}
             <Slider />
             {/* <Halfslider/> */}
             <Footercta />

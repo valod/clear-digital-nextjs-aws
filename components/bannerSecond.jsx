@@ -36,13 +36,13 @@ export default function BannerSecond({ content }) {
                 <Image src={backgroundImage} width={1600} height={1090} alt="vector" />
             </div>}
             <div className="container">
-                <div className="content-wrap relative z-[3]">
-                    {subtitle && <h6 className="subtitle mb-5">{subtitle}</h6>}
+                <div className="content-wrap relative z-[3] pt-[102px]">
+                    {subtitle && <h6 className="subtitle mb-[18px]">{subtitle}</h6>}
                     {title && <h1 className="text-white" dangerouslySetInnerHTML={{ __html: title }} />}
-                    {description && <p className='mt-8'>{description}</p>}
+                    {description && <p className='mt-[31px] max-w-[990px]'>{description}</p>}
                     {buttonLink && buttonText && (
-                        <div className="btn-wrap mt-8">
-                            <Link href={buttonLink} className="link-btn white">{buttonText}</Link>
+                        <div className="btn-wrap mt-[30px]">
+                            <Link href={buttonLink} className="link-btn white font-bold">{buttonText}</Link>
                         </div>
                     )}
                 </div>

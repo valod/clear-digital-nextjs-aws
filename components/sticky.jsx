@@ -6,22 +6,28 @@ export default function Sticky({ ribbonVisible }) {
     const stickyData = [
         {
             id: "1",
-            pageName: "solutions",
-            title: "By use case",
-            url: "use-case"
+            pageName: "serviceDetail",
+            title: "Overview",
+            url: "overview"
         },
         {
             id: "2",
-            pageName: "solutions",
-            title: "By industry",
-            url: "industry"
+            pageName: "serviceDetail",
+            title: "Our process",
+            url: "our-process"
         },
         {
             id: "3",
-            pageName: "solutions",
-            title: "By role",
-            url: "role"
-        }
+            pageName: "serviceDetail",
+            title: "Case studies",
+            url: "case-studies"
+        },
+        {
+            id: "4",
+            pageName: "serviceDetail",
+            title: "Related services",
+            url: "related-services"
+        },
     ];
 
     const [isSticky, setSticky] = useState(false);
@@ -229,7 +235,7 @@ export default function Sticky({ ribbonVisible }) {
                                 {stickyData.map((data, index) => {
                                     return (
                                         <li key={index} datatype={data.id} className="pr-10 sm:px-1 relative tablet-mid:pr-[12px]">
-                                            <Link href={`#${data.url}`} aria-label={`Navigate to ${data.title}`} className={`text-black ${visibleSections[0] === data.url ? 'border-b-4 border-pink activated' : ''} text-[18px] font-[500] transition-all hover:text-pink pb-[22px] ease-in-out`} onClick={(e) => handleStickyClick(e, data.url, index, data.url, 50)} >{data.title}</Link>
+                                            <Link href={`#${data.url}`} aria-label={`Navigate to ${data.title}`} className={`text-black ${visibleSections[0] === data.url ? 'border-b-4 border-pink activated' : ''} text-base font-bold transition-all hover:text-pink pb-[22px] ease-in-out`} onClick={(e) => handleStickyClick(e, data.url, index, data.url, 50)} >{data.title}</Link>
                                         </li>
                                     )
                                 })}
