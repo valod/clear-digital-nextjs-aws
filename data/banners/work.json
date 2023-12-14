@@ -1,6 +1,6 @@
 {
     "subtitle": "Lorem ipsum dolor sit",
-    "title": "Our work is our <span class='underline-text text-pink'>passion</span>.",
+    "title": "Our work is our <span class='underline-white text-pink'>passion</span>.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "buttonLink": "#",
     "buttonText": "Let's get started",

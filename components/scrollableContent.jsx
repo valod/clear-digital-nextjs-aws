@@ -11,7 +11,7 @@ export default function ScrollableContent() {
                         <div class="inner-content h-full flex flex-col justify-between">
                             <div class="title-wrap pt-[149px]">
                                 <h6 className="mb-[19px]">Our process</h6>
-                                <h3>Nisl <span className='text-pink'>pulvinar</span> consectet nec set adipiscing</h3>
+                                <h3>Nisl <span className='underline-black text-pink'>pulvinar</span> consectet nec set adipiscing</h3>
                             </div>
                             <div class="body-wrap pb-[151px]">
                                 <h4>Lorem ipsum dolor sit amet consectetur</h4>
@@ -31,7 +31,7 @@ export default function ScrollableContent() {
                         <div class="inner-content h-full flex flex-col justify-between">
                             <div class="title-wrap pt-[149px]">
                                 <h6 className="mb-[19px]">Our process</h6>
-                                <h3>Nisl <span className='text-pink'>pulvinar</span> consectet nec set adipiscing</h3>
+                                <h3>Nisl <span className='underline-black text-pink'>pulvinar</span> consectet nec set adipiscing</h3>
                             </div>
                             <div class="body-wrap pb-[151px]">
                                 <h4>Lorem ipsum dolor sit amet consectetur</h4>
@@ -51,7 +51,7 @@ export default function ScrollableContent() {
                         <div class="inner-content h-full flex flex-col justify-between">
                             <div class="title-wrap pt-[149px]">
                                 <h6 className="mb-[19px]">Our process</h6>
-                                <h3>Nisl <span className='text-pink'>pulvinar</span> consectet nec set adipiscing</h3>
+                                <h3>Nisl <span className='underline-black text-pink'>pulvinar</span> consectet nec set adipiscing</h3>
                             </div>
                             <div class="body-wrap pb-[151px]">
                                 <h4>Lorem ipsum dolor sit amet consectetur</h4>
