@@ -1,34 +1,31 @@
-import React, { useState, useEffect } from 'react';
-import Link from "next/link";
-import StickyStyle from '../components/styles/sticky.module.css'
+import React, { useState, useEffect } from "react";
+import StickyStyle from "../components/styles/sticky.module.css";
+import Link from 'next/link'
 
-export default function Sticky({ ribbonVisible }) {
+function Sticky() {
     const stickyData = [
         {
             id: "1",
-            pageName: "serviceDetail",
-            title: "Overview",
-            url: "overview"
+            title: "White Label Development",
+            url: "white-label-development",
         },
         {
             id: "2",
-            pageName: "serviceDetail",
-            title: "Our process",
-            url: "our-process"
+            title: "Dedicated Development Team",
+            url: "dedicated-team",
         },
         {
             id: "3",
-            pageName: "serviceDetail",
-            title: "Case studies",
-            url: "case-studies"
+            title: "CMS Implementation",
+            url: "cms-implementation",
         },
         {
             id: "4",
-            pageName: "serviceDetail",
-            title: "Related services",
-            url: "related-services"
+            title: "CMS Maintenance",
+            url: "cms-support",
         },
     ];
+
 
     const [isSticky, setSticky] = useState(false);
     const [isHeight, setHeight] = useState(0);
@@ -43,142 +40,88 @@ export default function Sticky({ ribbonVisible }) {
     const [isdropDown, setDropDown] = useState(false);
     // const [idMatch, isIdMatch] = use
     const [linkData, setLinkData] = useState();
-
     useEffect(() => {
-        let lastScrollTop = 0;
-
-        const handleNavScroll = () => {
-            const currentScrollTop = window.scrollY;
-            const isScrolledDown = currentScrollTop < lastScrollTop;
-
-            setIsScrolled(isScrolledDown);
-            lastScrollTop = currentScrollTop;
-        };
-
         setTimeout(() => {
-            window.addEventListener('scroll', handleNavScroll);
-        }, 500);
+            let lastScrollTop = 0;
+            const sticky = document.querySelector("#stickyNav");
+            var topp = sticky?.getBoundingClientRect().top;
+            const headr = document.querySelector("header")?.offsetHeight || 0;
+            // setheaderHeight((prevHeight) => {
+            //     // console.log(prevHeight);
+            //     return headr;
+            // });
+            const handleNavScroll = () => {
+                topp = sticky?.getBoundingClientRect().top;
+                const currentScrollTop = window.scrollY;
+                const isScrolledDown = currentScrollTop < lastScrollTop;
+                // console.log(topp);
+                if (topp) {
+                    if (topp !== null && topp < headr) {
+                        sticky?.classList.add(`${StickyStyle.fix}`);
+                    } else {
+                        sticky?.classList.remove(`${StickyStyle.fix}`);
+                    }
+                }
+                lastScrollTop = currentScrollTop;
+            };
 
-        return () => {
-            window.removeEventListener('scroll', handleNavScroll);
-        };
+            window.addEventListener("scroll", handleNavScroll);
+
+            return () => {
+                window.removeEventListener("scroll", handleNavScroll);
+            };
+        }, 100);
     }, []);
-
     // useEffect(() => {
-    //     const handleResize = () => {
-    //         setRibbonHeight(document.getElementById('previewRibbon').clientHeight);
-    //     };
-    //     setAbc(document.getElementById('previewRibbon'));
-    //     window.addEventListener('resize', handleResize);
+    //     const headerElement = document.getElementById('header'); // Replace with your actual header ID
 
-    //     handleResize();
-
-    //     return () => {
-    //         window.removeEventListener('resize', handleResize);
-    //     };
-
+    //     if (headerElement) {
+    //         const headerHeight = headerElement.clientHeight;
+    //         setHeight(headerHeight);
+    //     }
     // }, []);
-
-    useEffect(() => {
-        const headerElement = document.getElementById('header'); // Replace with your actual header ID
-
-        if (headerElement) {
-            const headerHeight = headerElement.clientHeight;
-            setHeight(headerHeight);
-        }
-    }, []);
-
-
-    useEffect(() => {
-
-        setTimeout(() => {
-            window.addEventListener('scroll', handleScroll);
-        }, 500);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-    useEffect(() => {
-        const handleDocumentClick = (event) => {
-            const isOutsideComponent = event.target.closest('#previewRibbon button');
-            if (isOutsideComponent) {
-                setRibbonHeight(document.getElementById('previewRibbon').clientHeight);
-            }
-        };
-
-        // Add event listener to the document
-        document.addEventListener('click', handleDocumentClick);
-
-        // Clean up the event listener on component unmount
-        return () => {
-            document.removeEventListener('click', handleDocumentClick);
-        };
-    }, []);
-
-    const handleScroll = () => {
-        setSticky(window.scrollY > 0);
+    const auto = {
+        top: `auto`,
+    };
+    const headheight = {
+        top: 154,
     };
     const handleStickyClick = (e, id, borderActive, sectionId, offset) => {
-        var x = document.querySelectorAll("section")
-        e.preventDefault()
-        setBorder(borderActive);
-        var headrHeight = document.querySelector('header').offsetHeight;
+        const x = document.querySelectorAll("section");
+        e.preventDefault();
+        const headrHeight = document.querySelector("header")?.offsetHeight || 0;
+        const stickyHeight =
+            document.getElementById("stickyNav")?.offsetHeight || 0;
+        // console.log("stick", stickyHeight);
 
         x.forEach((item) => {
-            var attr = item.getAttribute('id')
-            const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-            if (attr == id) {
-                var topp = item.getBoundingClientRect().top;
-                console.log(topp)
-                // console.log(scrollPosition)
-                var d = (scrollPosition + topp) - 100
+            const attr = item.getAttribute("id");
+            const scrollPosition =
+                window.pageYOffset ||
+                document.documentElement.scrollTop ||
+                document.body.scrollTop ||
+                0;
+            if (attr === id) {
+                const topp = item.getBoundingClientRect().top;
+                // console.log(topp);
+                const d = scrollPosition + topp - 116 - stickyHeight;
                 if (topp < 0) {
-                    d = d - (headrHeight)
+                    // d = d - headrHeight;
+                    d - headrHeight;
                 }
 
                 window.scrollTo({
                     top: d,
-                    behavior: 'smooth'
+                    behavior: "smooth",
                 });
-                // $('html,body').animate({scrollTop: d}, 0, 'linear');
             }
-        })
-    }
-
-    const height = {
-        top: `${isHeight + ribbonHeight}px`,
+        });
     };
-
-    useEffect(() => {
-        const mainElement = document.getElementsByTagName('main')[0];
-        const headerElement = document.getElementsByTagName('header')[0];
-        setTimeout(() => {
-            if (ribbonHeight === 0) {
-                if (isHeight === 0) {
-                    document.documentElement.style.scrollPadding = `${isHeight}px`;
-                } else {
-                    document.documentElement.style.scrollPadding = `0px`;
-                }
-            } else {
-                var totalHeight = isHeight + ribbonHeight + 80;
-                if (isScrolled === true) {
-                    document.documentElement.style.scrollPadding = `${totalHeight}px`;
-                } else {
-                    // var plusRibbonHeight = ribbonHeight + 80;
-                    var minusTotalHeight = totalHeight - isHeight;
-                    document.documentElement.style.scrollPadding = `${minusTotalHeight}px`;
-                    // mainElement.style.height = '5rem';
-
-                }
-            }
-        }, 500);
-    });
 
     const handleIntersection = (entries) => {
         const visibleSections = entries
-            .filter(entry => entry.isIntersecting)
-            .map(entry => entry.target.id);
+            .filter((entry) => entry.isIntersecting)
+            .map((entry) => entry.target.id);
 
         setVisibleSections(visibleSections);
     };
@@ -189,9 +132,9 @@ export default function Sticky({ ribbonVisible }) {
             threshold: 0.5,
         });
 
-        const sectionElements = document.querySelectorAll('section:not(.sticky');
+        const sectionElements = document.querySelectorAll("section:not(.sticky");
 
-        sectionElements.forEach(sectionElement => {
+        sectionElements.forEach((sectionElement) => {
             observer.observe(sectionElement);
         });
 
@@ -201,52 +144,72 @@ export default function Sticky({ ribbonVisible }) {
     }, [visibleSections]);
 
     useEffect(() => {
-        // isWinWidth(window.innerWidth);
         const handleResize = () => {
             isWinWidth(window.innerWidth);
-        }
+        };
 
-        window.addEventListener('resize', handleResize);
+        window.addEventListener("resize", handleResize);
         // Initial call to set window size
         handleResize();
 
         // Clean up event listener on component unmount
         return () => {
-            window.removeEventListener('resize', handleResize);
+            window.removeEventListener("resize", handleResize);
         };
-    })
-
+    });
 
     return (
         <>
-            {
-                winWidth > 1024 ?
-                    <section className={`${isSticky ? 'sticky' : 'position-initial'} py-[38px] ${StickyStyle.mainSticky} border-b border-black z-5 bg-white  transition-all duration-300 ease-in-out shadow-bottom-white-shadow`} style={isScrolled ? height : { top: ribbonHeight }}>
-                        <div className="container">
-                            <ul className="flex relative sm:justify-between">
-                                {stickyData.map((data, index) => {
-                                    return (
-                                        <li key={index} datatype={data.id} className="pr-10 sm:px-1 relative tablet-mid:pr-[12px]">
-                                            <Link href={`#${data.url}`} aria-label={`Navigate to ${data.title}`} className={`text-black ${visibleSections[0] === data.url ? 'border-b-4 border-pink activated' : ''} text-base font-bold transition-all hover:text-pink pb-[22px] ease-in-out`} onClick={(e) => handleStickyClick(e, data.url, index, data.url, 50)} >{data.title}</Link>
-                                        </li>
-                                    )
-                                })}
-                            </ul>
-                        </div>
-                    </section> : ''
-            }
+            {winWidth > 991 ? (
+                <section
+                    className={`sticky top-[116px] ${StickyStyle.mainSticky} py-[38px] border-b border-black z-5 bg-darkBlue  transition-all duration-300 ease-in-out shadow-bottom-white-shadow`}
+                    style={isSticky ? headheight : { top: 154 }}
+                    id="stickyNav"
+                    data-aos="fade-in"
+                    data-aos-delay="500"
+                    data-aos-duration="1000"
+                >
+                    <div className="container">
+                        <ul className="flex relative sm:justify-between">
+                            {stickyData.map((data, index) => {
+                                return (
+                                    <li
+                                        key={index}
+                                        datatype={data.id}
+                                        className="pr-10 sm:px-1 relative tablet-mid:pr-[12px]"
+                                    >
+                                        <Link
+                                            href={`/${data.url}`}
+                                            aria-label={`Navigate to ${data.title}`}
+                                            className={`text-black ${visibleSections[0] === data.url
+                                                ? "border-b-4 border-white activated"
+                                                : ""
+                                                } text-[18px] font-[500] transition-all hover:text-pink font-bold pb-[22px] ease-in-out`}
+                                            onClick={(e) =>
+                                                handleStickyClick(e, data.url, index, data.url, 50)
+                                            }
+                                        >
+                                            {data.title}
+                                        </Link>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </div>
+                </section>
+            ) : (
+                ""
+            )}
             <style jsx>
-                {
-                    `
-                    .activated{
-                        color:#FF3B84;
-                        -webkit-text-stroke: 1px #FF3B84;
-                    }
-                    `
-                }
+                {`
+          .activated {
+            color: #ffffff;
+          }
+        `}
             </style>
         </>
+    );
+};
 
+export default Sticky;
 
-    )
-}

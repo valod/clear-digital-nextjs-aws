@@ -510,8 +510,8 @@ section {
   padding: 150px 0;
 }
 
-.padding-top{
-  padding-top:100px;
+.padding-top {
+  padding-top: 100px;
 }
 
 @media only screen and (min-width: 1920px) {
@@ -657,7 +657,9 @@ p.medium {
 
 /* miscellaneous */
 
-.underline-text {
+.underline-text,
+.underline-white,
+.underline-black {
   position: relative;
 }
 
@@ -669,6 +671,27 @@ p.medium {
   height: 41%;
   width: 102%;
   background: url(/images/marker-underline-white.svg) no-repeat;
+  background-size: contain;
+}
+
+.underline-white:after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  height: 41%;
+  width: 102%;
+  background: url(/white_marker_underline.png) no-repeat;
+  background-size: contain;
+}
+.underline-black:after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  height: 41%;
+  width: 102%;
+  background: url(/black_marker_underline.png) no-repeat;
   background-size: contain;
 }
 
