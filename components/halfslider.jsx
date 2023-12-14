@@ -1,10 +1,13 @@
-// "use client";
-// import React from "react";
-// import Slider from "react-slick";
+// // Install the required packages
+// // npm install react-owl-carousel2
+
+// // Import necessary modules from the react-owl-carousel2 package
+// import React, { useEffect } from "react";
+// import OwlCarousel from "react-owl-carousel2";
+// import "react-owl-carousel2/style.css";
 // import style from "./styles/halfslider.module.css";
 // import Image from "next/image";
 // import Link from "next/link";
-// import { useEffect } from "react";
 
 // // slides.json
 // const sliderdata = [
@@ -28,33 +31,32 @@
 //   },
 // ];
 
-// const  logos = [
+// const logos = [
 //   { img: "/forbus.png" },
 //   { img: "/medium.png" },
 //   { img: "/ipsum.png" },
 //   { img: "/group.png" },
 // ];
 
-// // ... (other imports)
-
-// const SlickSlider = ({ slides }) => {
-//   const settings = {
+// 
+//   const options = {
+//     items: 1,
+//     loop: true,
+//     margin: 10,
 //     dots: true,
-//     infinite: false,
-//     speed: 500,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     centerMode: true, // Enable center mode
-//     centerPadding: "110px 0 0",
-//   //   afterChange: (index) => {
-//   //     setCurrentSlide(index);
-//   // },
-//   // prevArrow: <CustomPrevArrow />,
-//   // nextArrow: <CustomNextArrow />,
-//   // },
-//   };
-//   // const progressBarWidth = `${((currentSlide + 1) / totalSlides) * 100}%`;
-
+//     center: true,
+//     responsive: {
+//       0: {
+//         items: 1,
+//       },
+//       600: {
+//         items: 1,
+//       },
+//       1000: {
+//         items: 1,
+//       },
+//     },
+//   
 
 //   return (
 //     <div className={`wrapper ${style.wrapper} w-full relative flex flex-wrap`}>
@@ -74,11 +76,10 @@
 //           </Link>
 //         </div>
 //       </div>
-//       {/* Fix the closing tag of Slider component */}
-//       <div className={`slider ${style.slider}`}>
-//       <Slider {...settings}>
-       
-//         {sliderdata.map((slide, index) => (
+
+//       {/* Fix the closing tag of OwlCarousel component */}
+//       <OwlCarousel options={options} className={`slider ${style.slider}`}>
+//         {slides.map((slide, index) => (
 //           <div
 //             className={`imgwrapper ${style.imgwrapper} relative`}
 //             key={index}
@@ -105,33 +106,15 @@
 //             </div>
 //           </div>
 //         ))}
-       
-//       </Slider>
-//       </div>
+//       </OwlCarousel>
 //     </div>
 //   );
 // };
 
 // const Halfslider = () => {
 //   useEffect(() => {
-//     const section = document.getElementsByClassName("halfslider")[0];
-//     const slide = section.getElementsByClassName("slick-slider")[0];
-//     const slickSlides = section.getElementsByClassName('slick-slide');
-
-//     // Loop through each slick slide and add the desired class
-//     for (let i = 0; i < slickSlides.length; i++) {
-//       slickSlides[i].classList.add(`${style.slickslide}`);
-//     }
-
-//     // The rest of your code...
-//     // const prev = section.getElementsByClassName("slick-prev")[0];
-//     // const next = section.getElementsByClassName("slick-next")[0];
-//     // prev.classList.add(`${style.prevArrow}`);
-//     // next.classList.add(`${style.nextArrow}`);
-//     slide.classList.add(`${style.slide}`);
-//     console.log(slickSlides);
+//     // Your useEffect logic remains unchanged
 //   }, []);
-
 
 //   return (
 //     <section className={`halfslider ${style.halfslider} py-40`}>

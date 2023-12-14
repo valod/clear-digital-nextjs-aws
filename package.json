@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "jquery": "^3.7.1",
     "next": "14.0.3",
     "next-seo": "^6.4.0",
+    "owl.carousel": "^2.3.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-owl-carousel": "^2.3.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",

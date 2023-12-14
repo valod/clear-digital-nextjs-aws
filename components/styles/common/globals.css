@@ -510,6 +510,10 @@ section {
   padding: 150px 0;
 }
 
+.padding-top{
+  padding:100px 0 150px 0;
+}
+
 @media only screen and (min-width: 1920px) {
   section {
     padding: 170px 0;

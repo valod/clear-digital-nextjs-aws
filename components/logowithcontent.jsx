@@ -45,9 +45,9 @@ const data = [
 
 const Logowithcontent = () => {
   return (
-    <section className="logowithcontent pb-0">
+    <section className="logowithcontent padding-top pb-0">
       <div className="container">
-        <div className="intro w-full relative flex flex-wrap justify-between mb-[210px] laptop:mb-[190px] tablet:mb-[150px] phablet:mb-[130px] sm:mb-[100px]">
+        <div className="intro w-full relative flex flex-wrap justify-between mb-[96px] laptop:mb-[190px] tablet:mb-[150px] phablet:mb-[130px] sm:mb-[100px]">
           <div className="contentwrapper max-w-[690px]">
             <h6 className="mb-[20px] ">Case studies</h6>
             <h3 className="font-bold">
@@ -64,7 +64,7 @@ const Logowithcontent = () => {
       </div>
 
       {data.map((wrap, index) => (
-        <div className={`${wrap.border == true ? `border-t border-darkGray` : ''}area w-full relative`} key={index}>
+        <div className={`${wrap.border == true ? `border-t border-gray` : ''}area w-full relative border-[#989898]`} key={index}>
           {/* Use wrap.bgimg instead of bgimg */}
           {wrap.bgimg && (
             <div className={`bgimg ${style.bgimg}`}>
@@ -81,7 +81,7 @@ const Logowithcontent = () => {
               </div>
               <div className="contentwrapper w-[50%] sm:w-[100%]">
                 <div className={`content max-w-[570px] ${wrap.bgimg ? 'text-white' : ''}`}>
-                  <h4 className={`heading ${style.heading}mb-[5px]`}>{wrap.heading}</h4>
+                  <h4 className={`heading ${style.heading}mb-[5px] pr-[30px]`}>{wrap.heading}</h4>
                   <p className={`medium ${style.medium}`}>{wrap.medium}</p>
                 </div>
               </div>
