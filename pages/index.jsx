@@ -1,10 +1,7 @@
-// import Image from 'next/image';
-// import styles from './page.module.css';
 import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
 // import ColTwoSlider from '../components/colTwoSlider';
 import HomepageHero from '../components/HeroBanner';
-import Footercta from '../components/FooterCta';
 import IntroWithColThree from '../components/introWithColThree';
 import Accordian from '../components/accordian';
 // import Tabwithslider from '../components/tabwithslider';
