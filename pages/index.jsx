@@ -17,13 +17,6 @@ export default function Home({ menuItems }) {
 				description="ClearDigital "
 			/>
 			<HomepageHero />
-			{/* <ImageSlider />
-			<ContentGrid />
-			<TabsContent />
-			<ColTwoSlider />
-			<LogoSlider />
-			<ColTwoImageSlider /> */}
-			<FooterCta />
 		</Layout>
 	)
 }
