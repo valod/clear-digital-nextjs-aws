@@ -49,14 +49,14 @@ const Logowithcontent = () => {
 
           <div className="container">
             <div className={`w-full relative flex items-center flex-wrap h-[363px]`}>
-              <div className="imgwrapper w-[50%] pl-[120px] desktop:pl-[120px] laptop:pl-[60px] largedesktop:pl-[120px] tablet:pl-[50px] phablet:pl-[30px] sm:w-[100%] sm:pl-[20px] ">
+              <div className="imgwrapper w-[50%] pl-[120px] desktop:pl-[120px] laptop:pl-[60px] largedesktop:pl-[120px] tablet:pl-[50px] phablet:pl-[30px] md:w-full md:pl-0 ">
                 <div className="logowrapper relative w-[190px] h-[69px]">
                   <Image className="absolute transition-opacity group-hover:opacity-0 duration-300 left-0 object-contain top-0 w-full h-full" width={100} height={100} src={wrap.logo} />
                   <Image className="absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100 left-0 top-0 w-full h-full" width={100} height={100} src={wrap.hover_logo} />
                 </div>
               </div>
-              <div className="contentwrapper w-[50%] sm:w-[100%]">
-                <div className={`content max-w-[570px] group-hover:text-white transition-color duration-300`}>
+              <div className="contentwrapper w-[50%] md:w-full">
+                <div className={`content max-w-[570px] md:max-w-full group-hover:text-white transition-color duration-300`}>
                   <h4 className={`heading pr-[30px] ${style.heading}`}>{wrap.heading}</h4>
                   <p className={`medium mt-[10px] para ${style.para}`}>{wrap.para}</p>
                 </div>
