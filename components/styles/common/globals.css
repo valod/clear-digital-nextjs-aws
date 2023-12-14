@@ -496,13 +496,11 @@ section {
   background-size: contain;
 } */
 
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --pink: #FA198C;
+  --pink: #fa198c;
   --white: #fff;
   --black: #000;
 }
@@ -589,43 +587,48 @@ section {
   }
 }
 
-h1 { 
-  font-size: clamp(60px, 8.8vw, 140px);
+h1 {
+  font-size: clamp(3.125rem, 8.8vw, 8.75rem);
   color: var(--white);
   font-weight: 700;
-  line-height: 1;
-  letter-spacing: -.05em;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
 }
 
-.h1 { 
-  font-size: clamp(60px, 8.8vw, 140px);
+.h1 {
+  font-size: clamp(3.125rem, 8.8vw, 8.75rem);
   color: var(--white);
   font-weight: 700;
-  line-height: 1;
-  letter-spacing: -.05em;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
 }
 
 h2 {
-  font-size: clamp(40px, 8.8vw, 80px);
+  font-size: clamp(2.5rem, 8.8vw, 4.688rem);
   font-weight: 700;
-  letter-spacing: -.02em;
+  letter-spacing: -0.02em;
   line-height: 1.1;
 }
 
 h3 {
-  font-size: clamp(40px, 4vw, 58px);
-  letter-spacing: -.02em;
+  font-size: clamp(1.875rem, 4vw, 3.438rem);
+  letter-spacing: -0.02em;
   line-height: 1.1;
 }
 
 h6 {
-  font-size: clamp(20px, 2.5vw, 25px);
-  letter-spacing: -.02em;
+  font-size: clamp(1.25rem, 2.5vw, 1.563rem);
+  letter-spacing: -0.02em;
   line-height: 1.1;
 }
 
 p {
-  font-size: clamp(18px, 2vw, 21px);
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  line-height: 1.5;
+}
+p.medium {
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .bg-black h1,
@@ -635,9 +638,8 @@ p {
 .bg-black h5,
 .bg-black h6,
 .bg-black p {
-  color:#fff;
+  color: #fff;
 }
-
 
 /* miscellaneous */
 
@@ -685,18 +687,18 @@ p {
 .grid__parallax:before {
   position: absolute;
   content: " ";
-  background: url('/Grid_Pattern_White.svg') center repeat fixed;
+  background: url("/Grid_Pattern_White.svg") center repeat fixed;
   background-size: 4rem;
   height: 100%;
   width: 100%;
   inset: 0;
-  opacity: .5;
+  opacity: 0.5;
   z-index: 1;
   background-attachment: fixed;
 }
 
 .grid__parallax.dark:before {
-  background: url('/Grid_Pattern_Black.svg') center repeat fixed;
+  background: url("/Grid_Pattern_Black.svg") center repeat fixed;
   background-size: 4rem;
 }
 
@@ -727,7 +729,6 @@ p {
   opacity: 0.7;
   /* z-index: -1; */
 }
-
 
 /* spaceFiller */
 .spaceFiller {
@@ -948,32 +949,26 @@ p {
   position: unset;
 }
 
-.halfslider .slick-slide{
-  max-width:600px;
-
+.halfslider .slick-slide {
+  max-width: 600px;
 }
 
-.halfslider .imgwrapcase{
-  width:calc(25% - 108px);
-  margin:0  54px;
+.halfslider .imgwrapcase {
+  width: calc(25% - 108px);
+  margin: 0 54px;
 }
 
-.halfslider .headingwrap::after{
-  content:'';
-  position:absolute;
-  right:-80px;
-  top:-40px;
-  width:80px;
-  height:66px;
+.halfslider .headingwrap::after {
+  content: "";
+  position: absolute;
+  right: -80px;
+  top: -40px;
+  width: 80px;
+  height: 66px;
   transform: rotate(14.594deg);
-  background-image:url('/Star.png');
-  background-size:cover;
+  background-image: url("/Star.png");
+  background-size: cover;
 }
-
-
-
-
-
 
 @-webkit-keyframes scroll {
   0% {
@@ -995,7 +990,6 @@ p {
     transform: translateX(calc(-250px * 7));
   }
 }
-
 
 .slidera::after {
   right: 0;

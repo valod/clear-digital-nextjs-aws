@@ -31,13 +31,13 @@ export default function BannerSecond({ content }) {
     } = getContent(content);
 
     return (
-        <section className={`${black_overlay ? 'dark__overlay' : ''} bg-black banner-second grid__parallax min-h-[1090px] flex items-center`}>
+        <section className={`${black_overlay ? 'dark__overlay' : ''} bg-black banner-second grid__parallax min-h-[1090px] flex items-center md:h-[740px]`}>
             {backgroundImage && <div className="bg-img z-0">
                 <Image src={backgroundImage} width={1600} height={1090} alt="vector" />
             </div>}
             <div className="container">
                 <div className="content-wrap relative z-[3]">
-                    {subtitle && <p className="subtitle mb-5">{subtitle}</p>}
+                    {subtitle && <h6 className="subtitle mb-5">{subtitle}</h6>}
                     {title && <h1 className="text-white" dangerouslySetInnerHTML={{ __html: title }} />}
                     {description && <p className='mt-8'>{description}</p>}
                     {buttonLink && buttonText && (
