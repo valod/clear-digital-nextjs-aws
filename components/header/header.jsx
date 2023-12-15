@@ -83,7 +83,7 @@ const Header = () => {
 		};
 	}, [isScrolled]);
 	return (
-		<header className={`${styles.header} ${isScrolled ? styles.active : ''}`}>
+		<header className={`${styles.header} bg-red-600 ${isScrolled ? styles.active : ''}`}>
 			<div className="container">
 				<div className={`${styles['main-menu-wrap']}`}>
 					<div className={`${styles['imgWrap']} `}>

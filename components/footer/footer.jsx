@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="container">
           <div className="outer-wrap flex flex-wrap pb-[250px]">
             <div className="item small w-[34%]">
-              <div className="logo-wrap max-w-[111px] max-h-[35px] mb-[52px]">
+              <div className="img-wrap">
                 <Link href="/" data-cursor-expand>
                   <Image src="/cleardigital-logo.png" alt="Cleardigital Logo" height={100} width={100} />
                 </Link>
@@ -59,16 +59,16 @@ const Footer = () => {
             <div className="item medium w-[17%]">
               <div className="list-item">
                 <ul>
-                  <li className="mb-[30px]">
+                  <li>
                     <Link href="/" className="subtitle text-white" data-cursor-expand="">Work </Link>
                   </li>
-                  <li className="mb-[30px]">
+                  <li>
                     <Link href="/" className="subtitle text-white" data-cursor-expand="">Approach</Link>
                   </li>
-                  <li className="mb-[30px]">
+                  <li>
                     <Link href="/" className="subtitle text-white" data-cursor-expand="">Services </Link>
                   </li>
-                  <li className="mb-[30px]">
+                  <li>
                     <Link href="/" className="subtitle text-white" data-cursor-expand="">About </Link>
                   </li>
                   <li>
