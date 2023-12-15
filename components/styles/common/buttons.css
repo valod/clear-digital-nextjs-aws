@@ -4,16 +4,23 @@
   display: inline-block;
   background: #fa198c;
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 1.6rem;
   font-weight: 700;
   color: #fff;
   letter-spacing: 0.008em;
   border: 2px solid #fa198c;
   transition: all 0.3s ease-in-out;
 }
+
+@media only screen and (max-width: 1600px) {
+  .pink-btn {
+    font-size: 16px;
+  }
+}
 .pink-btn:hover {
   background: transparent;
-  border: 2px solid #fff;
+  color: #fa198c;
+  /* border: 2px solid #fff; */
 }
 .pink-btn.pink-border:hover {
   background: transparent;
@@ -68,12 +75,18 @@
   position: relative;
   display: inline-block;
   text-decoration: none;
-  /* font-size: clamp(16px, 2vw, 20px); */
+  font-size: clamp(16px, 1.3vw, 20px);
   font-size: 1.6rem;
-  color: var(--white);
+  /* color: var(--white); */
   font-weight: 700;
   line-height: 1;
   padding-right: 3.5rem;
+}
+
+@media only screen and (min-width: 1201px) {
+  .btn-default {
+    font-size: 2rem;
+  }
 }
 
 .btn-default:hover {
@@ -97,4 +110,15 @@
   background-repeat: no-repeat;
   background-size: contain;
   transition: right .3s ease-in-out, background-image .3s ease-in-out;
+}
+
+.btn-default.dark-btn-default:hover:after {
+  background-image: url(/hover_right.svg);
+  right: 0;
+}
+
+.btn-default.dark-btn-default:after {
+  background-image: url(/black_link.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }

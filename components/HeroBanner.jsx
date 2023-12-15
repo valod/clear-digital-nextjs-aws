@@ -3,16 +3,18 @@ import Link from 'next/link';
 
 const HomepageHero = () => {
   return (
-    <section className="hero__banner grid__parallax height__full">
+    <section className="hero__banner grid__parallax height__full flex items-center">
       <div className="container">
-        <div className="hero__content">
-          <h5 className="eyebrow__text">
+        <div className="hero__content relative z-[1]">
+          <h5 className="eyebrow__text text-white">
             Hello! We are Clear Digital.
           </h5>
-          <h1 className='text-white'> We build B2B websites and <span className="underline-text">digital</span> brand experiences.</h1>
-          <Link href="/" className="btn-default" target="_self">
-            Our Approach
-          </Link>
+          <h1 className='text-white'> We build B2B websites and <span className="underline-text text-pink">digital</span> brand experiences.</h1>
+          <div className='xl-up:mt-[2rem] mt-[3rem]'>
+            <Link href="/" className="btn-default text-white" target="_self">
+              Our Approach
+            </Link>
+          </div>
         </div>
       </div>
       <div className="bg-img dark__overlay">
