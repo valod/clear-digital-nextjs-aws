@@ -37,7 +37,7 @@ const data = [
 
 const Logowithcontent = () => {
   return (
-    <section className={`set-2 ${style.logowithcontent} py-0 border-b border-darkGray`}>
+    <section className={`set-2 ${style.logowithcontent} py-0 border-b border-darkGray`} id='case-studies'>
       {data.map((wrap, index) => (
         <div className={`${style.wrapper} group ${wrap.border === true ? `border-t border-gray` : ''} area w-full relative`} key={index}>
           {/* Use wrap.bgimg instead of bgimg */}

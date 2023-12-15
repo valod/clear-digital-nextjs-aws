@@ -75,8 +75,9 @@ export default function introWithCards({ content }) {
     ];
 
     const contentData = content === 'serviceDetail' ? serviceDetail : serviceOverview;
+
     return (
-        <section className="introWithCards pt-[406px] grid__parallax dark">
+        <section className="introWithCards pt-[406px] grid__parallax dark" id={content === 'serviceDetail' ? 'related-services' : 'services'}>
             <div class="bg-text-lines absolute z-[1] text-[122px] text-gray font-bold top-0 -left-[10px]">
                 <div class="pb-12 animate-marquee whitespace-nowrap ">
                     Brand strategy & <span className='text-black'>Website</span>

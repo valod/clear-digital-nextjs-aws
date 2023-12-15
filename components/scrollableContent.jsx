@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function ScrollableContent() {
     return (
-        <section class="content-with-img no-padding">
+        <section class="content-with-img no-padding" id="our-process">
             <div class="column-wrapper">
                 <div class="inner-wrap flex bg-gray">
                     <div class="text-holder w-1/2 pl-[95px] pr-[135px]">

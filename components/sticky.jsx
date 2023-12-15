@@ -7,7 +7,7 @@ function Sticky() {
         {
             id: "1",
             title: "Overview",
-            url: "Overview",
+            url: "overview",
         },
         {
             id: "2",
@@ -43,10 +43,6 @@ function Sticky() {
             const sticky = document.querySelector("#stickyNav");
             var topp = sticky?.getBoundingClientRect().top;
             const headr = document.querySelector("header")?.offsetHeight || 0;
-            setheaderHeight((prevHeight) => {
-                // console.log(prevHeight);
-                return headr;
-            });
             const handleNavScroll = () => {
                 topp = sticky?.getBoundingClientRect().top;
                 const currentScrollTop = window.scrollY;
@@ -159,7 +155,7 @@ function Sticky() {
         <>
             {winWidth > 991 ? (
                 <section
-                    className={`sticky top-[116px] ${StickyStyle.mainSticky} py-[38px] border-b border-black z-5 bg-darkBlue  transition-all duration-300 ease-in-out shadow-bottom-white-shadow`}
+                    className={`sticky ${StickyStyle.mainSticky} py-[38px] h-[100px] bg-white border-b border-black z-5 bg-darkBlue  transition-all duration-300 ease-in-out shadow-bottom-white-shadow`}
                     style={isSticky ? headheight : { top: 154 }}
                     id="stickyNav"
                     data-aos="fade-in"
@@ -181,7 +177,7 @@ function Sticky() {
                                             className={`text-black ${visibleSections[0] === data.url
                                                 ? "border-b-4 border-white activated"
                                                 : ""
-                                                } text-[18px] font-[500] transition-all hover:text-pink font-bold pb-[22px] ease-in-out`}
+                                                } text-[18px] transition-all hover:text-pink font-bold pb-[22px] ease-in-out`}
                                             onClick={(e) =>
                                                 handleStickyClick(e, data.url, index, data.url, 50)
                                             }
@@ -200,7 +196,14 @@ function Sticky() {
             <style jsx>
                 {`
           .activated {
-            color: #ffffff;
+            color: #FA198C;
+          }
+          .activated:after{
+            content: '';
+            postion:absolute;
+            width: 100%;
+            height: 7px;
+            background: #FA198C;
           }
         `}
             </style>
