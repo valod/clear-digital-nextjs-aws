@@ -59,16 +59,16 @@ const Footer = () => {
             <div className="item medium w-[17%]">
               <div className="list-item">
                 <ul>
-                  <li>
+                  <li className="mb-[30px]">
                     <Link href="/" className="subtitle text-white" data-cursor-expand="">Work </Link>
                   </li>
-                  <li>
+                  <li className="mb-[30px]">
                     <Link href="/" className="subtitle text-white" data-cursor-expand="">Approach</Link>
                   </li>
-                  <li>
+                  <li className="mb-[30px]">
                     <Link href="/" className="subtitle text-white" data-cursor-expand="">Services </Link>
                   </li>
-                  <li>
+                  <li className="mb-[30px]">
                     <Link href="/" className="subtitle text-white" data-cursor-expand="">About </Link>
                   </li>
                   <li>
