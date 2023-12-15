@@ -1,9 +1,12 @@
+.padding-top:{
+    padding:100px 0 0 0;
+}
 .set-2 h1 {
   font-size: 140px;
   color: var(--white);
   font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.05em;
+  line-height: 1.08;
+  letter-spacing: 0.004em;
 }
 
 @media (max-width: 767px) {
@@ -144,3 +147,4 @@
   background: url(/black_marker_underline.png) no-repeat;
   background-size: contain;
 }
+

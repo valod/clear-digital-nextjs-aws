@@ -55,11 +55,11 @@ const data = [
 
 const Logowithcontent = () => {
   return (
-       <section className="logowithcontent padding-top pb-0 sm:pt-[70px]">
+       <section className="logowithcontent set-2 padding-top pb-0 sm:pt-[70px]">
       <div className="container">
-        <div className="intro w-full relative flex flex-wrap justify-between mb-[96px]">
+        <div className="intro padding-top w-full relative flex flex-wrap justify-between mb-[96px]">
           <div className="contentwrapper max-w-[690px] pr-[10px]">
-            <h6 className="mb-[20px] ">Case studies</h6>
+            <h6 className="mb-[20px] font-normal">Case studies</h6>
             <h3 className="font-bold">
               Nisl <span className={`pink ${style.pink}`}>pulvinar</span> consectet nec lipsum dolor
             </h3>

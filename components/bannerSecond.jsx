@@ -36,7 +36,7 @@ export default function BannerSecond({ content }) {
                 <Image src={backgroundImage} width={1600} height={1090} alt="vector" />
             </div>}
             <div className="container">
-                <div className="content-wrap relative z-[3] pt-[102px]">
+                <div className="content-wrap relative z-[3] pt-[102px] max-w-[1420px]">
                     {subtitle && <h6 className="subtitle mb-[18px]">{subtitle}</h6>}
                     {title && <h1 className="text-white" dangerouslySetInnerHTML={{ __html: title }} />}
                     {description && <p className='mt-[31px] max-w-[990px]'>{description}</p>}
