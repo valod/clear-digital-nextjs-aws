@@ -6,7 +6,7 @@ export default function ScrollableContent() {
     return (
         <section class="set-2 content-with-img no-padding" id="our-process">
             <div class="column-wrapper">
-                <div class="inner-wrap flex bg-gray">
+                <div class="inner-wrap block bg-gray relative">
                     <div class="text-holder w-1/2 pl-[95px] pr-[135px]">
                         <div class="inner-content h-full flex flex-col justify-between">
                             <div class="title-wrap pt-[149px]">
@@ -19,8 +19,8 @@ export default function ScrollableContent() {
                             </div>
                         </div>
                     </div>
-                    <div class="image-holder w-1/2">
-                        <div class="img-wrap">
+                    <div class="image-holder w-1/2 sticky top-0 h-[100vh] float-right overflow-hidden">
+                        <div class="img-wrap h-full">
                             <Image width={800} height={1090} className='w-full' src="/service-detail/img1.png" alt="pulvinar" />
                         </div>
                     </div>
