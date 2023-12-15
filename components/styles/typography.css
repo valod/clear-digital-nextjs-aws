@@ -140,8 +140,8 @@
 }
 
 .set-2 .container {
-  max-width: clamp(20.313rem, 90.625rem);
-  padding: clamp(1.25rem, 5.938rem, 10rem);
+  max-width: 1450px;
+  padding: 0 20px !important;
   width: 100%;
   margin: 0 auto;
   z-index: 5;
