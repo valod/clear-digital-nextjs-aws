@@ -28,50 +28,42 @@ function Sticky() {
 
 
     const [isSticky, setSticky] = useState(false);
-    const [isHeight, setHeight] = useState(0);
-    const [isScrolled, setIsScrolled] = useState(true);
-    const [ribbonHeight, setRibbonHeight] = useState(0);
-    const [abc, setAbc] = useState(0);
-    const [isBorder, setBorder] = useState(0);
-    const [scrollPosition, setScrollPosition] = useState(0);
-    const [scrollMatch, isScrolledMatch] = useState(true);
+    const [headerHeight, setheaderHeight] = useState(0);
+    const [stick, setstick] = useState(0);
     const [visibleSections, setVisibleSections] = useState([]);
     const [winWidth, isWinWidth] = useState(0);
-    const [isdropDown, setDropDown] = useState(false);
-    // const [idMatch, isIdMatch] = use
-    const [linkData, setLinkData] = useState();
     useEffect(() => {
         setTimeout(() => {
-            let lastScrollTop = 0;
-            const sticky = document.querySelector("#stickyNav");
-            var topp = sticky?.getBoundingClientRect().top;
-            const headr = document.querySelector("header")?.offsetHeight || 0;
-            // setheaderHeight((prevHeight) => {
-            //     // console.log(prevHeight);
-            //     return headr;
-            // });
-            const handleNavScroll = () => {
-                topp = sticky?.getBoundingClientRect().top;
-                const currentScrollTop = window.scrollY;
-                const isScrolledDown = currentScrollTop < lastScrollTop;
-                // console.log(topp);
-                if (topp) {
-                    if (topp !== null && topp < headr) {
-                        sticky?.classList.add(`${StickyStyle.fix}`);
-                    } else {
-                        sticky?.classList.remove(`${StickyStyle.fix}`);
-                    }
-                }
-                lastScrollTop = currentScrollTop;
-            };
-
-            window.addEventListener("scroll", handleNavScroll);
-
-            return () => {
-                window.removeEventListener("scroll", handleNavScroll);
-            };
+          let lastScrollTop = 0;
+          const sticky = document.querySelector("#stickyNav");
+          var topp = sticky?.getBoundingClientRect().top;
+          const headr = document.querySelector("header")?.offsetHeight || 0;
+          setheaderHeight((prevHeight) => {
+            // console.log(prevHeight);
+            return headr;
+          });
+          const handleNavScroll = () => {
+            topp = sticky?.getBoundingClientRect().top;
+            const currentScrollTop = window.scrollY;
+            const isScrolledDown = currentScrollTop < lastScrollTop;
+            // console.log(topp);
+            if (topp) {
+              if (topp !== null && topp < headr) {
+                sticky?.classList.add(`${StickyStyle.fix}`);
+              } else {
+                sticky?.classList.remove(`${StickyStyle.fix}`);
+              }
+            }
+            lastScrollTop = currentScrollTop;
+          };
+    
+          window.addEventListener("scroll", handleNavScroll);
+    
+          return () => {
+            window.removeEventListener("scroll", handleNavScroll);
+          };
         }, 100);
-    }, []);
+      }, []);
     // useEffect(() => {
     //     const headerElement = document.getElementById('header'); // Replace with your actual header ID
 
@@ -82,10 +74,10 @@ function Sticky() {
     // }, []);
     const auto = {
         top: `auto`,
-    };
-    const headheight = {
-        top: 154,
-    };
+      };
+      const headheight = {
+        top: headerHeight,
+      };
     const handleStickyClick = (e, id, borderActive, sectionId, offset) => {
         const x = document.querySelectorAll("section");
         e.preventDefault();
