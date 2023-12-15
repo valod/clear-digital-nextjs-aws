@@ -82,7 +82,7 @@ const Logowithcontent = () => {
           )}
 
           <div className="container set-2">
-            <div className={`w-full relative flex items-center flex-wrap h-[363px] laptop:h-[350px]`}>
+            <div className={`w-full relative flex items-center flex-wrap h-[363px] laptop:h-[350px] lg:h-[350px] sm:h-[320px]`}>
               <div className="imgwrapper w-[50%] pl-[120px] desktop:pl-[120px] laptop:pl-[60px] largedesktop:pl-[120px] tablet:pl-[50px] phablet:pl-[30px] md:w-full md:pl-0 ">
                 <div className="logowrapper relative w-[190px] h-[69px]">
                   <Image className="absolute transition-opacity group-hover:opacity-0 duration-300 left-0 object-contain top-0 w-full h-full" width={100} height={100} src={wrap.logo} alt='image' />
@@ -105,5 +105,14 @@ const Logowithcontent = () => {
 };
 
 export default Logowithcontent;
+
+
+
+
+
+
+
+
+
 
 
