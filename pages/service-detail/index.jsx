@@ -2,12 +2,12 @@ import { NextSeo } from 'next-seo';
 import Layout from '../../components/layout';
 import BannerSecond from '../../components/bannerSecond';
 // import Sticky from '../../components/sticky'
-import ContentGrid from '../../components/ContentGridserviceDetail';
-import ScrollableContent from '../../components/scrollableContent'
-import Logowithcontent from '../../components/logowithcontentServiceDetail';
-import FooterCta from '@/components/Footercta';
+// import ContentGrid from '../../components/ContentGridserviceDetail';
+// import ScrollableContent from '../../components/scrollableContent'
+// import Logowithcontent from '../../components/logowithcontentServiceDetail';
+// import FooterCta from '@/components/Footercta';
 // import Halfslider from '@/components/halfslider';
-import IntroWithCards from "../../components/introWithCards"
+// import IntroWithCards from "../../components/introWithCards"
 export default function serviceDetail({ menuItems }) {
     return (
         <Layout footerMenu={menuItems}>
@@ -16,13 +16,13 @@ export default function serviceDetail({ menuItems }) {
                 description="ClearDigital"
             />
             <BannerSecond content='serviceDetail' />
-            {/* <Sticky/> */}
+            {/* <Sticky/>
             <ContentGrid />
             <ScrollableContent/>
-            {/* <Logowithcontent/> */}
+            <Logowithcontent/>
             <IntroWithCards content={'serviceDetail'}/>
-            {/* <Halfslider/> */}
-            <FooterCta/>
+            <Halfslider/>
+            <FooterCta/> */}
         </Layout>
     )
 }
