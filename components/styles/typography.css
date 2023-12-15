@@ -12,7 +12,7 @@
     }
   }
   
-  .set-2 h1 {
+  .set-2 .h1 {
     font-size: 140px;
     color: var(--white);
     font-weight: 700;
@@ -20,7 +20,7 @@
     letter-spacing: -0.05em;
   }
   @media (max-width: 767px) {
-    .set-2 h1 {
+    .set-2 .h1 {
       font-size: 50px;
     }
   }
@@ -95,4 +95,7 @@
   .pink{
     color:#FA198C;
   }
-
+.circle{
+    font-family:auto;
+    margin-left:-30px;
+}
