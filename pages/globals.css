@@ -528,67 +528,91 @@ section {
 .tabwithslider .slick-slide {
   margin: 0 30px;
 }
- .slick-prev{
+.slick-prev {
   position: absolute;
   left: 0;
-  top:0;
+  top: 0;
   width: 80px;
   height: 80px;
-  background-image: url('/circle.png');
+  background-image: url("/circle.png");
   background-size: cover;
 }
-.halfslider .slider_wrapper .slick-slider{
+.halfslider .slider_wrapper .slick-slider {
   /* width: calc(100% - 573px ) !important;
   overflow: hidden; */
 }
-.halfslider .slick-initialized{
-  width: calc(100% - 573px );
+.halfslider .slick-initialized {
+  width: calc(100% - 573px);
   overflow: hidden;
 }
-.halfslider .prevArrow{
+.halfslider .prevArrow {
   position: relative;
   left: 112px;
-  top:230px;
+  top: 230px;
   z-index: 22;
   font-size: 0;
   width: 80px;
   height: 80px;
-  background-image: url('/circle.png');
+  background-image: url("/circle.png");
   background-size: cover;
-  
 }
-.halfslider .prevArrow::after{
-  content: '';
+.halfslider .prevArrow::after {
+  content: "";
   position: absolute;
   width: 35px;
   height: 35px;
   left: 50%;
-  top:50%;
+  top: 50%;
   transform: translate(-50%, -50%);
-  background-image: url('/arrow-right.png');
+  background-image: url("/arrow-right.png");
   background-size: contain;
 }
-.halfslider .nextArrow{
+.halfslider .nextArrow {
   position: absolute;
   right: 21px;
- top:230px;
+  top: 230px;
   z-index: 22;
   font-size: 0;
   width: 80px;
   height: 80px;
-  background-image: url('/circle.png');
+  background-image: url("/circle.png");
   background-size: cover;
 }
 
-.halfslider .nextArrow::after{
-  content: '';
+.halfslider .nextArrow::after {
+  content: "";
   position: absolute;
   width: 35px;
   height: 35px;
   left: 50%;
-  top:50%;
+  top: 50%;
   transform: translate(-50%, -50%);
-  background-image: url('/arrow-left.png');
+  background-image: url("/arrow-left.png");
   background-size: contain;
 }
 
+.underline-white,
+.underline-black {
+  position: relative;
+}
+
+.underline-white:after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  height: 41%;
+  width: 102%;
+  background: url(/white_marker_underline.png) no-repeat;
+  background-size: contain;
+}
+.underline-black:after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  height: 41%;
+  width: 102%;
+  background: url(/black_marker_underline.png) no-repeat;
+  background-size: contain;
+}
