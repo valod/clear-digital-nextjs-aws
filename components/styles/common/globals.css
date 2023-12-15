@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
- :root {
+:root {
   --font-family-heading: "Poppins", sans-serif;
   --font-family-text: "Poppins", sans-serif;
   --font-permanent-marker: "Permanent Marker";
@@ -178,7 +178,8 @@ h6,
   font-family: var(--font-permanent-marker);
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 8rem;
   font-weight: bold;
   letter-spacing: -0.05em;
@@ -186,18 +187,21 @@ h1, .h1 {
 }
 
 @media only screen and (min-width: 1201px) {
-  h1, .h1 {
+  h1,
+  .h1 {
     font-size: 14rem;
   }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 768px) {
-  h1, .h1 {
+  h1,
+  .h1 {
     font-size: 12rem;
   }
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 4rem;
   font-weight: bold;
   letter-spacing: -0.02em;
@@ -205,18 +209,21 @@ h2, .h2 {
 }
 
 @media only screen and (min-width: 1201px) {
-  h2, .h2 {
+  h2,
+  .h2 {
     font-size: 7.5rem;
   }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 768px) {
-  h2, .h2 {
+  h2,
+  .h2 {
     font-size: 6.5rem;
   }
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: -0.02em;
@@ -224,13 +231,15 @@ h3, .h3 {
 }
 
 @media only screen and (min-width: 1201px) {
-  h3, .h3 {
+  h3,
+  .h3 {
     font-size: 5.5rem;
   }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 768px) {
-  h3, .h3 {
+  h3,
+  .h3 {
     font-size: 5rem;
   }
 }
@@ -258,7 +267,6 @@ h5,
 .h5 {
   font-size: 30px;
   line-height: 1;
-
 }
 @media (max-width: 767px) {
   h5,
@@ -349,7 +357,7 @@ ul:not([class]) li > ul ol,
 ol:not([class]) li > ul ol {
   --item-spacing: 0.33em;
   margin-block-start: var(--item-spacing);
-} 
+}
 
 table {
   border-collapse: collapse;
@@ -388,22 +396,29 @@ table tr:nth-child(even) {
 }
 
 .container {
-  inline-size: 100%;
-  margin-inline: auto;
+  max-width: clamp(20.313rem, 90.625rem);
+  padding: 0 1.25rem;
+  width: 100%;
+  margin: 0 auto;
+  /* inline-size: 100%; */
+  /* margin-inline: auto;
   max-inline-size: calc(
     var(--content-max-width-full) + var(--container-spacing) * 2
   );
-  padding-inline: var(--container-spacing);
+  padding-inline: var(--container-spacing); */
   z-index: 5;
 }
+/* @media only screen and (min-width: 1600) {
+  .container {
+    max-width: clamp(20.313rem, 90.625rem);
+  }
+} */
 
 @media only screen and (min-width: 768px) {
   .custom-wrapper {
     width: calc(100% + var(--container-spacing));
   }
 }
-
-
 
 section {
   width: 100%;
@@ -430,7 +445,7 @@ section {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --pink: #FA198C;
+  --pink: #fa198c;
   --white: #fff;
   --black: #000;
 }
@@ -442,9 +457,8 @@ section {
 .bg-black h5,
 .bg-black h6,
 .bg-black p {
-  color:#fff;
+  color: #fff;
 }
-
 
 /* miscellaneous */
 
@@ -484,9 +498,8 @@ section {
 }
 
 .blade-height {
-  height: var(--blade-view-height)
+  height: var(--blade-view-height);
 }
-
 
 @media only screen and (max-width: 991px) {
   .height__full-nav {
@@ -497,18 +510,18 @@ section {
 .grid__parallax:before {
   position: absolute;
   content: " ";
-  background: url('/Grid_Pattern_White.svg') center repeat fixed;
+  background: url("/Grid_Pattern_White.svg") center repeat fixed;
   background-size: 4rem;
   height: 100%;
   width: 100%;
   inset: 0;
-  opacity: .5;
+  opacity: 0.5;
   z-index: 1;
   background-attachment: fixed;
 }
 
 .grid__parallax.dark:before {
-  background: url('/Grid_Pattern_Black.svg') center repeat fixed;
+  background: url("/Grid_Pattern_Black.svg") center repeat fixed;
   background-size: 4rem;
 }
 
@@ -567,7 +580,6 @@ section {
 .intro .intro__text {
   max-width: 1190px;
 }
-
 
 .intro h2 span {
   color: var(--pink);
