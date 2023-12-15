@@ -19,7 +19,7 @@ export default function serviceDetail({ menuItems }) {
             {/* <Sticky/> */}
             <ContentGrid />
             <ScrollableContent/>
-            <Logowithcontent/>
+            {/* <Logowithcontent/> */}
             <IntroWithCards content={'serviceDetail'}/>
             {/* <Halfslider/> */}
             <FooterCta/>
