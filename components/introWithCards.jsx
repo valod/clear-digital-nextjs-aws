@@ -79,13 +79,13 @@ export default function introWithCards({ content }) {
     return (
         <section className="introWithCards pt-[406px] grid__parallax dark" id={content === 'serviceDetail' ? 'related-services' : 'services'}>
             <div class="bg-text-lines absolute z-[1] text-[122px] text-gray font-bold top-0 -left-[10px]">
-                <div class="pb-12 animate-marquee whitespace-nowrap ">
+                <div class="pb-12  whitespace-nowrap ">
                     Brand strategy & <span className='text-black'>Website</span>
                 </div>
-                <div class="pb-12 animate-marquee whitespace-nowrap ">
+                <div class="pb-12  whitespace-nowrap ">
                     <span className='text-black'>graphics</span>  & Content devel
                 </div>
-                <div class="pb-12 animate-marquee whitespace-nowrap ">
+                <div class="pb-12  whitespace-nowrap ">
                     <span className='text-black'>Support subscriptions</span> & De
                 </div>
             </div>
