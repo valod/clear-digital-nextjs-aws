@@ -43,23 +43,20 @@ function Sticky() {
         const aa = false;
         var elementTop;
         setTimeout(function () {
-            elementTop = $('#stickyNav ul').offset().top;
+            elementTop = $('#stickyNav .stickyOuter').offset().top;
         }, 500)
         console.log(elementTop);
         $(window).on('scroll', function () {
             // Get the vertical scroll position
             var scrollPosition = $(window).scrollTop();
 
-            // Get the element top position
-
             // Calculate the distance
             var distance = elementTop - scrollPosition;
-            console.log(distance);
 
             if (distance < 154) {
-                $('#stickyNav ul').css({ position: 'fixed', top: '154px' });
+                $('#stickyNav .stickyOuter').css({ position: 'fixed', top: '154px', width: '100%' });
             } else {
-                $('#stickyNav ul').css({ position: 'relative', top: 'auto' });
+                $('#stickyNav .stickyOuter').css({ position: 'relative', top: 'auto', width: '' });
             }
         });
 
@@ -111,7 +108,24 @@ function Sticky() {
     const headheight = {
         top: headerHeight,
     };
+    const toggleSubMenu = (event) => {
+        // const li = document.querySelectorAll(`.stickyOuter ul li a`)
+        const parentListItem = event.target.closest('li');
+        if (parentListItem) {
+            const parentList = parentListItem.parentNode;
+            const hasOpenSiblings = parentList.querySelectorAll(':scope > li a');
+            for (let i = 0; i < hasOpenSiblings.length; i++) {
+                const sibling = hasOpenSiblings[i];
+                if (sibling !== parentListItem) {
+                    sibling.classList.remove(StickyStyle.activated);
+                }
+            }
+        }
+        event.target.classList.add(StickyStyle.activated);
+    };
     const handleStickyClick = (e, id, borderActive, sectionId, offset) => {
+
+
         const x = document.querySelectorAll("section");
         e.preventDefault();
         const headrHeight = document.querySelector("header")?.offsetHeight || 0;
@@ -187,60 +201,46 @@ function Sticky() {
         <>
             {winWidth > 991 ? (
                 <section
-                    className={`${StickyStyle.mainSticky} py-0 h-[100px] bg-white bg-darkBlue transition-all duration-300 ease-in-out shadow-bottom-white-shadow `}
+                    className={`${StickyStyle.mainSticky} py-0 h-[100px] bg-white transition-all duration-300 ease-in-out shadow-bottom-white-shadow `}
                     id={"stickyNav"}
                     data-aos="fade-in"
                     data-aos-delay="500"
                     data-aos-duration="1000"
                 >
-                    <div className="container">
-                        <ul className="flex relative sm:justify-between py-[38px]  z-[7] bg-white border-b border-black">
-                            {stickyData.map((data, index) => {
-                                return (
-                                    <li
-                                        key={index}
-                                        datatype={data.id}
-                                        className="pr-10 sm:px-1 relative tablet-mid:pr-[12px]"
-                                    >
-                                        <Link
-                                            href={`/${data.url}`}
-                                            aria-label={`Navigate to ${data.title}`}
-                                            className={`text-black ${visibleSections[0] === data.url
-                                                ? "border-b-4 border-white activated"
-                                                : ""
-                                                } text-[18px] transition-all hover:text-pink font-bold pb-[22px] ease-in-out`}
-                                            onClick={(e) =>
-                                                handleStickyClick(e, data.url, index, data.url, 50)
-                                            }
+                    <div className="stickyOuter border-b border-black  z-[10] bg-white">
+                        <div className="container">
+                            <ul className="flex relative sm:justify-between py-[38px]">
+                                {stickyData.map((data, index) => {
+                                    return (
+                                        <li
+                                            key={index}
+                                            datatype={data.id}
+                                            className="pr-10 sm:px-1 relative tablet-mid:pr-[12px]"
+                                            onClick={toggleSubMenu}
                                         >
-                                            {data.title}
-                                        </Link>
-                                    </li>
-                                );
-                            })}
-                        </ul>
+                                            <Link
+                                                href={`/${data.url}`}
+                                                aria-label={`Navigate to ${data.title}`}
+                                                className={`text-black ${visibleSections[0] === data.url
+                                                    ? `${StickyStyle.activated}`
+                                                    : ""
+                                                    } text-[18px] transition-all hover:text-pink font-bold pb-[22px] ease-in-out`}
+                                                onClick={(e) =>
+                                                    handleStickyClick(e, data.url, index, data.url, 50)
+                                                }
+                                            >
+                                                {data.title}
+                                            </Link>
+                                        </li>
+                                    );
+                                })}
+                            </ul>
+                        </div>
                     </div>
                 </section>
             ) : (
                 ""
             )}
-            <style jsx>
-                {`
-          .activated {
-            color: #FA198C;
-          }
-          .activated:after{
-            content: '';
-            postion:absolute;
-            width: 100%;
-            height: 7px;
-            background: #FA198C;
-          }
-          #stickyNav{
-            position: sticky;
-          }
-        `}
-            </style>
         </>
     );
 };
