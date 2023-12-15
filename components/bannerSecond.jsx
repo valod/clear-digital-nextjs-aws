@@ -31,7 +31,7 @@ export default function BannerSecond({ content }) {
     } = getContent(content);
 
     return (
-        <section className={`${black_overlay ? 'dark__overlay' : ''} bg-black banner-second grid__parallax min-h-[1090px] flex items-center md:min-h-[740px]`}>
+        <section className={`set-2 ${black_overlay ? 'dark__overlay' : ''} bg-black banner-second grid__parallax min-h-[1090px] flex items-center md:min-h-[740px]`}>
             {backgroundImage && <div className="bg-img z-0">
                 <Image src={backgroundImage} width={1600} height={1090} alt="vector" />
             </div>}
