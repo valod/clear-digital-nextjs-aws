@@ -45,18 +45,22 @@ function Sticky() {
             const headr = document.querySelector("header")?.offsetHeight || 0;
             const handleNavScroll = () => {
                 topp = sticky?.getBoundingClientRect().top;
+                console.log(topp);
                 const currentScrollTop = window.scrollY;
-                const isScrolledDown = currentScrollTop < lastScrollTop;
-                // console.log(topp);
-                if (topp) {
-                    if (topp !== null && topp < headr) {
-                        sticky?.classList.add(`${StickyStyle.fix}`);
-                    } else {
-                        sticky?.classList.remove(`${StickyStyle.fix}`);
-                    }
+                const headr = document.querySelector("header")?.offsetHeight || 0;
+
+                if (topp < 154) {
+                    // If scrolled down more than 154 pixels from the top, add the 'fix' class
+                    sticky.style.top = '154px'
+                    sticky.style.position = 'fixed'
+                } else {
+                    // If not, remove the 'fix' class
+
                 }
+
                 lastScrollTop = currentScrollTop;
             };
+
 
             window.addEventListener("scroll", handleNavScroll);
 
@@ -155,8 +159,9 @@ function Sticky() {
         <>
             {winWidth > 991 ? (
                 <section
-                    className={`sticky ${StickyStyle.mainSticky} py-[38px] h-[100px] bg-white border-b border-black z-5 bg-darkBlue  transition-all duration-300 ease-in-out shadow-bottom-white-shadow`}
-                    style={isSticky ? headheight : { top: 154 }}
+                    className={`${StickyStyle.mainSticky} py-[38px] bg-white border-b border-black z-[7] bg-darkBlue transition-all duration-300 ease-in-out shadow-bottom-white-shadow ${isSticky ? StickyStyle.fix : ''
+                        }`}
+                    // style={isSticky ? headheight : { top: 154 }}
                     id="stickyNav"
                     data-aos="fade-in"
                     data-aos-delay="500"
