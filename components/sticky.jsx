@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import StickyStyle from "../components/styles/sticky.module.css";
 import Link from 'next/link'
-import $ from 'jquery';
 
 function Sticky() {
     const stickyData = [
@@ -39,28 +38,6 @@ function Sticky() {
     const [visibleSections, setVisibleSections] = useState([]);
     const [winWidth, isWinWidth] = useState(0);
 
-    useEffect(() => {
-        const aa = false;
-        var elementTop;
-        setTimeout(function () {
-            elementTop = $('#stickyNav .stickyOuter').offset().top;
-        }, 500)
-        console.log(elementTop);
-        $(window).on('scroll', function () {
-            // Get the vertical scroll position
-            var scrollPosition = $(window).scrollTop();
-
-            // Calculate the distance
-            var distance = elementTop - scrollPosition;
-
-            if (distance < 154) {
-                $('#stickyNav .stickyOuter').css({ position: 'fixed', top: '154px', width: '100%' });
-            } else {
-                $('#stickyNav .stickyOuter').css({ position: 'relative', top: 'auto', width: '' });
-            }
-        });
-
-    }, []);
 
     // useEffect(() => {
     //     setTimeout(() => {
