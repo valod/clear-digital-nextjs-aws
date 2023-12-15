@@ -55,7 +55,7 @@ const data = [
 
 const Logowithcontent = () => {
   return (
-       <section className="logowithcontent set-2 padding-top pb-0 sm:pt-[70px]">
+       <section className="logowithcontent padding-top pb-0 sm:pt-[70px]">
       <div className="container">
         <div className="intro w-full relative flex flex-wrap justify-between mb-[96px]">
           <div className="contentwrapper max-w-[690px] pr-[10px]">
@@ -81,7 +81,7 @@ const Logowithcontent = () => {
             </div>
           )}
 
-          <div className="container">
+          <div className="container set-2">
             <div className={`w-full relative flex items-center flex-wrap h-[363px]`}>
               <div className="imgwrapper w-[50%] pl-[120px] desktop:pl-[120px] laptop:pl-[60px] largedesktop:pl-[120px] tablet:pl-[50px] phablet:pl-[30px] md:w-full md:pl-0 ">
                 <div className="logowrapper relative w-[190px] h-[69px]">

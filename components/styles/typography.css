@@ -87,7 +87,7 @@
   
   .set-2 .container {
     max-width: clamp(20.313rem, 90.625rem);
-    padding: clamp(1.25rem, 5.938rem);
+    padding: clamp(1.25rem, 5.938rem, 10rem);
     width: 100%;
     margin: 0 auto;
     z-index: 5;
@@ -95,7 +95,26 @@
   .pink{
     color:#FA198C;
   }
-.circle{
+ .circle{
     font-family:auto;
     margin-left:-30px;
+  }
+.set-2 .bg-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.set-2 .overlay:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: var(--black);
+    opacity: 0.7;
 }
