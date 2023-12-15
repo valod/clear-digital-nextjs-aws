@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="container">
           <div className="outer-wrap flex flex-wrap pb-[250px]">
             <div className="item small w-[34%]">
-              <div className="img-wrap">
+              <div className="logo-wrap max-w-[111px] max-h-[35px] mb-[52px]">
                 <Link href="/" data-cursor-expand>
                   <Image src="/cleardigital-logo.png" alt="Cleardigital Logo" height={100} width={100} />
                 </Link>
