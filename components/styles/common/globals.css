@@ -396,7 +396,7 @@ table tr:nth-child(even) {
 }
 
 .container {
-  max-width: clamp(20.313rem, 90.625rem);
+  max-width: 1450px;
   padding: 0 1.25rem;
   width: 100%;
   margin: 0 auto;
