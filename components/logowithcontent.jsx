@@ -57,7 +57,7 @@ const Logowithcontent = () => {
   return (
        <section className="logowithcontent set-2 padding-top pb-0 sm:pt-[70px]">
       <div className="container">
-        <div className="intro padding-top w-full relative flex flex-wrap justify-between mb-[96px]">
+        <div className="intro w-full relative flex flex-wrap justify-between mb-[96px]">
           <div className="contentwrapper max-w-[690px] pr-[10px]">
             <h6 className="mb-[20px] font-normal">Case studies</h6>
             <h3 className="font-bold">
@@ -82,7 +82,7 @@ const Logowithcontent = () => {
           )}
 
           <div className="container set-2">
-            <div className={`w-full relative flex items-center flex-wrap h-[363px]`}>
+            <div className={`w-full relative flex items-center flex-wrap h-[363px] laptop:h-[350px]`}>
               <div className="imgwrapper w-[50%] pl-[120px] desktop:pl-[120px] laptop:pl-[60px] largedesktop:pl-[120px] tablet:pl-[50px] phablet:pl-[30px] md:w-full md:pl-0 ">
                 <div className="logowrapper relative w-[190px] h-[69px]">
                   <Image className="absolute transition-opacity group-hover:opacity-0 duration-300 left-0 object-contain top-0 w-full h-full" width={100} height={100} src={wrap.logo} />
