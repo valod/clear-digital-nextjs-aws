@@ -37,7 +37,7 @@ const data = [
 
 const Logowithcontent = () => {
   return (
-    <section className={`${style.logowithcontent} py-0 border-b border-darkGray`}>
+    <section className={`set-2 ${style.logowithcontent} py-0 border-b border-darkGray`}>
       {data.map((wrap, index) => (
         <div className={`${style.wrapper} group ${wrap.border === true ? `border-t border-gray` : ''} area w-full relative`} key={index}>
           {/* Use wrap.bgimg instead of bgimg */}
@@ -51,8 +51,8 @@ const Logowithcontent = () => {
             <div className={`w-full relative flex items-center flex-wrap h-[363px]`}>
               <div className="imgwrapper w-[50%] pl-[120px] desktop:pl-[120px] laptop:pl-[60px] largedesktop:pl-[120px] tablet:pl-[50px] phablet:pl-[30px] md:w-full md:pl-0 ">
                 <div className="logowrapper relative w-[190px] h-[69px]">
-                  <Image className="absolute transition-opacity group-hover:opacity-0 duration-300 left-0 object-contain top-0 w-full h-full" width={100} height={100} src={wrap.logo} />
-                  <Image className="absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100 left-0 top-0 w-full h-full" width={100} height={100} src={wrap.hover_logo} />
+                  <Image className="absolute transition-opacity group-hover:opacity-0 duration-300 left-0 object-contain top-0 w-full h-full" width={100} height={100} src={wrap.logo} alt='image' />
+                  <Image className="absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100 left-0 top-0 w-full h-full" width={100} height={100} src={wrap.hover_logo} alt='image' />
                 </div>
               </div>
               <div className="contentwrapper w-[50%] md:w-full">
