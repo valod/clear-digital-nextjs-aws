@@ -2,6 +2,7 @@
 import style from './styles/logowithcontent.module.css';
 import Link from 'next/link';
 import Image from "next/image";
+// import Typography from "./styles/typography.css";
 
 const data = [
   {
@@ -54,10 +55,10 @@ const data = [
 
 const Logowithcontent = () => {
   return (
-       <section className="logowithcontent padding-top pb-0 sm:pt-[70px]">
+       <section className="logowithcontent set-2 padding-top pb-0 sm:pt-[70px]">
       <div className="container">
         <div className="intro w-full relative flex flex-wrap justify-between mb-[96px]">
-          <div className="contentwrapper max-w-[690px]">
+          <div className="contentwrapper max-w-[690px] pr-[10px]">
             <h6 className="mb-[20px] ">Case studies</h6>
             <h3 className="font-bold">
               Nisl <span className={`pink ${style.pink}`}>pulvinar</span> consectet nec lipsum dolor
@@ -90,8 +91,8 @@ const Logowithcontent = () => {
               </div>
               <div className="contentwrapper w-[50%] md:w-full">
                 <div className={`content max-w-[570px] md:max-w-full group-hover:text-white transition-color duration-300`}>
-                  <h4 className={`heading pr-[30px] ${style.heading}`}>{wrap.heading}</h4>
-                  <p className={`medium mt-[10px] para ${style.para}`}>{wrap.para}</p>
+                  <h4 className={`heading pr-[50px] ${style.heading}`}>{wrap.heading}</h4>
+                  <p className={`medium mt-[10px] letter-spacing-[-0.32px]  ${style.medium}`}>{wrap.medium}</p>
                 </div>
               </div>
             </div>
