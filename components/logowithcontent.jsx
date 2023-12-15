@@ -55,7 +55,7 @@ const data = [
 
 const Logowithcontent = () => {
   return (
-       <section className="logowithcontent set-2 padding-top pb-0 sm:pt-[70px]">
+    <section className="logowithcontent set-2 padding-top pb-0 sm:pt-[70px]">
       <div className="container">
         <div className="intro w-full relative flex flex-wrap justify-between mb-[96px]">
           <div className="contentwrapper max-w-[690px] pr-[10px]">
@@ -77,7 +77,7 @@ const Logowithcontent = () => {
           {/* Use wrap.bgimg instead of bgimg */}
           {wrap.bgimg && (
             <div className={`absolute top-0 left-0 w-full h-full ${style.bgimg} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
-              <Image src={wrap.bgimg} className="w-full h-full object-cover" width={100} height={100} />
+              <Image src={wrap.bgimg} className="w-full h-full object-cover" width={100} height={100} alt='image' />
             </div>
           )}
 
@@ -85,8 +85,8 @@ const Logowithcontent = () => {
             <div className={`w-full relative flex items-center flex-wrap h-[363px] laptop:h-[350px]`}>
               <div className="imgwrapper w-[50%] pl-[120px] desktop:pl-[120px] laptop:pl-[60px] largedesktop:pl-[120px] tablet:pl-[50px] phablet:pl-[30px] md:w-full md:pl-0 ">
                 <div className="logowrapper relative w-[190px] h-[69px]">
-                  <Image className="absolute transition-opacity group-hover:opacity-0 duration-300 left-0 object-contain top-0 w-full h-full" width={100} height={100} src={wrap.logo} />
-                  <Image className="absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100 left-0 top-0 w-full h-full" width={100} height={100} src={wrap.hover_logo} />
+                  <Image className="absolute transition-opacity group-hover:opacity-0 duration-300 left-0 object-contain top-0 w-full h-full" width={100} height={100} src={wrap.logo} alt='image' />
+                  <Image className="absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100 left-0 top-0 w-full h-full" width={100} height={100} src={wrap.hover_logo} alt='image' />
                 </div>
               </div>
               <div className="contentwrapper w-[50%] md:w-full">

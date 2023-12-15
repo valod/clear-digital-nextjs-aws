@@ -43,7 +43,7 @@ const Logowithcontent = () => {
           {/* Use wrap.bgimg instead of bgimg */}
           {wrap.bgimg && (
             <div className={`absolute top-0 left-0 w-full h-full ${style.bgimg} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
-              <Image src={wrap.bgimg} className="w-full h-full object-cover" width={100} height={100} />
+              <Image src={wrap.bgimg} className="w-full h-full object-cover" width={100} height={100} alt='image' />
             </div>
           )}
 
