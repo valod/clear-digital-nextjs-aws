@@ -81,7 +81,7 @@ const Logowithcontent = () => {
             </div>
           )}
 
-          <div className="container set-2">
+          <div className="container">
             <div className={`w-full relative flex items-center flex-wrap h-[363px] laptop:h-[350px] lg:h-[350px] sm:h-[320px]`}>
               <div className="imgwrapper w-[50%] pl-[120px] desktop:pl-[120px] laptop:pl-[60px] largedesktop:pl-[120px] tablet:pl-[50px] phablet:pl-[30px] md:w-full md:pl-0 ">
                 <div className="logowrapper relative w-[190px] h-[69px]">
