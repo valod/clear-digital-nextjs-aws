@@ -66,7 +66,7 @@ const Logowithcontent = () => {
           </div>
           <div className="btnwrapper mt-[50px] sm:mt-[30px]">
             {/* Provide a valid URL or route in href */}
-            <Link href="/case-studies" className="pink-btn">
+            <Link href="/case-studies" className="pink-btn pink-border lg:w-full lg:text-center">
               View all case studies
             </Link>
           </div>
