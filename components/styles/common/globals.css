@@ -593,3 +593,26 @@ section {
 .colTwoSlider .slick-track {
   display: flex;
 }
+.colTwoSlider .slick-slide:first-child {
+  margin-left: 0;
+}
+.colTwoSlider .slick-slide {
+  margin: 0 100px;
+}
+.counter-arrow{
+  position: relative;
+  padding-left: 52px;
+}
+.counter-arrow::before{
+  content: '';
+  position: absolute;
+  width: 52px;
+  height: 102px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(/counter_arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

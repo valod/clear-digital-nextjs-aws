@@ -13,8 +13,8 @@ const QuoteCarousel = ({ imageSrc, heading, author, designation, url, linkText, 
                             <Image src={imageSrc} alt="" width={608} height={523} className='max-w-[60.8rem] w-full h-auto' />
                         }
                         {count &&
-                            <div className='counter'>
-                                <span className='h1 count'>{count}</span><span>{denotation}</span>
+                            <div className='counter counter-arrow'>
+                                <span className='h1 text-pink count'>{count}</span><span className='text-pink h1' >{denotation}</span>
                             </div>
                         }
                         {subText &&
