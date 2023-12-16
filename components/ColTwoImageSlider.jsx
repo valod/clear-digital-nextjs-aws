@@ -19,6 +19,13 @@ const ImageTextCarousel = ({ imageSrc, heading, subText, url, linkText }) => {
 }
 
 const ColTwoImageSlider = () => {
+    const logos = [
+        { img: "/forbus.png" },
+        { img: "/medium.png" },
+        { img: "/ipsum.png" },
+        { img: "/group.png" },
+    ];
+
     const slides = [
         {
             imageSrc: '/red_circle.png',
@@ -96,6 +103,24 @@ const ColTwoImageSlider = () => {
                         <div className="md-up:mr-[3.4rem] mt-[4rem] md-up:mt-[5rem]">
                             <div className="progress-bar h-[0.8rem] bg-pink transition-all duration-300" style={{ width: `${((currentSlide + 1) / totalSlides) * 100}%` }}></div>
                         </div>
+                    </div>
+                </div>
+                <div className={`logowrapper w-full  mt-[100px] relative flex flex-wrap justify-between`}>
+                    <div className="headingwrap relative w-[25%]">
+                        <h3>Featured in:</h3>
+                    </div>
+
+                    <div className="logowrapper justify-between relative flex flex-wrap w-[65%]">
+                        {logos.map((logo, index) => (
+                            <div className="imgwrapcase max-w-[153px] max-h-[46px] w-full h-full" key={index}>
+                                <Image
+                                    src={logo.img}
+                                    width={100}
+                                    height={100}
+                                    className="w-full h-full object-contain"
+                                />
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
