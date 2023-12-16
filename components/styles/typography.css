@@ -248,3 +248,33 @@
   left: 0;
   z-index: 0;
 }
+
+
+
+
+
+
+.inner-wrap {
+  display: flex;
+  background-color: #ccc; /* Set background color as needed */
+}
+
+.text-holder {
+  width: 50%;
+  padding-left: 95px;
+  padding-right: 135px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.image-holder {
+  width: 50%;
+}
+
+.img-wrap {
+  height: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}

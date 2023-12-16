@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Intro from './Intro';
+// import Intro from './Intro';
 
 
 const ContentGrid = () => {
@@ -14,7 +14,7 @@ const ContentGrid = () => {
     return (
         <section className='contentGrid grid__parallax dark height__full'>
             <div className='container'>
-                <Intro {...intro} />
+                {/* <Intro {...intro} /> */}
                 <div className='wrapper flex flex-wrap justify-between gap-[3rem] mt-[4.8rem]'>
                     <div className='contentGrid__item w-full lg-up:w-[calc(33.33%-2rem)] tablet:w-[calc(50%-2rem)] phablet:w-[calc(50%-2rem)]'>
                         <Link href={'/'}>
