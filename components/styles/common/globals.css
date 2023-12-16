@@ -652,3 +652,8 @@ section {
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="transparent", GradientType=1 );
 }
+
+.subtitle{
+  font-size: 25px;
+  font-weight: 400;
+}

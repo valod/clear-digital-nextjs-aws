@@ -4,5 +4,6 @@
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   "buttonLink": "#",
   "buttonText": "Let's get started",
-  "backgroundImage": "/banners/service_detail_banner_vector.png"
+  "backgroundImage": "/banners/service_detail_banner_vector.png",
+  "vector": true
 }
