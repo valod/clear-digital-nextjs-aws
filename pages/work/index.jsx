@@ -3,6 +3,7 @@ import Layout from '../../components/layout';
 import BannerSecond from '../../components/bannerSecond';
 import Footercta from '../../components/Footercta';
 import Slider from '../../components/logowithslider';
+import Introduction from '../../components/introduction';
 import Logowithcontent from '../../components/logowithcontent';
 import Cta from '../../components/ctaoverlay';
 export default function Work({ menuItems }) {
@@ -13,7 +14,8 @@ export default function Work({ menuItems }) {
                 description="ClearDigital"
             />
             <BannerSecond content='work' />
-            <Logowithcontent />
+            <Introduction/>
+            <Logowithcontent contentName='data'/>
             <Cta contentName={'work'}/>
             <Slider />
             <Footercta overlay={'semi'} />
