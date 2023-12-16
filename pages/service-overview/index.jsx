@@ -3,7 +3,7 @@ import Layout from '../../components/layout';
 import BannerSecond from '../../components/bannerSecond';
 import Sticky from '../../components/sticky'
 import CardGrid from "../../components/cardGrid"
-// import Cta from '../../components/ctaoverlay';
+import Cta from '../../components/ctaoverlay';
 import FooterCta from '../../components/Footercta';
 import Accordian from '../../components/accordianServiceOverview'
 
@@ -17,7 +17,7 @@ export default function serviceOverview({ menuItems }) {
 			<BannerSecond content='serviceOverview' />
 			<Sticky />
 			<CardGrid />
-			{/* <Cta /> */}
+			<Cta />
 			<Accordian />
 			<FooterCta/>
 

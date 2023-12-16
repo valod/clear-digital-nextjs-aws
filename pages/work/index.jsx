@@ -4,7 +4,7 @@ import BannerSecond from '../../components/bannerSecond';
 import ColTwoSlider from '../../components/ColTwoImageSlider'
 import Introduction from '../../components/introduction';
 import Logowithcontent from '../../components/logowithcontent';
-// import Cta from '../../components/ctaoverlay';
+import Cta from '../../components/ctaoverlay';
 import FooterCta from '../../components/Footercta';
 
 export default function Work({ menuItems }) {
@@ -18,7 +18,7 @@ export default function Work({ menuItems }) {
             <BannerSecond content='work' />
             <Introduction />
             <Logowithcontent contentName='data' />
-            {/* <Cta contentName={'work'} /> */}
+            <Cta contentName={'work'} />
             <ColTwoSlider />
             <FooterCta />
         </Layout>
