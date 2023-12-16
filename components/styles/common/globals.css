@@ -567,3 +567,15 @@ section {
   width: 250px;
 }
 
+@keyframes slideScroll {
+  0% {
+      transform: translateX(100%); /* Start from the right */
+  }
+  100% {
+      transform: translateX(-100%); /* Move to the left */
+  }
+}
+
+.animate-slideScroll {
+  animation: slideScroll 5s linear infinite;
+}

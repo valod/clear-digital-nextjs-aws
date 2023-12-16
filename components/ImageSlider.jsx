@@ -33,8 +33,8 @@ const ImageSlider = () => {
                             <Image src={'/man-holding-phone.webp'} width={800} height={1090} className="w-full h-full object-cover" alt="" />
                         </div>
                         <div className="imageSlider__text absolute left-0 xl-up:px-[9.5rem] laptop:px-[5.5rem] tablet:px-[2.5rem] md:px-[2rem] xl-up:bottom-[15rem] bottom-[7rem]">
-                            <div className="logo h-[4rem] max-w-[19.5rem] w-full mt-[2rem] md-up:mt-[3rem] ">
-                                <Image src={'/logo-digimarc.webp'} width={800} height={1090} className="w-full h-full object-contain blade-height" alt="" />
+                            <div className="logo h-[4rem] max-w-[19.5rem] w-full mt-[2rem] md-up:mt-[3rem] mb-[1.5rem]">
+                                <Image src={'/logo-digimarc.webp'} width={800} height={1090} className="w-full h-full object-contain" alt="" />
                             </div>
                             <h3 className="text-white leading-[1.1]">27% increase on click-through rates.</h3>
                             <Link href={'/'} className="btn-default mt-[3rem] text-white" target="_self">
@@ -47,7 +47,7 @@ const ImageSlider = () => {
                             <Image src={'/office-discussion.webp'} width={800} height={1090} className="w-full h-full object-cover blade-height" alt="" />
                         </div>
                         <div className="imageSlider__text absolute left-0 xl-up:px-[9.5rem] laptop:px-[5.5rem] tablet:px-[2.5rem] md:px-[2rem] xl-up:bottom-[15rem] bottom-[7rem]">
-                            <div className="logo h-[4rem] max-w-[19.5rem] w-full mt-[2rem] md-up:mt-[3rem] ">
+                            <div className="logo h-[4rem] max-w-[19.5rem] w-full mt-[2rem] md-up:mt-[3rem] mb-[1.5rem]">
                                 <Image src={'/logo-leadspace.webp'} width={800} height={1090} className="w-full h-full object-contain" alt="" />
                             </div>
                             <h3 className="text-white leading-[1.1]">53% increase on engagement metrics.</h3>
@@ -63,7 +63,7 @@ const ImageSlider = () => {
                             </video>
                         </div>
                         <div className="imageSlider__text absolute left-0 xl-up:px-[9.5rem] laptop:px-[5.5rem] tablet:px-[2.5rem] md:px-[2rem] xl-up:bottom-[15rem] bottom-[7rem]">
-                            <div className="logo h-[4rem] max-w-[19.5rem] w-full mt-[2rem] md-up:mt-[3rem] ">
+                            <div className="logo h-[4rem] max-w-[19.5rem] w-full mt-[2rem] md-up:mt-[3rem] mb-[1.5rem]">
                                 <Image src={'/logo-digimarc.webp'} width={800} height={1090} className="w-full h-full object-contain" alt="" />
                             </div>
                             <h3 className="text-white leading-[1.1]">27% increase on click-through rates.</h3>

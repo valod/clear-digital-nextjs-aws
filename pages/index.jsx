@@ -4,10 +4,9 @@ import HomepageHero from '../components/HeroBanner';
 import ImageSlider from '@/components/ImageSlider';
 import ContentGrid from '@/components/ContentGrid';
 import TabsContent from '@/components/TabsContent';
-import ColTwoSlider from '@/components/colTwoSlider';
+import ColTwoSlider from '@/components/ColTwoSlider';
 import LogoSlider from '@/components/LogoSlider';
 import ColTwoImageSlider from '@/components/ColTwoImageSlider';
-import FooterCta from '@/components/Footercta';
 
 export default function Home({ menuItems }) {
 	return (
@@ -17,6 +16,13 @@ export default function Home({ menuItems }) {
 				description="ClearDigital "
 			/>
 			<HomepageHero />
+			<ImageSlider />
+			<ContentGrid />
+			<TabsContent />
+			<ColTwoSlider />
+			<LogoSlider />
+			<ColTwoImageSlider />
+
 		</Layout>
 	)
 }

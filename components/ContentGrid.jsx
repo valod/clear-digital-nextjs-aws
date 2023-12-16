@@ -1,13 +1,20 @@
-import React from 'react'
-import Intro from './introduction'
-import Link from 'next/link'
-import Image from 'next/image'
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import Intro from './Intro';
+
 
 const ContentGrid = () => {
+    const intro = {
+        eyeBrowText: '20+ years of success.',
+        heading: 'We deliver results-driven digital experiences that get you to what’s',
+        highLightedText: 'next',
+        subText: 'Clear Digital is a Silicon Valley-based website design agency that helps you build and accelerate your web, brand, and digital marketing by providing expert, strategic, and data-informed solutions that deliver results.',
+    };
     return (
         <section className='contentGrid grid__parallax dark height__full'>
             <div className='container'>
-                <Intro />
+                <Intro {...intro} />
                 <div className='wrapper flex flex-wrap justify-between gap-[3rem] mt-[4.8rem]'>
                     <div className='contentGrid__item w-full lg-up:w-[calc(33.33%-2rem)] tablet:w-[calc(50%-2rem)] phablet:w-[calc(50%-2rem)]'>
                         <Link href={'/'}>
@@ -43,3 +50,4 @@ const ContentGrid = () => {
 }
 
 export default ContentGrid;
+
