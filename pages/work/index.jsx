@@ -5,6 +5,7 @@ import ColTwoSlider from '../../components/ColTwoImageSlider'
 import Introduction from '../../components/introduction';
 import Logowithcontent from '../../components/logowithcontent';
 // import Cta from '../../components/ctaoverlay';
+import FooterCta from '../../components/Footercta';
 
 export default function Work({ menuItems }) {
     return (
@@ -19,7 +20,7 @@ export default function Work({ menuItems }) {
             <Logowithcontent contentName='data' />
             {/* <Cta contentName={'work'} /> */}
             <ColTwoSlider />
-
+            <FooterCta />
         </Layout>
     )
 }

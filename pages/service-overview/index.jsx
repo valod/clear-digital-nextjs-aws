@@ -4,6 +4,7 @@ import BannerSecond from '../../components/bannerSecond';
 import Sticky from '../../components/sticky'
 import CardGrid from "../../components/cardGrid"
 // import Cta from '../../components/ctaoverlay';
+import FooterCta from '../../components/Footercta';
 import Accordian from '../../components/accordianServiceOverview'
 
 export default function serviceOverview({ menuItems }) {
@@ -18,6 +19,7 @@ export default function serviceOverview({ menuItems }) {
 			<CardGrid />
 			{/* <Cta /> */}
 			<Accordian />
+			<FooterCta/>
 
 		</Layout>
 	)
