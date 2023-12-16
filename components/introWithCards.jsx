@@ -182,6 +182,27 @@ function ParallaxText({ children, colors, baseVelocity = 100 }) {
                         </span>
                     ))}
                 </h2>
+                <h2 className="flex">
+                    {children.map((text, index) => (
+                        <span key={index} className={`text-${colors[index]}`}>
+                            {text}{' '}
+                        </span>
+                    ))}
+                </h2>
+                <h2 className="flex">
+                    {children.map((text, index) => (
+                        <span key={index} className={`text-${colors[index]}`}>
+                            {text}{' '}
+                        </span>
+                    ))}
+                </h2>
+                <h2 className="flex">
+                    {children.map((text, index) => (
+                        <span key={index} className={`text-${colors[index]}`}>
+                            {text}{' '}
+                        </span>
+                    ))}
+                </h2>
             </motion.div>
         </div>
     );
@@ -193,7 +214,7 @@ export default function App() {
             <ParallaxText baseVelocity={-40} colors={['gray', 'black']}>
                 {['Brand strategy &', 'Website']}
             </ParallaxText>
-            <ParallaxText baseVelocity={40} colors={['black', 'gray']}>
+            <ParallaxText baseVelocity={30} colors={['black', 'gray']}>
                 {['gragraphics', '& Content develphics']}
             </ParallaxText>
             <ParallaxText baseVelocity={-40} colors={['black', 'gray']}>
