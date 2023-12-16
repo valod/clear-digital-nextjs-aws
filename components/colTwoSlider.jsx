@@ -98,7 +98,7 @@ const ColTwoSlider = () => {
     const progressBarWidth = `${((currentSlide + 1) / totalSlides) * 100}%`;
 
     return (
-        <section className='colTwoSlider bg-black height__full-nav'>
+        <section className='colTwoSlider bg-black pb-0'>
             <div className='container'>
                 <div className='wrapper'>
                     <Slider {...settings}>

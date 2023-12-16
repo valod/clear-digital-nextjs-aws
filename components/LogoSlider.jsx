@@ -89,7 +89,7 @@ Object.assign(settings, { responsive: responsiveSettings });
 
 const LogoSlider = () => {
     return (
-        <section className="logoSlider bg-black overflow-hidden no-padding-top">
+        <section className="logoSlider bg-black overflow-hidden  pt-[80px]">
             <div className="">
                 <Slider {...settings}>
                     {logos.map((item, index) => {
