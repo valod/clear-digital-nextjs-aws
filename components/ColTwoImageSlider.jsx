@@ -84,7 +84,7 @@ const ColTwoImageSlider = () => {
         <section className='colTwoImageSlider bg-gray'>
             <div className='container'>
                 <div className='wrapper flex items-center justify-between lg:flex-wrap'>
-                    <div className='colTwoImageSlider__left pr-[130px] lg-up:min-w-[50%]'>
+                    <div className='colTwoImageSlider__left pr-[130px] lg:pr-0 lg-up:min-w-[50%]'>
                         <h3>Clear Digital news, thoughts, and <span className="underline-text text-pink">insights</span></h3>
                         <p className="mt-[2rem]">Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.</p>
                         <div className="mt-[3.5rem]">

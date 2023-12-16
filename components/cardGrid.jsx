@@ -78,7 +78,7 @@ export default function introWithCards({ content }) {
     const contentData = content === 'serviceDetail' ? serviceDetail : serviceOverview;
 
     return (
-        <section className="introWithCards pt-[406px] grid__parallax dark" id={content === 'serviceDetail' ? 'related-services' : 'services'}>
+        <section className="introWithCards pt-[406px] md:pt-[200px] grid__parallax dark" id={content === 'serviceDetail' ? 'related-services' : 'services'}>
             <div class="bg-text-lines absolute z-[1] top-0 -left-[800px]">
                 <ParalaxGrid />
             </div>
