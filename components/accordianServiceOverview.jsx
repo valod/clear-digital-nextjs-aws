@@ -36,7 +36,7 @@ const Accordion = ({ items }) => {
                                 className={`accordion-header ${activeIndex === index ? 'active' : ''} cursor-pointer max-w-[1170px]`}
                                 onClick={() => toggleAccordion(index)}
                             >
-                           <h4 className='text-[30px]'>{item.title}</h4>
+                           <h4 className=''>{item.title}</h4>
                             </div>
                             {activeIndex === index && (
                                 <div className="accordion-content max-w-[1170px]">
