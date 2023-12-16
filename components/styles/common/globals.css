@@ -599,12 +599,12 @@ section {
 .colTwoSlider .slick-slide {
   margin: 0 100px;
 }
-.counter-arrow{
+.counter-arrow {
   position: relative;
   padding-left: 52px;
 }
-.counter-arrow::before{
-  content: '';
+.counter-arrow::before {
+  content: "";
   position: absolute;
   width: 52px;
   height: 102px;
@@ -615,4 +615,40 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.logoSlider::after {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background: hsla(0, 0%, 0%, 1);
+
+  background: linear-gradient(
+    270deg,
+    hsla(0, 0%, 0%, 1) 0%,
+    hsla(0, 0%, 0%, 0.1) 110%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="transparent", GradientType=1 );
+}
+.logoSlider::before {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: hsla(0, 0%, 0%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(0, 0%, 0%, 1) 0%,
+    hsla(0, 0%, 0%, 0.1) 110%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="transparent", GradientType=1 );
 }

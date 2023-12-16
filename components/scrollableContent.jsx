@@ -1,130 +1,69 @@
-// import React from "react";
-// import Image from "next/image";
-// import Link from "next/link";
-
-// export default function ScrollableContent() {
-//     return (
-//         <section class="content-with-img no-padding" id="our-process">
-//             <div class="column-wrapper">
-//                 <div class="inner-wrap flex bg-gray relative">
-//                     <div class="text-holder w-1/2 pl-[95px] pr-[135px]">
-//                         <div class="inner-content h-full flex flex-col justify-between">
-//                             <div class="title-wrap pt-[149px]">
-//                                 <h6 className="mb-[19px]">Our process</h6>
-//                                 <h3>Nisl <span className='underline-black text-pink'>pulvinar</span> consectet nec set adipiscing</h3>
-//                             </div>
-//                             <div class="body-wrap pb-[151px]">
-//                                 <h4>Lorem ipsum dolor sit amet consectetur</h4>
-//                                 <p className="mt-[19px]">Lorem ipsum dolor sit amet consectetur. Pharetra dictum faucibus proin turpis sit. Tortor amet sit nunc libero non nec suscipit volutpat in. Viverra adipiscing dolor amet vitae. Malesuada vitae consectetur erat risus ac nibh. Lectus egestas adipiscing interdum hendrerit vitae consequat odio. Mattis imperdiet vitae tellus fringilla. Magna.</p>
-//                             </div>
-//                         </div>
-//                     </div>
-//                     <div class="image-holder w-1/2">
-//                         <div class="img-wrap h-full">
-//                             <Image width={800} height={1090} className='w-full' src="/service-detail/img1.png" alt="pulvinar" />
-//                         </div>
-//                     </div>
-
-//                 </div>
-//                 <div class="inner-wrap flex bg-gray">
-//                     <div class="text-holder w-1/2 pl-[95px] pr-[135px]">
-//                         <div class="inner-content h-full flex flex-col justify-between">
-//                             <div class="title-wrap pt-[149px]">
-//                                 <h6 className="mb-[19px]">Our process</h6>
-//                                 <h3>Nisl <span className='underline-black text-pink'>pulvinar</span> consectet nec set adipiscing</h3>
-//                             </div>
-//                             <div class="body-wrap pb-[151px]">
-//                                 <h4>Lorem ipsum dolor sit amet consectetur</h4>
-//                                 <p className="mt-[19px]">Lorem ipsum dolor sit amet consectetur. Pharetra dictum faucibus proin turpis sit. Tortor amet sit nunc libero non nec suscipit volutpat in. Viverra adipiscing dolor amet vitae. Malesuada vitae consectetur erat risus ac nibh. Lectus egestas adipiscing interdum hendrerit vitae consequat odio. Mattis imperdiet vitae tellus fringilla. Magna.</p>
-//                             </div>
-//                         </div>
-//                     </div>
-//                     <div class="image-holder w-1/2">
-//                         <div class="img-wrap">
-//                             <Image width={800} height={1090} className='w-full' src="/service-detail/img2.png" alt="pulvinar" />
-//                         </div>
-//                     </div>
-
-//                 </div>
-//                 <div class="inner-wrap flex bg-gray">
-//                     <div class="text-holder w-1/2 pl-[95px] pr-[135px]">
-//                         <div class="inner-content h-full flex flex-col justify-between">
-//                             <div class="title-wrap pt-[149px]">
-//                                 <h6 className="mb-[19px]">Our process</h6>
-//                                 <h3>Nisl <span className='underline-black text-pink'>pulvinar</span> consectet nec set adipiscing</h3>
-//                             </div>
-//                             <div class="body-wrap pb-[151px]">
-//                                 <h4>Lorem ipsum dolor sit amet consectetur</h4>
-//                                 <p className="mt-[19px]">Lorem ipsum dolor sit amet consectetur. Pharetra dictum faucibus proin turpis sit. Tortor amet sit nunc libero non nec suscipit volutpat in. Viverra adipiscing dolor amet vitae. Malesuada vitae consectetur erat risus ac nibh. Lectus egestas adipiscing interdum hendrerit vitae consequat odio. Mattis imperdiet vitae tellus fringilla. Magna.</p>
-//                             </div>
-//                         </div>
-//                     </div>
-//                     <div class="image-holder w-1/2">
-//                         <div class="img-wrap">
-//                             <Image width={800} height={1090} className='w-full' src="/service-detail/img3.png" alt="pulvinar" />
-//                         </div>
-//                     </div>
-
-//                 </div>
-//             </div>
-//         </section>
-//     )
-// }
-
-// import { motion, useAnimation } from "framer-motion";
-// import { useInView } from "react-intersection-observer";
-// import { useEffect } from "react";
-
-// const StickySection = () => {
-//   const controls = useAnimation();
-//   const [ref, inView] = useInView({
-//     triggerOnce: true,
-//   });
-
-//   const variants = {
-//     visible: { opacity: 1, y: 0 },
-//     hidden: { opacity: 0, y: "-100%" },
-//   };
-
-//   useEffect(() => {
-//     if (inView) {
-//       controls.start("visible");
-//     }
-//   }, [controls, inView]);
-
-//   return (
-//     <motion.div className="inner-wrap flex" ref={ref}>
-//       <motion.div className="text-holder w-1/2" variants={variants} initial="hidden" animate={controls}>
-//         {/* Your text content goes here */}
-//         <div className="inner-content">
-//           <div className="title-wrap">
-//             <h6 className="mb-[19px]">Our process</h6>
-//             <h3>Nisl <span className="underline-black text-pink">pulvinar</span> consectet nec set adipiscing</h3>
-//           </div>
-//           <div className="body-wrap">
-//             <h4>Lorem ipsum dolor sit amet consectetur</h4>
-//             <p className="mt-[19px]">Lorem ipsum dolor sit amet consectetur. Pharetra dictum faucibus proin turpis sit. Tortor amet sit nunc libero non nec suscipit volutpat in. Viverra adipiscing dolor amet vitae. Malesuada vitae consectetur erat risus ac nibh. Lectus egestas adipiscing interdum hendrerit vitae consequat odio. Mattis imperdiet vitae tellus fringilla. Magna.</p>
-//           </div>
-//         </div>
-//       </motion.div>
-//       <motion.div className="image-holder w-1/2" variants={variants} initial="hidden" animate={controls}>
-//         <div className="img-wrap">
-//           <img
-//             alt="pulvinar"
-//             loading="lazy"
-//             width="800"
-//             height="1090"
-//             decoding="async"
-//             data-nimg="1"
-//             className="w-full"
-//             style={{ color: "transparent" }}
-//             srcSet="/_next/image?url=%2Fservice-detail%2Fimg1.png&amp;w=828&amp;q=75 1x, /_next/image?url=%2Fservice-detail%2Fimg1.png&amp;w=1920&amp;q=75 2x"
-//             src="/_next/image?url=%2Fservice-detail%2Fimg1.png&amp;w=1920&amp;q=75"
-//           />
-//         </div>
-//       </motion.div>
-//     </motion.div>
-//   );
-// };
-
-// export default StickySection;
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import style from './styles/scrollablecontent.module.css';
+export default function ScrollableContent() {
+    return (
+        <section class="content-with-img no-padding" id="our-process">
+            <div class="column-wrapper">
+                <div class="inner-wrap flex bg-gray relative">
+                    <div class="text-holder w-1/2 pl-[95px] pr-[135px]">
+                        <div class="inner-content h-full flex flex-col justify-between">
+                            <div class="title-wrap pt-[149px]">
+                                <h6 className="mb-[19px]">Our process</h6>
+                                <h3>Nisl <span className='underline-black text-pink'>pulvinar</span> consectet nec set adipiscing</h3>
+                            </div>
+                            <div class="body-wrap pb-[151px]">
+                                <h4>Lorem ipsum dolor sit amet consectetur</h4>
+                                <p className="mt-[19px]">Lorem ipsum dolor sit amet consectetur. Pharetra dictum faucibus proin turpis sit. Tortor amet sit nunc libero non nec suscipit volutpat in. Viverra adipiscing dolor amet vitae. Malesuada vitae consectetur erat risus ac nibh. Lectus egestas adipiscing interdum hendrerit vitae consequat odio. Mattis imperdiet vitae tellus fringilla. Magna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class={`imageholder ${style.imageholder} ${style.imgone}  w-1/2 `}>
+                        <div class="img-wrap h-full">
+                            <Image width={800} height={1090} className='w-full  h-full' src="/service-detail/img1.png" alt="pulvinar" />
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-wrap flex bg-gray">
+                    <div class="text-holder w-1/2 pl-[95px] pr-[135px]">
+                        <div class="inner-content h-full flex flex-col justify-between">
+                            <div class="title-wrap pt-[149px]">
+                                <h6 className="mb-[19px]">Our process</h6>
+                                <h3>Nisl <span className='underline-black text-pink'>pulvinar</span> consectet nec set adipiscing</h3>
+                            </div>
+                            <div class="body-wrap pb-[151px]">
+                                <h4>Lorem ipsum dolor sit amet consectetur</h4>
+                                <p className="mt-[19px]">Lorem ipsum dolor sit amet consectetur. Pharetra dictum faucibus proin turpis sit. Tortor amet sit nunc libero non nec suscipit volutpat in. Viverra adipiscing dolor amet vitae. Malesuada vitae consectetur erat risus ac nibh. Lectus egestas adipiscing interdum hendrerit vitae consequat odio. Mattis imperdiet vitae tellus fringilla. Magna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class={` ${style.imageholder}  ${style.imgtwo} w-1/2 `}>
+                        <div class="img-wrap">
+                            <Image width={800} height={1090} className='w-full  h-full' src="/service-detail/img2.png" alt="pulvinar" />
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-wrap flex bg-gray">
+                    <div class="text-holder w-1/2 pl-[95px] pr-[135px]">
+                        <div class="inner-content h-full flex flex-col justify-between">
+                            <div class="title-wrap pt-[149px]">
+                                <h6 className="mb-[19px]">Our process</h6>
+                                <h3>Nisl <span className='underline-black text-pink'>pulvinar</span> consectet nec set adipiscing</h3>
+                            </div>
+                            <div class="body-wrap pb-[151px]">
+                                <h4>Lorem ipsum dolor sit amet consectetur</h4>
+                                <p className="mt-[19px]">Lorem ipsum dolor sit amet consectetur. Pharetra dictum faucibus proin turpis sit. Tortor amet sit nunc libero non nec suscipit volutpat in. Viverra adipiscing dolor amet vitae. Malesuada vitae consectetur erat risus ac nibh. Lectus egestas adipiscing interdum hendrerit vitae consequat odio. Mattis imperdiet vitae tellus fringilla. Magna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class={` ${style.imageholder}  ${style.imgthree} w-1/2 `}>
+                        <div class="img-wrap">
+                            <Image width={800} height={1090} className='w-full h-full' src="/service-detail/img3.png" alt="pulvinar" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}

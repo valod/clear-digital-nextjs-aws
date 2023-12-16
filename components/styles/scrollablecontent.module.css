@@ -1,0 +1,95 @@
+.imageholder {
+  position: relative;
+}
+.imgone::after {
+  content: "";
+  position: absolute;
+  top: 441px;
+  left: -240px;
+  width: 324px;
+  height: 164px;
+  z-index: 2;
+  background-image: url("/Illustrations.png");
+  background-size: cover;
+}
+@media (max-width: 1400px) {
+  .imgone::after {
+    left: -180px;
+    width: 300px;
+    height: 148px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1280px) {
+  .imgone::after {
+    left: -77px;
+    width: 270px;
+    height: 130px;
+  }
+}
+@media (max-width: 991px) {
+  .imgone::after {
+    display: none;
+  }
+}
+.imgtwo::after {
+  content: "";
+  position: absolute;
+  top: 441px;
+  left: -240px;
+  width: 666px;
+  height: 366px;
+  z-index: 2;
+  background-image: url("/Illustrations 2.png");
+  background-size: cover;
+}
+@media (max-width: 1400px) {
+  .imgtwo::after {
+    top: 420px;
+    left: -170px;
+    width: 600px;
+    height: 330px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1280px) {
+  .imgtwo::after {
+    top: 420px;
+    left: -95px;
+    width: 540px;
+    height: 295px;
+  }
+}
+@media (max-width: 991px) {
+  .imgtwo::after {
+    display: none;
+  }
+}
+.imgthree::after {
+  content: "";
+  position: absolute;
+  top: 314px;
+  left: -240px;
+  width: 305px;
+  height: 225px;
+  z-index: 2;
+  background-image: url("/Illustrations 3.png");
+  background-size: cover;
+}
+@media (max-width: 1400px) {
+  .imgthree::after {
+    left: -151px;
+    width: 270px;
+    height: 200px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1280px) {
+  .imgthree::after {
+    left: -63px;
+    width: 240px;
+    height: 177px;
+  }
+}
+@media (max-width: 991px) {
+  .imgthree::after {
+    display: none;
+  }
+}
