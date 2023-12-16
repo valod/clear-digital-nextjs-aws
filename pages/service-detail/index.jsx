@@ -5,7 +5,7 @@ import Sticky from '../../components/sticky'
 import ContentGrid from '../../components/ContentGridserviceDetail';
 import ColTwoSlider from '../../components/ColTwoImageSlider'
 // import ScrollableContent from '../../components/scrollableContent'
-// import Logowithcontent from '../../components/logowithcontent';
+import Logowithcontent from '../../components/logowithcontent';
 // import FooterCta from '../../components/Footercta';
 // import CardGrid from "../../components/cardGrid"
 export default function serviceDetail({ menuItems }) {
@@ -18,9 +18,9 @@ export default function serviceDetail({ menuItems }) {
             <BannerSecond content='serviceDetail' />
             <Sticky />
             <ContentGrid />
+            <Logowithcontent contentName="threecards"/>
             <ColTwoSlider/>
             {/* <ScrollableContent /> */}
-            {/* <Logowithcontent contentName="threecards"/> */}
             {/* <CardGrid content={'serviceDetail'} /> */}
             {/* <FooterCta /> */}
         </Layout>
