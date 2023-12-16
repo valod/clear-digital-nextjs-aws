@@ -7,7 +7,7 @@ import ColTwoSlider from '../../components/ColTwoImageSlider'
 // import ScrollableContent from '../../components/scrollableContent'
 import Logowithcontent from '../../components/logowithcontent';
 // import FooterCta from '../../components/Footercta';
-// import CardGrid from "../../components/cardGrid"
+import CardGrid from "../../components/cardGrid"
 export default function serviceDetail({ menuItems }) {
     return (
         <Layout footerMenu={menuItems}>
@@ -19,9 +19,9 @@ export default function serviceDetail({ menuItems }) {
             <Sticky />
             <ContentGrid />
             <Logowithcontent contentName="threecards"/>
+            <CardGrid content={'serviceDetail'} />
             <ColTwoSlider/>
             {/* <ScrollableContent /> */}
-            {/* <CardGrid content={'serviceDetail'} /> */}
             {/* <FooterCta /> */}
         </Layout>
     )
