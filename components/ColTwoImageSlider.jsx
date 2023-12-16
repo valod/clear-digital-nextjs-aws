@@ -6,7 +6,7 @@ import style from '../components/styles/colTwoImageSlider.module.css'
 
 const ImageTextCarousel = ({ imageSrc, heading, subText, url, linkText }) => {
     return (
-        <div className="card relative flex items-end 30.9rem xl-up:min-h-[55rem] laptop:min-h-[36rem] tablet:min-h-[49.3rem] phablet:min-h-[49.3rem] md-up:mr-[3rem]">
+        <div className="card relative flex items-end 30.9rem xl-up:min-h-[54rem] laptop:min-h-[36rem] tablet:min-h-[49.3rem] phablet:min-h-[49.3rem] md-up:mr-[3rem]">
             <div className="bg-img">
                 <Image src={imageSrc} width={692} height={551} className="w-full h-full object-cover" alt="" />
             </div>
@@ -81,10 +81,10 @@ const ColTwoImageSlider = () => {
     const progressBarWidth = `${((currentSlide + 1) / totalSlides) * 100}%`;
 
     return (
-        <section className='colTwoImageSlider'>
+        <section className='colTwoImageSlider bg-gray'>
             <div className='container'>
-                <div className='wrapper flex justify-between lg:flex-wrap'>
-                    <div className='colTwoImageSlider__left lg-up:min-w-[50%]'>
+                <div className='wrapper flex items-center justify-between lg:flex-wrap'>
+                    <div className='colTwoImageSlider__left pr-[130px] lg-up:min-w-[50%]'>
                         <h3>Clear Digital news, thoughts, and <span className="underline-text text-pink">insights</span></h3>
                         <p className="mt-[2rem]">Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.</p>
                         <div className="mt-[3.5rem]">
@@ -106,7 +106,7 @@ const ColTwoImageSlider = () => {
                         </div>
                     </div>
                 </div>
-                <div className={`logowrapper w-full  mt-[100px] relative flex flex-wrap justify-between`}>
+                <div className={`logowrapper w-full  mt-[125px] relative flex flex-wrap justify-between`}>
                     <div className={`w-[25%] xl:w-[100%]`}>
                         <h3 className={`relative inline ${style.star_logo}`}>Featured in:</h3>
                     </div>
