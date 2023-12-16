@@ -5,7 +5,7 @@ import HomepageHero from '../components/HeroBanner';
 // import ContentGrid from '@/components/ContentGrid';
 // import TabsContent from '@/components/TabsContent';
 import ColTwoSlider from '../components/ColTwoImageSlider';
-// import LogoSlider from '@/components/LogoSlider';
+import LogoSlider from '../components/LogoSlider'
 // import ColTwoImageSlider from '@/components/ColTwoImageSlider';
 import FooterCta from '../components/Footercta';
 
@@ -17,6 +17,7 @@ export default function Home({ menuItems }) {
 				description="ClearDigital "
 			/>
 			<HomepageHero />
+			<LogoSlider/>
 			<ColTwoSlider />
 			<FooterCta />
 		</Layout>

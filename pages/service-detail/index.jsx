@@ -8,6 +8,7 @@ import ColTwoSlider from '../../components/ColTwoImageSlider'
 import Logowithcontent from '../../components/logowithcontent';
 import FooterCta from '../../components/Footercta';
 import CardGrid from "../../components/cardGrid"
+
 export default function serviceDetail({ menuItems }) {
     return (
         <Layout footerMenu={menuItems}>

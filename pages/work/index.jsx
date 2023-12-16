@@ -6,6 +6,7 @@ import Introduction from '../../components/introduction';
 import Logowithcontent from '../../components/logowithcontent';
 import Cta from '../../components/ctaoverlay';
 import FooterCta from '../../components/Footercta';
+import LogoSlider from '../../components/LogoSlider'
 
 export default function Work({ menuItems }) {
     return (
@@ -19,6 +20,7 @@ export default function Work({ menuItems }) {
             <Introduction />
             <Logowithcontent contentName='data' />
             <Cta contentName={'work'} />
+            <LogoSlider/>
             <ColTwoSlider />
             <FooterCta />
         </Layout>

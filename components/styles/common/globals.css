@@ -587,3 +587,6 @@ section {
 .colTwoImageSlider .slick-track {
   display: flex;
 }
+.logoSlider .slick-track {
+  display: flex;
+}

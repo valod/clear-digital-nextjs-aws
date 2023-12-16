@@ -6,6 +6,7 @@ import CardGrid from "../../components/cardGrid"
 import Cta from '../../components/ctaoverlay';
 import FooterCta from '../../components/Footercta';
 import Accordian from '../../components/accordianServiceOverview'
+import LogoSlider from '../../components/LogoSlider'
 
 export default function serviceOverview({ menuItems }) {
 	return (
@@ -18,6 +19,7 @@ export default function serviceOverview({ menuItems }) {
 			<Sticky />
 			<CardGrid />
 			<Cta />
+			<LogoSlider/>
 			<Accordian />
 			<FooterCta/>
 
