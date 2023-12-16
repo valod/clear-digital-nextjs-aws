@@ -14,7 +14,7 @@ export default function Work({ menuItems }) {
             />
             <BannerSecond content='work' />
             <Logowithcontent />
-            <Cta />
+            <Cta contentName={'work'}/>
             <Slider />
             <Footercta overlay={'semi'} />
         </Layout>

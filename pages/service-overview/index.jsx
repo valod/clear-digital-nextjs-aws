@@ -3,7 +3,7 @@ import Layout from '../../components/layout';
 import BannerSecond from '../../components/bannerSecond';
 import Sticky from '../../components/sticky'
 import IntroWithCards from "../../components/introWithCards"
-import Cta from '../../components/ctaoverlayServiceOverview';
+import Cta from '../../components/ctaoverlay';
 import Footercta from '../../components/Footercta';
 import Accordian from '../../components/accordianServiceOverview'
 export default function serviceOverview({ menuItems }) {
