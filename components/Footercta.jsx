@@ -10,8 +10,8 @@ const FooterCta = ({ props }) => {
       </div>
       <div className='container'>
         <div className="">
-          <h6 className='text-white font-normal mb-[20px]'>Lorem ipsum dolor</h6>
-          <h2 className='h1 text-white mb-[30px]'>Let&#39;s talk <span className="circle">.</span></h2>
+        <h6 className='text-white  mb-[20px] text-[25px] font-normal'>Lorem ipsum dolor</h6>
+          <h2 className='h1 text-white mb-[30px] font-weight-[700]'>Let&#39;s talk <span className="circle">.</span></h2>
           <div>
             <Link className="pink-btn" href="#">Contact us</Link>
           </div>
