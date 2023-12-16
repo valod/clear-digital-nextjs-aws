@@ -15,12 +15,12 @@ export default function serviceOverview({ menuItems }) {
 				description="ClearDigital"
 			/>
 			<BannerSecond content='serviceOverview' />
-			{/* <Sticky /> */}
 			<IntroWithCards />
 			<Cta />
+			{/* <Sticky /> */}
 			{/* <ColTwoSlider/> */}
-			<Accordian />
-			<Footercta />
+			{/* <Accordian />
+			<Footercta /> */}
 		</Layout>
 	)
 }
