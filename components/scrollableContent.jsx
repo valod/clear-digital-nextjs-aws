@@ -6,10 +6,10 @@ export default function ScrollableContent() {
     return (
         <section class="content-with-img no-padding" id="our-process">
             <div class="column-wrapper">
-                <div class="inner-wrap flex bg-gray relative">
-                    <div class="text-holder w-1/2 pl-[95px] pr-[135px]">
-                        <div class="inner-content h-full flex flex-col justify-between">
-                            <div class="title-wrap pt-[149px]">
+                <div class="inner-wrap flex flex-wrap bg-gray relative">
+                    <div class="text-holder w-1/2 pl-[95px] pr-[135px] lg:w-[100%]">
+                        <div class="inner-content h-full flex flex-wrap flex-col justify-between">
+                            <div class="title-wrap pt-[149px] pb-[50px]">
                                 <h6 className="mb-[19px]">Our process</h6>
                                 <h3>Nisl <span className='underline-black text-pink'>pulvinar</span> consectet nec set adipiscing</h3>
                             </div>
@@ -19,7 +19,7 @@ export default function ScrollableContent() {
                             </div>
                         </div>
                     </div>
-                    <div class={`imageholder ${style.imageholder} ${style.imgone}  w-1/2 `}>
+                    <div class={`imageholder ${style.imageholder} ${style.imgone}  w-1/2 lg:w-[100%]`}>
                         <div class="img-wrap h-full">
                             <Image width={800} height={1090} className='w-full  h-full' src="/service-detail/img1.png" alt="pulvinar" />
                         </div>
@@ -28,7 +28,7 @@ export default function ScrollableContent() {
                 <div class="inner-wrap flex bg-gray">
                     <div class="text-holder w-1/2 pl-[95px] pr-[135px]">
                         <div class="inner-content h-full flex flex-col justify-between">
-                            <div class="title-wrap pt-[149px]">
+                            <div class="title-wrap pt-[149px] pb-[50px]">
                                 <h6 className="mb-[19px]">Our process</h6>
                                 <h3>Nisl <span className='underline-black text-pink'>pulvinar</span> consectet nec set adipiscing</h3>
                             </div>
@@ -45,9 +45,9 @@ export default function ScrollableContent() {
                     </div>
                 </div>
                 <div class="inner-wrap flex bg-gray">
-                    <div class="text-holder w-1/2 pl-[95px] pr-[135px]">
+                    <div class="text-holder w-1/2 pl-[95px] pr-[135px] ">
                         <div class="inner-content h-full flex flex-col justify-between">
-                            <div class="title-wrap pt-[149px]">
+                            <div class="title-wrap pt-[149px] pb-[50px]">
                                 <h6 className="mb-[19px]">Our process</h6>
                                 <h3>Nisl <span className='underline-black text-pink'>pulvinar</span> consectet nec set adipiscing</h3>
                             </div>
@@ -67,3 +67,12 @@ export default function ScrollableContent() {
         </section>
     )
 }
+
+
+
+
+
+
+
+
+

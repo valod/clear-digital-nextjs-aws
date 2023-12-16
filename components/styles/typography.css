@@ -249,11 +249,6 @@
   z-index: 0;
 }
 
-
-
-
-
-
 .inner-wrap {
   display: flex;
   background-color: #ccc; /* Set background color as needed */
@@ -277,4 +272,19 @@
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.content-with-img .text-holder {
+  /* width: 50%; */
+  padding-left: 95px;
+  padding-right: 135px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+@media (min-width: 992px) and (max-width: 1280px) {
+  .content-with-img .text-holder {
+    padding-left: 60px;
+    padding-right: 100px;
+  }
 }
