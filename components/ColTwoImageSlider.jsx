@@ -84,7 +84,7 @@ const ColTwoImageSlider = () => {
                         </div>
                     </div>
                     <div className='colTwoImageSlider__right lg-up:min-w-[50%] lg:w-full lg:mt-[4rem]'>
-                        <div className="custom-wrapper">
+                        <div className="custom-wrapper overflow-hidden relative">
                             <Slider {...settings}>
                                 {slides.map((slide, index) => (
                                     <div key={index}>
