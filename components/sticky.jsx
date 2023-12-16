@@ -201,7 +201,7 @@ function Sticky() {
                                                 className={`text-black ${visibleSections[0] === data.url
                                                     ? `${StickyStyle.activated}`
                                                     : ""
-                                                    } text-[18px] transition-all hover:text-pink font-bold pb-[22px] ease-in-out`}
+                                                    } text-[16px] transition-all hover:text-pink font-bold pb-[22px] ease-in-out`}
                                                 onClick={(e) =>
                                                     handleStickyClick(e, data.url, index, data.url, 50)
                                                 }
