@@ -19,7 +19,7 @@ html {
   }
 }
 
- :root {
+:root {
   --font-family-heading: "Poppins", sans-serif;
   --font-family-text: "Poppins", sans-serif;
   --font-permanent-marker: "Permanent Marker";
@@ -180,7 +180,8 @@ h6,
   font-family: var(--font-permanent-marker);
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: clamp(60px, 8.8vw, 140px);
   font-weight: bold;
   letter-spacing: -0.05em;
@@ -188,12 +189,14 @@ h1, .h1 {
 }
 
 @media only screen and (min-width: 1201px) {
-  h1, .h1 {
+  h1,
+  .h1 {
     font-size: 14rem;
   }
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: clamp(40px, 4.7vw, 75px);
   font-weight: bold;
   letter-spacing: -0.02em;
@@ -201,12 +204,14 @@ h2, .h2 {
 }
 
 @media only screen and (min-width: 1201px) {
-  h2, .h2 {
+  h2,
+  .h2 {
     font-size: 7.5rem;
   }
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: clamp(40px, 3.5vw, 55px);
   font-weight: bold;
   letter-spacing: -0.02em;
@@ -214,7 +219,8 @@ h3, .h3 {
 }
 
 @media only screen and (min-width: 1201px) {
-  h3, .h3 {
+  h3,
+  .h3 {
     font-size: 5.5rem;
   }
 }
@@ -226,7 +232,8 @@ h4,
 }
 
 @media only screen and (min-width: 1201px) {
-  h4, .h4 {
+  h4,
+  .h4 {
     font-size: 3rem;
   }
 }
@@ -235,11 +242,11 @@ h5,
 .h5 {
   font-size: clamp(20px, 1.6vw, 25px);
   line-height: 1;
-
 }
 
 @media only screen and (min-width: 1201px) {
-  h5, .h5 {
+  h5,
+  .h5 {
     font-size: 2.5rem;
   }
 }
@@ -252,7 +259,8 @@ h6,
 }
 
 @media only screen and (min-width: 1201px) {
-  h6, .h6 {
+  h6,
+  .h6 {
     font-size: 2rem;
   }
 }
@@ -334,7 +342,7 @@ ul:not([class]) li > ul ol,
 ol:not([class]) li > ul ol {
   --item-spacing: 0.33em;
   margin-block-start: var(--item-spacing);
-} 
+}
 
 table {
   border-collapse: collapse;
@@ -388,7 +396,6 @@ table tr:nth-child(even) {
   }
 }
 
-
 section {
   width: 100%;
   display: flex;
@@ -414,7 +421,7 @@ section {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --pink: #FA198C;
+  --pink: #fa198c;
   --white: #fff;
   --black: #000;
 }
@@ -426,9 +433,8 @@ section {
 .bg-black h5,
 .bg-black h6,
 .bg-black p {
-  color:#fff;
+  color: #fff;
 }
-
 
 /* miscellaneous */
 
@@ -466,9 +472,8 @@ section {
 }
 
 .blade-height {
-  height: var(--blade-view-height)
+  height: var(--blade-view-height);
 }
-
 
 /* @media only screen and (max-width: 991px) {
   .height__full-nav {
@@ -479,18 +484,18 @@ section {
 .grid__parallax:before {
   position: absolute;
   content: " ";
-  background: url('/Grid_Pattern_White.svg') center repeat fixed;
+  background: url("/Grid_Pattern_White.svg") center repeat fixed;
   background-size: 4rem;
   height: 100%;
   width: 100%;
   inset: 0;
-  opacity: .5;
+  opacity: 0.5;
   z-index: 1;
   background-attachment: fixed;
 }
 
 .grid__parallax.dark:before {
-  background: url('/Grid_Pattern_Black.svg') center repeat fixed;
+  background: url("/Grid_Pattern_Black.svg") center repeat fixed;
   background-size: 4rem;
 }
 
@@ -569,13 +574,16 @@ section {
 
 @keyframes slideScroll {
   0% {
-      transform: translateX(100%); /* Start from the right */
+    transform: translateX(100%); /* Start from the right */
   }
   100% {
-      transform: translateX(-100%); /* Move to the left */
+    transform: translateX(-100%); /* Move to the left */
   }
 }
 
 .animate-slideScroll {
   animation: slideScroll 5s linear infinite;
+}
+.colTwoImageSlider .slick-track {
+  display: flex;
 }
