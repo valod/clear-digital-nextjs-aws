@@ -55,7 +55,7 @@ const data = [
 
 const Logowithcontent = () => {
   return (
-    <section className="logowithcontent set-2 padding-top pb-0 sm:pt-[70px]">
+    <section className="logowithcontent padding-top pb-0 sm:pt-[70px]">
       <div className="container">
         <div className="intro w-full relative flex flex-wrap justify-between mb-[96px]">
           <div className="contentwrapper max-w-[690px] pr-[10px]">

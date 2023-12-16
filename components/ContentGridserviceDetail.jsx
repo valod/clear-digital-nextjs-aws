@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const ContentGrid = () => {
     return (
-        <section className='set-2 contentGrid grid__parallax dark pb-[236px]' id='overview'>
+        <section className='contentGrid grid__parallax dark pb-[236px]' id='overview'>
             <div className='container'>
                 <div className='intro'>
                     <div className='wrapper'>

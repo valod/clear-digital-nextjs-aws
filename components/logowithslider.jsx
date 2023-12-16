@@ -36,7 +36,7 @@ const logoImage = [
 
 const Logowithslider = () => {
     return (<>
-        <section className={`slidera set-2 ${style.slider} no-padding-top bg-black`}>
+        <section className={`slidera ${style.slider} no-padding-top bg-black`}>
             <div className={`slide-track ${style.slidetrack} relative`}>
                 {logoImage.map((item, index) => (
                     <div className="slide logowrap w-[210px] h-[84px] mx-[25px]" key={index}>
