@@ -1,6 +1,11 @@
 .padding-top {
   padding: 100px 0 100px 0;
 }
+@media (max-width: 991px) {
+  .padding-top {
+    padding: 50px 0 50px 0;
+  }
+}
 .set-2 h1 {
   font-size: 140px;
   color: var(--white);
