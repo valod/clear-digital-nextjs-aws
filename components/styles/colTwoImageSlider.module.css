@@ -1,0 +1,14 @@
+.star_logo{
+    position: relative;
+  }
+  .star_logo::after{
+      content: '';
+      position: absolute;
+      top:-35px;
+      right:-100px;
+      width: 80px;
+      height: 66px;
+      transform: rotate(14.594deg);
+      background-image: url('/Star.png');
+      background-size: cover;
+  }

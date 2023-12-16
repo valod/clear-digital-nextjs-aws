@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import Slider from 'react-slick';
 import React, { useState, useEffect } from 'react';
+import style from '../components/styles/colTwoImageSlider.module.css'
 
 const ImageTextCarousel = ({ imageSrc, heading, subText, url, linkText }) => {
     return (
@@ -106,11 +107,11 @@ const ColTwoImageSlider = () => {
                     </div>
                 </div>
                 <div className={`logowrapper w-full  mt-[100px] relative flex flex-wrap justify-between`}>
-                    <div className="headingwrap relative w-[25%]">
-                        <h3>Featured in:</h3>
+                    <div className={`w-[25%] xl:w-[100%]`}>
+                        <h3 className={`relative inline ${style.star_logo}`}>Featured in:</h3>
                     </div>
 
-                    <div className="logowrapper justify-between relative flex flex-wrap w-[65%]">
+                    <div className="logowrapper justify-between relative flex flex-wrap w-[65%] xl:w-full xl:mt-[60px]">
                         {logos.map((logo, index) => (
                             <div className="imgwrapcase max-w-[153px] max-h-[46px] w-full h-full" key={index}>
                                 <Image

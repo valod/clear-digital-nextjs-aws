@@ -39,7 +39,7 @@
   width: 666px;
   height: 366px;
   z-index: 2;
-  background-image: url("/Illustrations 2.png");
+  background-image: url("/Illustrations_two.png");
   background-size: cover;
 }
 @media (max-width: 1400px) {
@@ -71,7 +71,7 @@
   width: 305px;
   height: 225px;
   z-index: 2;
-  background-image: url("/Illustrations 3.png");
+  background-image: url("/Illustrations_three.png");
   background-size: cover;
 }
 @media (max-width: 1400px) {
