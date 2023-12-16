@@ -6,7 +6,7 @@ import ContentGrid from '../../components/ContentGridserviceDetail';
 import ScrollableContent from '../../components/scrollableContent'
 import Logowithcontent from '../../components/logowithcontent';
 import FooterCta from '../../components/Footercta';
-import IntroWithCards from "../../components/introWithCards"
+import CardGrid from "../../components/cardGrid"
 export default function serviceDetail({ menuItems }) {
     return (
         <Layout footerMenu={menuItems}>
@@ -19,7 +19,7 @@ export default function serviceDetail({ menuItems }) {
             <ContentGrid />
             <ScrollableContent />
             <Logowithcontent contentName="threecards"/>
-            <IntroWithCards content={'serviceDetail'} />
+            <CardGrid content={'serviceDetail'} />
             <FooterCta />
         </Layout>
     )
