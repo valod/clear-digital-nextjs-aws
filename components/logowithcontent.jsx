@@ -57,7 +57,7 @@ const Logowithcontent = ({ contentName }) => {
                 logo: '/cisco.svg',
                 hover_logo: '/cisco_white.svg',
                 heading: '80% vel consequat est. Donec semper neque quam eget.',
-                para: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
+                medium: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
                 border: true
             },
             {
@@ -65,7 +65,7 @@ const Logowithcontent = ({ contentName }) => {
                 logo: '/vmare.svg',
                 hover_logo: '/vmarewhite.svg',
                 heading: '80% vel consequat est. Donec semper neque quam eget.',
-                para: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
+                medium: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
                 border: true
             },
             {
@@ -73,7 +73,7 @@ const Logowithcontent = ({ contentName }) => {
                 logo: '/mcafee_black.png',
                 hover_logo: '/McAfee_white.svg',
                 heading: '80% vel consequat est. Donec semper neque quam eget.',
-                para: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
+                medium: 'Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.',
                 border: true
             },
             // Add other threecards objects here
@@ -102,10 +102,10 @@ const Logowithcontent = ({ contentName }) => {
                                     <Image className="absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100 left-0 top-0 w-full h-full" width={100} height={100} src={wrap.hover_logo} alt="image" />
                                 </div>
                             </div>
-                            <div className="contentwrapper w-[50%] md:w-full">
+                            <div className="contentwrapper pl-[15px] w-[50%] md:w-full">
                                 <div className={`content max-w-[570px] md:max-w-full group-hover:text-white transition-color duration-300`}>
                                     <h4 className={`heading pr-[50px] ${style.heading}`}>{wrap.heading}</h4>
-                                    <p className={`medium mt-[10px] letter-spacing-[-0.32px]  ${style.medium}`}>{wrap.medium}</p>
+                                    <p className={`medium letter-spacing-[-0.32px] mt-[10px] letter-spacing-[-0.32px]  ${style.medium}`}>{wrap.medium}</p>
                                 </div>
                             </div>
                         </div>
