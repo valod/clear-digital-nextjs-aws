@@ -13,6 +13,7 @@ export default function Work({ menuItems }) {
                 title="Services"
                 description="ClearDigital"
             />
+            
             <BannerSecond content='work' />
             <Introduction/>
             <Logowithcontent contentName='data'/>
