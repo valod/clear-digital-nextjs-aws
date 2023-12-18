@@ -7,7 +7,7 @@ export default function ScrollableContent() {
         <section class="content-with-img no-padding" id="our-process">
             <div class="column-wrapper">
                 <div class="inner-wrap flex flex-wrap bg-gray relative">
-                    <div class="text-holder w-1/2 pl-[95px] pr-[135px] lg:w-[100%] phablet:pl-[60px] phablet:pr-[100px] sm:pl-[40px] sm:pr-[40px]">
+                    <div class="text-holder w-1/2 pl-[95px] pr-[135px] lg:w-[100%] phablet:pl-[40px] phablet:pr-[100px] sm:pl-[20px] sm:pr-[20px]">
                         <div class="inner-content h-full flex flex-wrap flex-col justify-between">
                             <div class="title-wrap pt-[149px] pb-[50px] phablet:pt-[120px] sm:pt-[80px]">
                                 <h6 className="mb-[19px]">Our process</h6>
@@ -26,7 +26,7 @@ export default function ScrollableContent() {
                     </div>
                 </div>
                 <div class="inner-wrap flex flex-wrap bg-gray">
-                    <div class="text-holder w-1/2 pl-[95px] pr-[135px] lg:w-[100%] phablet:pl-[60px] phablet:pr-[100px] sm:pl-[20px] sm:pr-[20px]">
+                    <div class="text-holder w-1/2 pl-[95px] pr-[135px] lg:w-[100%] phablet:pl-[40px] phablet:pr-[100px] sm:pl-[20px] sm:pr-[20px]">
                         <div class="inner-content h-full flex flex-col justify-between">
                             <div class="title-wrap pt-[149px] pb-[50px] phablet:pt-[120px] sm:pt-[80px]">
                                 <h6 className="mb-[19px]">Our process</h6>
@@ -45,7 +45,7 @@ export default function ScrollableContent() {
                     </div>
                 </div>
                 <div class="inner-wrap flex flex-wrap bg-gray">
-                    <div class="text-holder w-1/2 pl-[95px] pr-[135px] lg:w-[100%] phablet:pl-[60px] phablet:pr-[100px] sm:pl-[20px] sm:pr-[20px]">
+                    <div class="text-holder w-1/2 pl-[95px] pr-[135px] lg:w-[100%] phablet:pl-[40px] phablet:pr-[100px] sm:pl-[20px] sm:pr-[20px]">
                         <div class="inner-content h-full flex flex-col justify-between">
                             <div class="title-wrap pt-[149px] pb-[50px] phablet:pt-[120px] sm:pt-[80px]">
                                 <h6 className="mb-[19px]">Our process</h6>
