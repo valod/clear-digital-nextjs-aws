@@ -83,7 +83,7 @@ const Logowithcontent = ({ contentName }) => {
     const content = contentData[contentName] || [];
 
     return (
-        <section className="logowithcontent py-0 sm:pt-[30px]">
+        <section className="logowithcontent py-0 ">
 
             {content.map((wrap, index) => (
                 <div key={index} className={`${style.wrapper} group ${wrap.border === true ? `border-t border-gray` : ''} area w-full relative border-darkGray`}>

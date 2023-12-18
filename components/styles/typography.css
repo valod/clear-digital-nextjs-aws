@@ -260,9 +260,9 @@
 }
 
 .text-holder {
-  width: 50%;
-  padding-left: 95px;
-  padding-right: 135px;
+  /* width: 50%; */
+  /* padding-left: 95px;
+  padding-right: 135px; */
   position: sticky;
   top: 0;
   z-index: 1;
@@ -281,8 +281,8 @@
 
 .content-with-img .text-holder {
   /* width: 50%; */
-  padding-left: 95px;
-  padding-right: 135px;
+  /* padding-left: 95px;
+  padding-right: 135px; */
   position: sticky;
   top: 0;
   z-index: 1;
