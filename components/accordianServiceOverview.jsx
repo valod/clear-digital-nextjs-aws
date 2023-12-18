@@ -25,7 +25,7 @@ const Accordion = ({ items }) => {
 
 
     return (
-        <section className="accordion bg-gray">
+        <section className="accordion set-2 bg-gray">
           <div className="container">
             <div className="intro mb-12">
               <h2>FAQs</h2>

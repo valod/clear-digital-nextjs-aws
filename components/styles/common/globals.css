@@ -599,9 +599,10 @@ section {
 .colTwoSlider .slick-slide {
   margin: 0 100px;
 }
-.counter-arrow {
-  position: relative;
-  padding-left: 52px;
+@media only screen and (max-width: 569px) and (min-width: 480px) {
+  .colTwoSlider .slick-slide {
+    margin: 0 30px;
+  }
 }
 .counter-arrow::before {
   content: "";
