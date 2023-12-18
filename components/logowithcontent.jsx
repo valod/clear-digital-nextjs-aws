@@ -83,10 +83,10 @@ const Logowithcontent = ({ contentName }) => {
     const content = contentData[contentName] || [];
 
     return (
-        <section className="logowithcontent py-0 ">
+        <section className="logowithcontent set-2 py-0 ">
 
             {content.map((wrap, index) => (
-                <div key={index} className={`${style.wrapper} group ${wrap.border === true ? `border-t border-gray` : ''} area w-full relative border-darkGray`}>
+                <div key={index} className={`${style.wrapper} group ${wrap.border === true ? `border-t border-gray` : ''} area  w-full relative border-darkGray`}>
                     {/* Your existing code for background image */}
                     {wrap.bgimg && (
                         <div className={`absolute top-0 left-0 w-full h-full ${style.bgimg} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>

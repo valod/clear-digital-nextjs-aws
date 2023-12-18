@@ -32,7 +32,7 @@ export default function BannerSecond({ content }) {
     } = getContent(content);
 
     return (
-        <section className={`${black_overlay ? ' dark__overlay' : ''} overflow-hidden bg-black banner-second grid__parallax min-h-[1088px] flex items-center md:min-h-[740px]`}>
+        <section className={`${black_overlay ? ' dark__overlay' : ''} overflow-hidden set-2 bg-black banner-second grid__parallax min-h-[1088px] flex items-center md:min-h-[740px]`}>
             {backgroundImage && <div className={`bg-img z-0 ${vector === true ? '!top-[74px] !w-[1400px] !h-[1017px] !l-[195px]' : ''}`}>
                 <Image src={backgroundImage} width={1600} height={1090} alt="vector" />
             </div>}

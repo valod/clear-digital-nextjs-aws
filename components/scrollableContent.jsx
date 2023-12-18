@@ -4,7 +4,8 @@ import Link from "next/link";
 import style from './styles/scrollablecontent.module.css';
 export default function ScrollableContent() {
     return (
-        <section class="content-with-img no-padding" id="our-process">
+        <section class="content-with-img no-padding set-2" id="our-process">
+            
             <div class="column-wrapper">
                 <div class="inner-wrap flex flex-wrap bg-gray relative">
                     <div class="text-holder w-1/2 pl-[95px] pr-[135px] lg:w-[100%] phablet:pl-[40px] phablet:pr-[100px] sm:pl-[20px] sm:pr-[20px]">
@@ -64,6 +65,8 @@ export default function ScrollableContent() {
                     </div>
                 </div>
             </div>
+          
+        
         </section>
     )
 }
