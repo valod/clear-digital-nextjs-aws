@@ -19,7 +19,7 @@ const ContentGrid = () => {
                     <div className='contentGrid__item w-full lg-up:w-[calc(33.33%-2rem)] tablet:w-[calc(50%-2rem)] phablet:w-[calc(50%-2rem)]'>
                         <Link href={'/'}>
                             <div className='contentGrid__icon mb-[3rem]'>
-                                <Image src={"/overview-1.png"} alt='' width={80} height={80} />
+                                <Image src={"/overview-1.png"} alt='img' width={80} height={80} />
                             </div>
                             <h4>Collaboration focus lorem ipsum.</h4>
                             <p className='mt-[2rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, amet expedita! Quis magnam quos odit earum quidem quod voluptates? Ex.</p>
@@ -28,7 +28,7 @@ const ContentGrid = () => {
                     <div className='contentGrid__item w-full lg-up:w-[calc(33.33%-2rem)] tablet:w-[calc(50%-2rem)] phablet:w-[calc(50%-2rem)]'>
                         <Link href={'/'}>
                             <div className='contentGrid__icon'>
-                                <Image src={"/overview-2.png"} alt='' width={80} height={80} />
+                                <Image src={"/overview-2.png"} alt='img' width={80} height={80} />
                             </div>
                             <h4>Collaboration focus lorem ipsum.</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, amet expedita! Quis magnam quos odit earum quidem quod voluptates? Ex.</p>
@@ -37,7 +37,7 @@ const ContentGrid = () => {
                     <div className='contentGrid__item w-full lg-up:w-[calc(33.33%-2rem)] tablet:w-[calc(50%-2rem)] phablet:w-[calc(50%-2rem)]'>
                         <Link href={'/'}>
                             <div className='contentGrid__icon'>
-                                <Image src={"/overview-3.png"} alt='' width={80} height={80} />
+                                <Image src={"/overview-3.png"} alt='img' width={80} height={80} />
                             </div>
                             <h4>Collaboration focus lorem ipsum.</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, amet expedita! Quis magnam quos odit earum quidem quod voluptates? Ex.</p>

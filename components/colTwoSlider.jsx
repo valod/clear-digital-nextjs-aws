@@ -31,7 +31,7 @@ const QuoteCarousel = ({ imageSrc, heading, author, designation, url, linkText, 
                     }
                     {logo &&
                         <div className='colTwoSlider__logo mt-[2.5rem]'>
-                            <Image src={logo} alt="" width={166} height={24} />
+                            <Image src={logo} alt="img" width={166} height={24} />
                         </div>
                     }
                     {url &&

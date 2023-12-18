@@ -39,7 +39,9 @@ const Accordion = ({ items }) => {
                            <h4 className=''>{item.title}</h4>
                             </div>
                             {activeIndex === index && (
-                                <div className="accordion-content max-w-[1170px]">
+                                <div className={`accordion-content max-w-[1170px] ${
+                                    activeIndex === index ? 'open' : 'closed'
+                                  }`}>
                                     <p>{item.content}</p>
                                     <div className="btnWrap mt-8"><a href="#" className='pink-btn'>Learn more</a></div>
                                 </div>

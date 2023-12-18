@@ -198,7 +198,7 @@ const TabsContent = (tab, imageSrc, heading, subText, lists, url, linkText) => {
                                                         <div className="flex gap-x-[3rem] md:flex-wrap">
                                                             <div className='tabsContent__left w-full md-up:w-[50%]'>
                                                                 <div className="max-h-[53.5rem] max-w-[45rem] h-full">
-                                                                    <Image src={card.imageSrc} width={894} height={1071} className="w-full" alt="" />
+                                                                    <Image src={card.imageSrc} width={894} height={1071} className="w-full" alt="img" />
                                                                 </div>
                                                             </div>
                                                             <div className='tabsContent__right w-full md-up:w-[50%]'>
@@ -231,7 +231,7 @@ const TabsContent = (tab, imageSrc, heading, subText, lists, url, linkText) => {
                                         <div className="flex gap-x-[3rem] md:flex-wrap">
                                             <div className='tabsContent__left w-full md-up:w-[50%]'>
                                                 <div className="max-h-[53.5rem] max-w-[45rem] h-full">
-                                                    <Image src={card.imageSrc} width={894} height={1071} className="w-full" alt="" />
+                                                    <Image src={card.imageSrc} width={894} height={1071} className="w-full" alt="img" />
                                                 </div>
                                             </div>
                                             <div className='tabsContent__right w-full md-up:w-[50%]'>
