@@ -12,3 +12,11 @@
       background-image: url('/Star.png');
       background-size: cover;
   }
+  @media screen and (max-width: 480px) {
+     .star_logo::after{
+         top:-50px;
+         right:-50px;
+         width: 60px;
+         height: 56px;
+     }
+  }

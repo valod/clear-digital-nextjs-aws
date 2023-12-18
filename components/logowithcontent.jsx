@@ -83,7 +83,7 @@ const Logowithcontent = ({ contentName }) => {
     const content = contentData[contentName] || [];
 
     return (
-        <section className="logowithcontent py-0 sm:pt-[70px]">
+        <section className="logowithcontent py-0 sm:pt-[30px]">
 
             {content.map((wrap, index) => (
                 <div key={index} className={`${style.wrapper} group ${wrap.border === true ? `border-t border-gray` : ''} area w-full relative border-darkGray`}>
@@ -97,7 +97,7 @@ const Logowithcontent = ({ contentName }) => {
                     <div className="container">
                         <div className={`w-full relative flex items-center flex-wrap h-[363px] laptop:h-[350px] lg:h-[350px] sm:h-[320px]`}>
                             <div className="imgwrapper w-[50%] pl-[120px] desktop:pl-[120px] laptop:pl-[60px] largedesktop:pl-[120px] tablet:pl-[50px] phablet:pl-[30px] md:w-full md:pl-0 ">
-                                <div className="logowrapper relative w-[190px] h-[69px]">
+                                <div className="logowrapper relative w-[190px] h-[69px] sm:w-[150px] sm:h-[50px] ">
                                     <Image className="absolute transition-opacity group-hover:opacity-0 duration-300 left-0 object-contain top-0 w-full h-full" width={100} height={100} src={wrap.logo} alt="image" />
                                     <Image className="absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100 left-0 top-0 w-full h-full" width={100} height={100} src={wrap.hover_logo} alt="image" />
                                 </div>
