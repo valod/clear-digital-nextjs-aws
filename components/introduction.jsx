@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Introduction = () => {
   return (
-<section className="intro padding-top">
+<section className="intro set-2 padding-top">
       <div className="container">
         <div className="wrapper set-2 w-full relative flex flex-wrap justify-between">
           <div className="contentwrapper max-w-[690px] pr-[10px]">

@@ -20,7 +20,7 @@ const ContentGrid = () => {
                     </div>
                 </div>
                 <div className='mainRow flex flex-wrap mt-[36px] -ml-[10px]'>
-                    <div className='w-threeCard relative pr-[90px] mx-2.5 md:w-full laptop:pr-[50px] tablet:w-halfWidth tablet:mb-[50px] md:mb-[50px] sm:pr-[0]'>
+                    <div className='w-threeCard relative pr-[90px] mx-2.5 md:w-full laptop:pr-[50px] lg:pr-[0] tablet:w-halfWidth tablet:mb-[50px] md:mb-[50px] sm:pr-[0]'>
                         <Link href={'#'} className='redirect'>  .  </Link>
                         <div className='max-w-[79px] max-h-[85px] mb-[30px] w-full sm:max-w-[60px] sm:h-[60px]'>
                             <Image src={"/overview-1.png"} alt='img' className='w-full h-full object-contain' width={80} height={80 } />
@@ -29,7 +29,7 @@ const ContentGrid = () => {
                         <p className='medium'>Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.</p>
 
                     </div>
-                    <div className='w-threeCard relative pr-[90px] mx-2.5 md:w-full laptop:pr-[50px] tablet:w-halfWidth tablet:mb-[50px] md:mb-[50px] sm:pr-[0]'>
+                    <div className='w-threeCard relative pr-[90px] mx-2.5 md:w-full laptop:pr-[50px] lg:pr-[0]  tablet:w-halfWidth tablet:mb-[50px] md:mb-[50px] sm:pr-[0]'>
                         <Link href={'#'} className='redirect'>  .  </Link>
                         <div className='max-w-[79px] max-h[85px] mb-[30px] w-full sm:h-[60px]'>
                             <Image src={"/overview-2.png"} alt='img' className='w-full h-full object-contain' width={80} height={80} />
@@ -38,7 +38,7 @@ const ContentGrid = () => {
                         <p className='medium'>Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.</p>
 
                     </div>
-                    <div className='w-threeCard relative pr-[90px] mx-2.5 md:w-full laptop:pr-[50px] tablet:w-halfWidth sm:pr-[0]'>
+                    <div className='w-threeCard relative pr-[90px] mx-2.5 md:w-full laptop:pr-[50px] lg:pr-[0]  tablet:w-halfWidth sm:pr-[0]'>
                         <Link href={'#'} className='redirect'>  .  </Link>
                         <div className='max-w-[79px] max-h[85px] mb-[30px] w-full sm:h-[60px]'>
                             <Image src={"/overview-3.svg"} alt='img' className='w-full h-full object-contain' width={80} height={80} />
