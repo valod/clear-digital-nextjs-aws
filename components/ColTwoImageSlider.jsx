@@ -88,7 +88,7 @@ const ColTwoImageSlider = () => {
                         <h3>Clear Digital news, thoughts, and <span className="underline-text text-pink">insights</span></h3>
                         <p className="mt-[2rem]">Torem ipsum dolor sit amet, consectetur adipiscing at elit. Nunc vulputate libero dolore aliqua et.</p>
                         <div className="mt-[3.5rem]">
-                            <Link href={'/'} className="pink-btn lg:w-full lg:text-center">View all Insights</Link>
+                            <Link href={'/'} className="pink-btn lg:text-center">View all Insights</Link>
                         </div>
                     </div>
                     <div className='colTwoImageSlider__right lg-up:min-w-[50%] lg:w-full lg:mt-[4rem]'>
@@ -111,9 +111,9 @@ const ColTwoImageSlider = () => {
                         <h3 className={`relative inline ${style.star_logo}`}>Featured in:</h3>
                     </div>
 
-                    <div className="logowrapper justify-between relative flex flex-wrap w-[65%] xl:w-full xl:mt-[60px]">
+                    <div className="logowrapper justify-between relative flex flex-wrap w-[65%] xl:w-full xl:mt-[60px] md:justify-around">
                         {logos.map((logo, index) => (
-                            <div className="imgwrapcase max-w-[153px] max-h-[46px] w-full h-full tablet:px-[20px] md:w-1/2 md:max-w-[50%] md:px-[20px] md:mb-[30px]" key={index}>
+                            <div className="imgwrapcase max-w-[153px] max-h-[46px] w-full h-full tablet:px-[20px] md:px-[20px] md:mb-[30px]" key={index}>
                                 <Image
                                     src={logo.img}
                                     width={100}
