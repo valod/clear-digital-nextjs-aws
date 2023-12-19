@@ -7,7 +7,7 @@ import ColTwoImageSlider from '../../components/ColTwoImageSlider'
 import ScrollableContent from '../../components/scrollableContent'
 import Logowithcontent from '../../components/logowithcontent';
 import FooterCta from '../../components/Footercta';
-import CardGrid from "../../components/cardGrid"
+import CardGrid from "../../components/CardGrid"
 
 export default function serviceDetail({ menuItems }) {
     return (
