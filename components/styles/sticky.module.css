@@ -18,3 +18,8 @@
 .mainSticky ul li a.activated::after {
   width: 100%;
 }
+
+.sticky {
+  position: fixed;
+  top: 104px;
+}
