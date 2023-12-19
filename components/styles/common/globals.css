@@ -584,7 +584,7 @@ section {
 .animate-slideScroll {
   animation: slideScroll 5s linear infinite;
 }
-.colTwoImageSlider .slick-track {
+/* .colTwoImageSlider .slick-track {
   display: flex;
 }
 .logoSlider .slick-track {
@@ -592,7 +592,7 @@ section {
 }
 .colTwoSlider .slick-track {
   display: flex;
-}
+} */
 .colTwoSlider .slick-slide:first-child {
   margin-left: 0;
 }
