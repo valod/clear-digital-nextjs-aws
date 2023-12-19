@@ -5,7 +5,7 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   scroll-behavior: smooth;
 }
 
@@ -673,9 +673,4 @@ section {
   font-size: 2.5rem;
   font-weight: 400;
   letter-spacing: 0em;
-}
-
-.sticky {
-  position: fixed;
-  top: 104px;
 }

@@ -85,7 +85,7 @@ function Sticky() {
             if (attr === id) {
                 const topp = item.getBoundingClientRect().top;
                 // console.log(topp);
-                const d = scrollPosition + topp - 154 - stickyHeight;
+                const d = scrollPosition + topp - 104 - stickyHeight;
                 if (topp < 0) {
                     // d = d - headrHeight;
                     d - headrHeight;
