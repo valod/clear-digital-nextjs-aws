@@ -2,8 +2,22 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import style from './styles/scrollablecontent.module.css';
+import { useEffect } from "react";
 export default function ScrollableContent() {
+    useEffect(() => {
+        setTimeout(() => {
+            const section = document.querySelector(".content-with-img");
+            console.log(section);
+        }, 400);
+        // let distanceFromTop;
+
+        // if (sticky) {
+        //     distanceFromTop = sticky.getBoundingClientRect().top;
+        // }
+    }, [])
+
     return (
+
         <section class="content-with-img no-padding set-2" id="case-studies">
             <div className={`${style.scrollerContainer}`}>
                 <div class="column-wrapper">

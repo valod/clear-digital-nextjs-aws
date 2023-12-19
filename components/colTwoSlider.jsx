@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const QuoteCarousel = ({ imageSrc, heading, author, designation, url, linkText, count, denotation, subText, logo }) => {
     return (
-        <div className='colTwoSlider__item' id='case-studies'>
+        <div className='colTwoSlider__item'>
             <div className='colTwoSlider__item--inner flex justify-between gap-x-[6rem] lg:flex-wrap'>
                 {imageSrc || count ? (
                     <div className='colTwoSlider__left w-full sm-up:grow-0 sm-up:shrink-0 sm-up:flex-[42%] sm-up:mx-auto sm-up:my-0'>
@@ -100,7 +100,7 @@ const ColTwoSlider = () => {
     const progressBarWidth = `${((currentSlide + 1) / totalSlides) * 100}%`;
 
     return (
-        <section className='colTwoSlider bg-black pb-0'>
+        <section className='colTwoSlider bg-black pb-0'  id='case-studies'>
             <div className='container'>
                 <div className='wrapper'>
                     <Slider {...settings}>
