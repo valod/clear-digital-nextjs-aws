@@ -113,7 +113,7 @@ const ColTwoImageSlider = () => {
 
                     <div className="logowrapper justify-between relative flex flex-wrap w-[65%] xl:w-full xl:mt-[60px] ">
                         {logos.map((logo, index) => (
-                            <div className="imgwrapcase max-w-[153px] max-h-[46px] w-full h-full tablet:px-[20px] md:px-[20px] md:mb-[30px]" key={index}>
+                            <div className="imgwrapcase max-w-[16.9rem] max-h-[7.7rem] w-full h-full tablet:px-[20px] md:px-[20px] md:mb-[30px]" key={index}>
                                 <Image
                                     src={logo.img}
                                     width={100}

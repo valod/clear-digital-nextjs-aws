@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const FooterCta = ({ props }) => {
   return (
-    <section className='footerCta grid__parallax set-2 height__full-nav '>
+    <section className='footerCta grid__parallax height__full-nav '>
       <div className='bg-img dark__overlay'>
         <Image src="/Image.svg" alt='image' height={100} width={100} className='w-full h-full object-cover' />
       </div>
