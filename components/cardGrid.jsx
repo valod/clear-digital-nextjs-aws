@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import ParalaxGrid from './paralaxText'
+import ParalaxGrid from '../components/ParalaxText'
 
 export default function introWithCards({ content }) {
 

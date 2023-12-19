@@ -31,12 +31,51 @@ function Sticky() {
         },
     ];
 
-
-    const [isSticky, setSticky] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const [isSticky, setIsSticky] = useState(false);
     const [headerHeight, setheaderHeight] = useState(0);
     const [stick, setstick] = useState(0);
     const [visibleSections, setVisibleSections] = useState([]);
     const [winWidth, isWinWidth] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollPosition(window.scrollY);
+        };
+
+        const handleSticky = () => {
+            const sticky = document.querySelector("#stickyNav");
+            
+            const headerHeight = document.querySelector("header")?.offsetHeight;
+
+            if (sticky && headerHeight !== undefined) {
+                console.log(scrollPosition);
+                const isSticky = window.scrollY > headerHeight;
+
+                // if (isSticky) {
+                //     sticky.classList.add('sticky');
+                // } else {
+                //     sticky.classList.remove('sticky');
+                // }
+            }
+        };
+
+        // In your CSS, define the 'sticky' class:
+        // .sticky {
+        //     position: fixed;
+        //     top: 0;
+        // }
+
+
+
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleSticky);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', handleSticky);
+        };
+    }, [scrollPosition, isSticky]);
 
 
     // useEffect(() => {
@@ -178,7 +217,7 @@ function Sticky() {
         <>
             {winWidth > 991 ? (
                 <section
-                    className={`${StickyStyle.mainSticky} block py-0 h-[100px] bg-white transition-all duration-300 ease-in-out shadow-bottom-white-shadow `}
+                    className={`${StickyStyle.mainSticky} ${isSticky ? 'sticky' : ''} block py-0 h-[100px] bg-white transition-all duration-300 ease-in-out shadow-bottom-white-shadow `}
                     id={"stickyNav"}
                 >
                     <div className="stickyOuter border-b border-black  z-[10] bg-white">
