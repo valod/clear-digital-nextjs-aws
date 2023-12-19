@@ -399,6 +399,7 @@ table tr:nth-child(even) {
 section {
   width: 100%;
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   justify-content: center;
   position: relative;
@@ -602,6 +603,15 @@ section {
   background-position: center;
   background-size: cover;
 }
+
+@media (max-width: 595px) {
+
+  .counter-arrow::before {
+    height: 58px;
+    background-size: contain;
+  }
+  
+}
 .counter-arrow::after{
   content: "";
   position: absolute;
@@ -615,6 +625,14 @@ section {
 .colTwoSlider__right{
   position: relative;
   margin-left: 70px;
+}
+@media (max-width: 991px) {
+
+  .colTwoSlider__right{
+    margin-left: 0;
+    padding-top: 50px;
+    margin-top: 70px !important;
+  }
 }
 
 .colTwoSlider__right::before{
@@ -631,7 +649,13 @@ section {
   background-position: center;
 }
 
+@media (max-width: 991px) {
 
+  .colTwoSlider__right::before{
+    top: -37px;
+    left: 0;
+  }
+}
 .logoSlider::after {
   position: absolute;
   content: "";
