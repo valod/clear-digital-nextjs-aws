@@ -38,49 +38,79 @@ function Sticky() {
     const [visibleSections, setVisibleSections] = useState([]);
     const [winWidth, isWinWidth] = useState(0);
 
+
+    const handleScroll = () => {
+        const sticky = document.querySelector("#stickyNav .stickyOuter");
+        const BannerHeight = document.querySelector(".banner-second")?.offsetHeight || 0;
+        const headerHeight = document.querySelector("header")?.offsetHeight;
+        if (sticky && headerHeight !== undefined) {
+            const isStickyNow = window.scrollY > (BannerHeight - 100);
+            setIsSticky(isStickyNow);
+        }
+    };
+
     useEffect(() => {
-        const handleScroll = () => {
-            setScrollPosition(window.scrollY);
-        };
-        const handleSticky = () => {
-            const sticky = document.querySelector("#stickyNav");
-            let distanceFromTop;
-        
-            if (sticky) {
-                distanceFromTop = sticky.getBoundingClientRect().top;
-                console.log("Distance from top:", distanceFromTop);
-            }
-        
-            const headerHeight = document.querySelector("header")?.offsetHeight;
-        
-            if (sticky && headerHeight !== undefined) {
-                console.log(scrollPosition);
-                const isSticky = distanceFromTop > headerHeight;
-        
-                if (isSticky) {
-                    sticky.classList.add('sticky');
-                } else {
-                    sticky.classList.remove('sticky');
-                }
-            }
-        };
-        
-        // In your CSS, define the 'sticky' class:
-        // .sticky {
-        //     position: fixed;
-        //     top: 0;
-        // }
-
-
-
         window.addEventListener('scroll', handleScroll);
-        window.addEventListener('scroll', handleSticky);
 
+        // Cleanup
         return () => {
             window.removeEventListener('scroll', handleScroll);
-            window.removeEventListener('scroll', handleSticky);
         };
-    }, [scrollPosition, isSticky]);
+    }, []);
+
+    // const debounce = (func, delay) => {
+    //     let timeoutId;
+    //     return (...args) => {
+    //         clearTimeout(timeoutId);
+    //         timeoutId = setTimeout(() => {
+    //             func(...args);
+    //         }, delay);
+    //     };
+    // };
+
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         setScrollPosition(window.scrollY);
+    //     };
+
+    //     const handleSticky = () => {
+    //         const sticky = document.querySelector("#stickyNav");
+    //         let distanceFromTop;
+
+    //         if (sticky) {
+    //             distanceFromTop = sticky.getBoundingClientRect().top;
+    //         }
+
+    //         const headerHeight = document.querySelector("header")?.offsetHeight;
+
+    //         if (sticky && headerHeight) {
+    //             const isSticky = distanceFromTop < 105;
+
+    //             if (isSticky) {
+    //                 sticky.classList.add('sticky');
+    //             } else {
+    //                 sticky.classList.remove('sticky');
+    //             }
+    //         }
+    //     };
+
+    //     const debouncedHandleSticky = debounce(handleSticky, 50);
+
+    //     // Use requestAnimationFrame for smooth scrolling
+    //     const handleScrollRAF = () => {
+    //         requestAnimationFrame(() => {
+    //             handleScroll();
+    //             debouncedHandleSticky();
+    //         });
+    //     };
+
+    //     window.addEventListener('scroll', handleScrollRAF);
+
+    //     // Cleanup
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScrollRAF);
+    //     };
+    // }, []);
 
 
     // useEffect(() => {
@@ -222,10 +252,10 @@ function Sticky() {
         <>
             {winWidth > 991 ? (
                 <section
-                    className={`${StickyStyle.mainSticky} ${isSticky ? 'sticky' : ''} block py-0 h-[100px] bg-white transition-all duration-300 ease-in-out shadow-bottom-white-shadow `}
+                    className={`${StickyStyle.mainSticky} block py-0 h-[100px] bg-white transition-all duration-300 ease-in-out shadow-bottom-white-shadow `}
                     id={"stickyNav"}
                 >
-                    <div className="stickyOuter border-b border-black  z-[10] bg-white">
+                    <div className={`${isSticky ? 'sticky' : ''} stickyOuter border-b border-black  z-[10] bg-white`}>
                         <div className="container">
                             <ul className="flex relative sm:justify-between py-[4.1rem]">
                                 {stickyData.map((data, index) => {

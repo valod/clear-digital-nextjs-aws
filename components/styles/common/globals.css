@@ -654,13 +654,15 @@ section {
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="transparent", GradientType=1 );
 }
 
-.subtitle{
+.subtitle {
   font-size: 2.5rem;
   font-weight: 400;
   letter-spacing: 0em;
 }
 
 .sticky {
-     position: fixed;
-    top: 105px;
- }
+  position: fixed;
+  top: 104px;
+  z-index: 9;
+  width: 100%;
+}
