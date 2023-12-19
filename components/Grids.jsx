@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-// import ParalaxGrid from '../components/ParalaxText'
+import ParalaxGrid from '../components/ParalaxText'
 
 export default function introWithCards({ content }) {
 
@@ -80,7 +80,7 @@ export default function introWithCards({ content }) {
     return (
         <section className="introWithCards set-2 pt-[406px] md:pt-[200px] grid__parallax dark" id={content === 'serviceDetail' ? 'related-services' : 'services'}>
             <div class="bg-text-lines absolute z-[1] top-0 -left-[800px]">
-                {/* <ParalaxGrid /> */}
+                <ParalaxGrid />
             </div>
             <div className="container">
                 <div className="w-mainRow flex flex-wrap relative z-[2] -ml-[10px]">
