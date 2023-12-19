@@ -103,5 +103,7 @@ export default function ParalexText() {
                 {['Support subscriptions', '& De']}
             </ParallaxText>
         </div>
+
+    
     );
 }
