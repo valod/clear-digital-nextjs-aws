@@ -83,7 +83,7 @@ const Logowithcontent = ({ contentName }) => {
     const content = contentData[contentName] || [];
 
     return (
-        <section className="logowithcontent set-2 py-0 ">
+        <section className="logowithcontent  py-0 ">
 
             {content.map((wrap, index) => (
                 <div key={index} className={`${style.wrapper} group ${wrap.border === true ? `border-t border-gray` : ''} area  w-full relative border-darkGray`}>
@@ -95,15 +95,15 @@ const Logowithcontent = ({ contentName }) => {
                     )}
 
                     <div className="container">
-                        <div className={`w-full relative flex items-center flex-wrap h-[363px] laptop:h-[350px] lg:h-[350px] sm:h-[320px]`}>
+                        <div className={`w-full relative flex items-center flex-wrap h-[40rem] laptop:h-[350px] lg:h-[350px] sm:h-[320px]`}>
                             <div className="imgwrapper w-[50%] pl-[120px] desktop:pl-[120px] laptop:pl-[60px] largedesktop:pl-[120px] tablet:pl-[50px] phablet:pl-[30px] md:w-full md:pl-0 ">
-                                <div className="logowrapper relative w-[190px] h-[69px] md:w-[160px] md:h-[60px] sm:w-[150px] sm:h-[50px] ">
+                                <div className="logowrapper relative w-[21rem] h-[8rem] md:w-[160px] md:h-[60px] sm:w-[150px] sm:h-[50px] ">
                                     <Image className="absolute transition-opacity group-hover:opacity-0 duration-300 left-0 object-contain top-0 w-full h-full" width={100} height={100} src={wrap.logo} alt="image" />
                                     <Image className="absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100 left-0 top-0 w-full h-full" width={100} height={100} src={wrap.hover_logo} alt="image" />
                                 </div>
                             </div>
                             <div className="contentwrapper pl-[15px] w-[50%] md:w-full md:pl-[0]">
-                                <div className={`content max-w-[570px] md:max-w-full group-hover:text-white transition-color duration-300`}>
+                                <div className={`content max-w-[63rem] md:max-w-full group-hover:text-white transition-color duration-300`}>
                                     <h4 className={`heading pr-[50px] ${style.heading}`}>{wrap.heading}</h4>
                                     <p className={`medium letter-spacing-[-0.32px] mt-[10px] letter-spacing-[-0.32px]  ${style.medium}`}>{wrap.medium}</p>
                                 </div>
