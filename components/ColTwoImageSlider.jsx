@@ -3,6 +3,8 @@ import Link from "next/link"
 import Slider from 'react-slick';
 import React, { useState, useEffect } from 'react';
 import style from '../components/styles/colTwoImageSlider.module.css'
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const ImageTextCarousel = ({ imageSrc, heading, subText, url, linkText }) => {
     return (
