@@ -4,13 +4,14 @@
   display: inline-block;
   background: #fa198c;
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 1.95rem;
   font-weight: 700;
   color: #fff;
   letter-spacing: 0.008em;
   border: 2px solid #fa198c;
   transition: all 0.3s ease-in-out;
 }
+
 
 @media only screen and (max-width: 991px) {
   .pink-btn {
@@ -33,7 +34,7 @@
   display: inline-block;
   padding-right: 25px;
   width: fit-content;
-  font-size: 20px;
+  font-size: 2rem;
 }
 .link-btn.black {
   color: #000;

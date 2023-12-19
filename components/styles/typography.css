@@ -253,6 +253,14 @@
   left: 0;
   z-index: -1;
 }
+.banner-second .bg-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
 
 .inner-wrap {
   display: flex;
