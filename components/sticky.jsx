@@ -178,21 +178,18 @@ function Sticky() {
         <>
             {winWidth > 991 ? (
                 <section
-                    className={`${StickyStyle.mainSticky} py-0 h-[100px] bg-white set-2 transition-all duration-300 ease-in-out shadow-bottom-white-shadow `}
+                    className={`${StickyStyle.mainSticky} block py-0 h-[100px] bg-white transition-all duration-300 ease-in-out shadow-bottom-white-shadow `}
                     id={"stickyNav"}
-                    data-aos="fade-in"
-                    data-aos-delay="500"
-                    data-aos-duration="1000"
                 >
                     <div className="stickyOuter border-b border-black  z-[10] bg-white">
                         <div className="container">
-                            <ul className="flex relative sm:justify-between py-[38px]">
+                            <ul className="flex relative sm:justify-between py-[4.1rem]">
                                 {stickyData.map((data, index) => {
                                     return (
                                         <li
                                             key={index}
                                             datatype={data.id}
-                                            className="pr-10 sm:px-1 relative tablet-mid:pr-[12px]"
+                                            className="mr-[5.5rem] sm:px-1 text-[16px] xl-up:text-[1.5rem] font-bold  relative tablet-mid:pr-[1rem]"
                                             onClick={toggleSubMenu}
                                         >
                                             <Link
@@ -201,7 +198,7 @@ function Sticky() {
                                                 className={`text-black ${visibleSections[0] === data.url
                                                     ? `${StickyStyle.activated}`
                                                     : ""
-                                                    } text-[16px] transition-all hover:text-pink font-bold pb-[22px] ease-in-out`}
+                                                    }transition-all hover:text-pink pb-[22px] ease-in-out`}
                                                 onClick={(e) =>
                                                     handleStickyClick(e, data.url, index, data.url, 50)
                                                 }
