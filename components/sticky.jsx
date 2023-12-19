@@ -144,10 +144,10 @@ function Sticky() {
         <>
             {winWidth > 991 ? (
                 <section
-                    className={`${StickyStyle.mainSticky} block py-0 h-[100px] bg-white transition-all duration-300 ease-in-out shadow-bottom-white-shadow `}
+                    className={`${StickyStyle.mainSticky} block py-0 h-[10rem] bg-white transition-all duration-300 ease-in-out shadow-bottom-white-shadow `}
                     id={"stickyNav"}
                 >
-                    <div className={`${isSticky ? 'sticky' : ''} w-full stickyOuter border-b border-black  z-[10] bg-white`}>
+                    <div className={`${isSticky ? 'sticky' : ''} h-[10rem] w-full stickyOuter border-b border-black  z-[10] bg-white`}>
                         <div className="container">
                             <ul className="flex relative sm:justify-between py-[4.1rem]">
                                 {stickyData.map((data, index) => {

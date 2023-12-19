@@ -23,65 +23,36 @@ function Sticky() {
             id: "4",
             title: "FAQ",
             url: "faq",
-        },
+        }
     ];
 
-
-    const [isSticky, setSticky] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const [isSticky, setIsSticky] = useState(false);
     const [headerHeight, setheaderHeight] = useState(0);
     const [stick, setstick] = useState(0);
     const [visibleSections, setVisibleSections] = useState([]);
     const [winWidth, isWinWidth] = useState(0);
 
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         let lastScrollTop = 0;
-    //         const sticky = document.querySelector("#stickyNav");
-    //         var topp = sticky?.getBoundingClientRect().top;
-    //         const headr = document.querySelector("header")?.offsetHeight || 0;
-    //         const handleNavScroll = () => {
-    //             topp = sticky?.getBoundingClientRect().top;
-    //             console.log(topp);
-    //             const currentScrollTop = window.scrollY;
-    //             const headr = document.querySelector("header")?.offsetHeight || 0;
-
-    //             if (topp < 154) {
-    //                 // If scrolled down more than 154 pixels from the top, add the 'fix' class
-    //                 sticky.style.top = '154px'
-    //                 sticky.style.position = 'fixed'
-    //             } else {
-    //                 // If not, remove the 'fix' class
-
-    //             }
-
-    //             lastScrollTop = currentScrollTop;
-    //         };
-
-
-    //         window.addEventListener("scroll", handleNavScroll);
-
-    //         return () => {
-    //             window.removeEventListener("scroll", handleNavScroll);
-    //         };
-    //     }, 100);
-    // }, []);
-    // useEffect(() => {
-    //     const headerElement = document.getElementById('header'); // Replace with your actual header ID
-
-    //     if (headerElement) {
-    //         const headerHeight = headerElement.clientHeight;
-    //         setHeight(headerHeight);
-    //     }
-    // }, []);
-    const auto = {
-        top: `auto`,
+    const handleScroll = () => {
+        const sticky = document.querySelector("#stickyNav .stickyOuter");
+        const BannerHeight = document.querySelector(".banner-second")?.offsetHeight || 0;
+        const headerHeight = document.querySelector("header")?.offsetHeight;
+        if (sticky && headerHeight !== undefined) {
+            const isStickyNow = window.scrollY > (BannerHeight - 100);
+            setIsSticky(isStickyNow);
+        }
     };
-    const headheight = {
-        top: headerHeight,
-    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     const toggleSubMenu = (event) => {
-        // const li = document.querySelectorAll(`.stickyOuter ul li a`)
         const parentListItem = event.target.closest('li');
         if (parentListItem) {
             const parentList = parentListItem.parentNode;
@@ -95,15 +66,14 @@ function Sticky() {
         }
         event.target.classList.add(StickyStyle.activated);
     };
-    const handleStickyClick = (e, id, borderActive, sectionId, offset) => {
 
+    const handleStickyClick = (e, id, borderActive, sectionId, offset) => {
 
         const x = document.querySelectorAll("section");
         e.preventDefault();
         const headrHeight = document.querySelector("header")?.offsetHeight || 0;
         const stickyHeight =
             document.getElementById("stickyNav")?.offsetHeight || 0;
-        // console.log("stick", stickyHeight);
 
         x.forEach((item) => {
             const attr = item.getAttribute("id");
@@ -158,12 +128,8 @@ function Sticky() {
         const handleResize = () => {
             isWinWidth(window.innerWidth);
         };
-
         window.addEventListener("resize", handleResize);
-        // Initial call to set window size
         handleResize();
-
-        // Clean up event listener on component unmount
         return () => {
             window.removeEventListener("resize", handleResize);
         };
@@ -173,21 +139,18 @@ function Sticky() {
         <>
             {winWidth > 991 ? (
                 <section
-                    className={`${StickyStyle.mainSticky} py-0 h-[100px] container bg-white transition-all duration-300 ease-in-out shadow-bottom-white-shadow `}
+                    className={`${StickyStyle.mainSticky} block py-0 h-[10rem] bg-white transition-all duration-300 ease-in-out shadow-bottom-white-shadow `}
                     id={"stickyNav"}
-                    data-aos="fade-in"
-                    data-aos-delay="500"
-                    data-aos-duration="1000"
                 >
-                    <div className="stickyOuter border-b border-black  z-[10] bg-white">
+                    <div className={`${isSticky ? 'sticky' : ''} h-[10rem] w-full stickyOuter border-b border-black  z-[10] bg-white`}>
                         <div className="container">
-                            <ul className="flex relative sm:justify-between py-[38px]">
+                            <ul className="flex relative sm:justify-between py-[4.1rem]">
                                 {stickyData.map((data, index) => {
                                     return (
                                         <li
                                             key={index}
                                             datatype={data.id}
-                                            className="pr-10 sm:px-1 relative tablet-mid:pr-[12px]"
+                                            className="mr-[5.5rem] sm:px-1 text-[16px] xl-up:text-[1.5rem] font-bold  relative tablet-mid:pr-[1rem]"
                                             onClick={toggleSubMenu}
                                         >
                                             <Link
@@ -196,7 +159,7 @@ function Sticky() {
                                                 className={`text-black ${visibleSections[0] === data.url
                                                     ? `${StickyStyle.activated}`
                                                     : ""
-                                                    } text-[16px] transition-all hover:text-pink font-bold pb-[22px] ease-in-out`}
+                                                    }transition-all hover:text-pink pb-[22px] ease-in-out`}
                                                 onClick={(e) =>
                                                     handleStickyClick(e, data.url, index, data.url, 50)
                                                 }
