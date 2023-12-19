@@ -8,6 +8,7 @@ import ScrollableContent from '../../components/scrollableContent'
 import Logowithcontent from '../../components/logowithcontent';
 import FooterCta from '../../components/Footercta';
 // import CardGrid from "../../components/CardGrid"
+import Grid from '../../components/Grids'
 
 export default function serviceDetail({ menuItems }) {
     return (
@@ -22,6 +23,7 @@ export default function serviceDetail({ menuItems }) {
             <ScrollableContent />
             <Logowithcontent contentName="threecards" />
             {/* <CardGrid content={'serviceDetail'} /> */}
+            <Grid content={'serviceDetail'} />
             <ColTwoImageSlider />
             <FooterCta />
         </Layout>

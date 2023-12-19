@@ -8,6 +8,7 @@ import FooterCta from '../../components/Footercta';
 import Accordian from '../../components/accordianServiceOverview'
 import LogoSlider from '../../components/LogoSlider'
 import ColTwoSlider from '../../components/colTwoSlider'
+import Grid from '../../components/Grids'
 
 export default function serviceOverview({ menuItems }) {
 	return (
@@ -18,7 +19,7 @@ export default function serviceOverview({ menuItems }) {
 			/>
 			<BannerSecond content='serviceOverview' />
 			<Sticky />
-			{/* <CardGrid /> */}
+			<Grid />
 			<Cta />
 			<ColTwoSlider/>
 			<LogoSlider/>
