@@ -10,12 +10,12 @@ const QuoteCarousel = ({ imageSrc, heading, author, designation, url, linkText, 
         <div className='colTwoSlider__item'>
             <div className='colTwoSlider__item--inner flex justify-between gap-x-[6rem] lg:flex-wrap'>
                 {imageSrc || count ? (
-                    <div className='colTwoSlider__left w-full sm-up:grow-0 sm-up:shrink-0 sm-up:flex-[50%] sm-up:mx-auto sm-up:my-0'>
+                    <div className='colTwoSlider__left w-full sm-up:grow-0 sm-up:shrink-0 sm-up:flex-[42%] sm-up:mx-auto sm-up:my-0'>
                         {imageSrc &&
                             <Image src={imageSrc} alt="" width={608} height={523} className='max-w-[60.8rem] w-full h-auto' />
                         }
                         {count &&
-                            <div className='counter counter-arrow'>
+                            <div className='counter relative counter-arrow'>
                                 <span className='h1 text-pink count'>{count}</span><span className='text-pink h1' >{denotation}</span>
                             </div>
                         }
@@ -24,20 +24,20 @@ const QuoteCarousel = ({ imageSrc, heading, author, designation, url, linkText, 
                         }
                     </div>
                 ) : null}
-                <div className='colTwoSlider__right lg:mt-[4rem]'>
+                <div className='colTwoSlider__right lg:mt-[4rem] top-[20px]'>
                     {heading &&
                         <h3>{heading}</h3>
                     }
                     {author &&
-                        <span className='block text-[16px] xl-up:text-[1.6rem] text-pink mt-[5rem]'><strong>{author}</strong> {designation}</span>
+                        <span className='block text-[16px] xl-up:text-[1.6rem] text-pink mt-[4rem]'><strong>{author}</strong> {designation}</span>
                     }
                     {logo &&
-                        <div className='colTwoSlider__logo mt-[2.5rem]'>
+                        <div className='colTwoSlider__logo mt-[2rem]'>
                             <Image src={logo} alt="img" width={166} height={24} />
                         </div>
                     }
                     {url &&
-                        <div className='mt-[3.5rem]'>
+                        <div className='mt-[3rem]'>
                             <Link href={url} className="btn-default text-white" target="_self">
                                 {linkText}
                             </Link>
@@ -60,7 +60,7 @@ const ColTwoSlider = () => {
             linkText: ' View case study'
         },
         {
-            heading: 'Aenean aliquet malesuada quam et placerat. Suspendisse pellentesque. Interdum et malesuada fames ac ante ipsum primis in.',
+            heading: 'Aenean aliquet malesuada quam et placerat. Suspendiss pellentes. Interdum et malesuada fames ac ante ipsum primis in.',
             count: '113',
             denotation: '%',
             subText: 'Aenean aliquet malesuada quam et placerat.',

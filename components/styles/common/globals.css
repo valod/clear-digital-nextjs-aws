@@ -584,6 +584,11 @@ section {
 .animate-slideScroll {
   animation: slideScroll 5s linear infinite;
 }
+
+.counter-arrow{
+  padding-left: 70px;
+}
+
 .counter-arrow::before {
   content: "";
   position: absolute;
@@ -597,6 +602,36 @@ section {
   background-position: center;
   background-size: cover;
 }
+.counter-arrow::after{
+  content: "";
+  position: absolute;
+  width: 52px;
+  height: 102px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.colTwoSlider__right{
+  position: relative;
+  margin-left: 70px;
+}
+
+.colTwoSlider__right::before{
+  content: '';
+  position: absolute;
+  left: -50px;
+  top:-22px;
+  width: 72px;
+  height: 60px;
+  transform: rotate(2.864deg);
+  background-image: url('/Quotations.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 .logoSlider::after {
   position: absolute;
   content: "";
@@ -640,14 +675,7 @@ section {
   letter-spacing: 0em;
 }
 
-.sticky-component {
-  transition: all 0.3s ease;
- }
- 
- .sticky-component.fixed {
+.sticky {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
- }
+  top: 104px;
+}

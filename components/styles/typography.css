@@ -1,5 +1,5 @@
 .padding-top {
-  padding: 100px 0 100px 0;
+  padding: 10rem 0;
 }
 @media (max-width: 991px) {
   .padding-top {
