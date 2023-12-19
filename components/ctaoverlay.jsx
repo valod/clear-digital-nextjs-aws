@@ -20,7 +20,7 @@ export default function Cta({ contentName }) {
     const content = getContent(contentName);
 
     return (
-        <section className='cta  flex items-center min-h-[109rem] laptop:min-h-[990px] tablet:min-h-[890px] md:min-h-[739px]'>
+        <section className='cta  flex items-center min-h-[109rem] laptop:min-h-[990px] tablet:min-h-[890px] md:min-h-[739px]' id={content.id}>
             <div className='bg-img light__overlay semi_black'>
                 <Image src={content.bgimg} alt='image' height={1600} width={1090} className='w-full h-full object-cover' />
             </div>
