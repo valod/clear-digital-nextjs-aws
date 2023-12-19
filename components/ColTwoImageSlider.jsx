@@ -83,7 +83,7 @@ const ColTwoImageSlider = () => {
     const progressBarWidth = `${((currentSlide + 1) / totalSlides) * 100}%`;
 
     return (
-        <section className='colTwoImageSlider bg-gray'>
+        <section className='colTwoImageSlider bg-gray' id="resources">
             <div className='container'>
                 <div className='wrapper flex items-center justify-between lg:flex-wrap'>
                     <div className='colTwoImageSlider__left pr-[130px] lg:pr-0 lg-up:min-w-[50%]'>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import style from './styles/scrollablecontent.module.css';
 export default function ScrollableContent() {
     return (
-        <section class="content-with-img no-padding set-2" id="our-process">
+        <section class="content-with-img no-padding set-2" id="case-studies">
             <div className={`${style.scrollerContainer}`}>
                 <div class="column-wrapper">
                     <div class="inner-wrap flex flex-wrap bg-gray relative">
