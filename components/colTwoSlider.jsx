@@ -24,7 +24,7 @@ const QuoteCarousel = ({ imageSrc, heading, author, designation, url, linkText, 
                         }
                     </div>
                 ) : null}
-                <div className='colTwoSlider__right lg:mt-[4rem] top-[20px]'>
+                <div className='colTwoSlider__right lg:mt-[4rem] pt-[20px]'>
                     {heading &&
                         <h3>{heading}</h3>
                     }
