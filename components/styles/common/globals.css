@@ -593,7 +593,7 @@ section {
 .colTwoSlider .slick-track {
   display: flex;
 } */
-.colTwoSlider .slick-slide:first-child {
+/* .colTwoSlider .slick-slide:first-child {
   margin-left: 0;
 }
 .colTwoSlider .slick-slide {
@@ -603,7 +603,7 @@ section {
   .colTwoSlider .slick-slide {
     margin: 0 30px;
   }
-}
+} */
 .counter-arrow::before {
   content: "";
   position: absolute;
