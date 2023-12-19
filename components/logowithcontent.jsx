@@ -95,9 +95,9 @@ const Logowithcontent = ({ contentName }) => {
                     )}
 
                     <div className="container">
-                        <div className={`w-full relative flex items-center flex-wrap h-[40rem] laptop:h-[350px] lg:h-[350px] sm:h-[320px]`}>
+                        <div className={`w-full relative flex items-center flex-wrap h-[36.3rem] laptop:h-[350px] lg:h-[350px] sm:h-[320px]`}>
                             <div className="imgwrapper w-[50%] pl-[120px] desktop:pl-[120px] laptop:pl-[60px] largedesktop:pl-[120px] tablet:pl-[50px] phablet:pl-[30px] md:w-full md:pl-0 ">
-                                <div className="logowrapper relative w-[21rem] h-[8rem] md:w-[160px] md:h-[60px] sm:w-[150px] sm:h-[50px] ">
+                                <div className="logowrapper relative w-[19rem] h-[6.9rem] md:w-[160px] md:h-[60px] sm:w-[150px] sm:h-[50px] ">
                                     <Image className="absolute transition-opacity group-hover:opacity-0 duration-300 left-0 object-contain top-0 w-full h-full" width={100} height={100} src={wrap.logo} alt="image" />
                                     <Image className="absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100 left-0 top-0 w-full h-full" width={100} height={100} src={wrap.hover_logo} alt="image" />
                                 </div>
