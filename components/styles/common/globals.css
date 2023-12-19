@@ -659,3 +659,8 @@ section {
   font-weight: 400;
   letter-spacing: 0em;
 }
+
+.sticky {
+     position: fixed;
+    top: 105px;
+ }

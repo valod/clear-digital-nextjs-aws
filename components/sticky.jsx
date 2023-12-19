@@ -42,24 +42,29 @@ function Sticky() {
         const handleScroll = () => {
             setScrollPosition(window.scrollY);
         };
-
         const handleSticky = () => {
             const sticky = document.querySelector("#stickyNav");
-            
+            let distanceFromTop;
+        
+            if (sticky) {
+                distanceFromTop = sticky.getBoundingClientRect().top;
+                console.log("Distance from top:", distanceFromTop);
+            }
+        
             const headerHeight = document.querySelector("header")?.offsetHeight;
-
+        
             if (sticky && headerHeight !== undefined) {
                 console.log(scrollPosition);
-                const isSticky = window.scrollY > headerHeight;
-
-                // if (isSticky) {
-                //     sticky.classList.add('sticky');
-                // } else {
-                //     sticky.classList.remove('sticky');
-                // }
+                const isSticky = distanceFromTop > headerHeight;
+        
+                if (isSticky) {
+                    sticky.classList.add('sticky');
+                } else {
+                    sticky.classList.remove('sticky');
+                }
             }
         };
-
+        
         // In your CSS, define the 'sticky' class:
         // .sticky {
         //     position: fixed;
