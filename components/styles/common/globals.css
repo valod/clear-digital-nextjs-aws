@@ -584,26 +584,6 @@ section {
 .animate-slideScroll {
   animation: slideScroll 5s linear infinite;
 }
-/* .colTwoImageSlider .slick-track {
-  display: flex;
-}
-.logoSlider .slick-track {
-  display: flex;
-}
-.colTwoSlider .slick-track {
-  display: flex;
-} */
-/* .colTwoSlider .slick-slide:first-child {
-  margin-left: 0;
-}
-.colTwoSlider .slick-slide {
-  margin: 0 100px;
-}
-@media only screen and (max-width: 569px) and (min-width: 480px) {
-  .colTwoSlider .slick-slide {
-    margin: 0 30px;
-  }
-} */
 .counter-arrow::before {
   content: "";
   position: absolute;
