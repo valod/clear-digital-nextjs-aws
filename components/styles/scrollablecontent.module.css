@@ -107,7 +107,7 @@
   top: 0;
   z-index: 5;
 }
-.innerWrap{
+/* .innerWrap{
   opacity: 0;
   visibility: hidden;
 }
@@ -115,4 +115,4 @@
 .innerWrap.show{
   opacity: 1;
   visibility: visible;
-}
+} */

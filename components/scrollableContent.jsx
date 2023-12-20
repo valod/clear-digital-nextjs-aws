@@ -8,55 +8,57 @@ const ScrollableContent = () => {
     const [isSticky, setIsSticky] = useState(false);
     const [visibleSections, setVisibleSections] = useState([true, false, false]);
 
-    // useEffect(() => {
-    //     const calculatePreviousSectionsHeight = () => {
-    //         const scrollableContent = scrollableContentRef.current;
-    //         if (scrollableContent) {
-    //             let totalHeight = 0;
-    //             let previousSections = scrollableContent.previousElementSibling;
 
-    //             while (previousSections) {
-    //                 totalHeight += previousSections.clientHeight;
-    //                 previousSections = previousSections.previousElementSibling;
-    //             }
 
-    //             setPreviousSectionsHeight(totalHeight);
-    //         }
-    //     };
+    useEffect(() => {
+        const calculatePreviousSectionsHeight = () => {
+            const scrollableContent = scrollableContentRef.current;
+            if (scrollableContent) {
+                let totalHeight = 0;
+                let previousSections = scrollableContent.previousElementSibling;
 
-    //     // Initial calculation and event listener setup
-    //     calculatePreviousSectionsHeight();
-    //     window.addEventListener('resize', calculatePreviousSectionsHeight);
+                while (previousSections) {
+                    totalHeight += previousSections.clientHeight;
+                    previousSections = previousSections.previousElementSibling;
+                }
 
-    //     // Cleanup for event listener
-    //     return () => {
-    //         window.removeEventListener('resize', calculatePreviousSectionsHeight);
-    //     };
-    // }, []);
+                setPreviousSectionsHeight(totalHeight);
+            }
+        };
 
-    // const handleScroll = () => {
-    //     const section = document.querySelector(".content-with-img");
+        // Initial calculation and event listener setup
+        calculatePreviousSectionsHeight();
+        window.addEventListener('resize', calculatePreviousSectionsHeight);
 
-    //     if (section) {
-    //         const distanceFromTop = section.getBoundingClientRect().top;
+        // Cleanup for event listener
+        return () => {
+            window.removeEventListener('resize', calculatePreviousSectionsHeight);
+        };
+    }, [previousSectionsHeight]); // Include previousSectionsHeight in the dependency array
 
-    //         const isStickyNow = window.scrollY > previousSectionsHeight;
-    //         setIsSticky(isStickyNow);
+    const handleScroll = () => {
+        const section = document.querySelector(".content-with-img");
 
-    //         const isShowFirst = window.scrollY > previousSectionsHeight + 100;
-    //         const isShowSecond = window.scrollY > isShowFirst + 100;
+        if (section) {
+            const distanceFromTop = section.getBoundingClientRect().top;
 
-    //         setVisibleSections([isStickyNow, isShowFirst, isShowSecond]);
-    //     }
-    // };
+            const isStickyNow = window.scrollY > previousSectionsHeight;
+            setIsSticky(isStickyNow);
 
-    // useEffect(() => {
-    //     window.addEventListener('scroll', handleScroll);
+            const isShowFirst = window.scrollY > previousSectionsHeight + 100;
+            const isShowSecond = window.scrollY > isShowFirst + 100;
 
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, [previousSectionsHeight]);
+            setVisibleSections([isStickyNow, isShowFirst, isShowSecond]);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [previousSectionsHeight]);
 
     // Content data array
     const contentData = [
@@ -86,7 +88,7 @@ const ScrollableContent = () => {
     console.log(contentData.sections);
 
     return (
-        <section className="content-with-img no-padding set-2 min-h-[100vh]" id="our-process" ref={scrollableContentRef}>
+        <section className="content-with-img no-padding set-2 min-h-[100vh] bg-gray" id="our-process" ref={scrollableContentRef}>
             <div className={`${style.scrollerContainer}`}>
                 <div className={`${isSticky ? style.stickTop : ''} w-full column-wrapper`}>
                     <div className="relative w-full h-auto z-[1]">
@@ -97,7 +99,7 @@ const ScrollableContent = () => {
                             </div>
                         ))}
                         {sections.map((content, index) => (
-                            <div key={index} className={`${style.innerWrap} inner-wrap flex flex-wrap bg-gray relative ${visibleSections[index] ? '' : style.hide}`}>
+                            <div key={index} className={`${style.innerWrap} inner-wrap flex flex-wrap relative ${visibleSections[index] ? '' : style.hide}`}>
                                 <div className="text-holder w-1/2 pl-[95px] pr-[135px] lg:w-[100%] tablet:pl-[40px] tablet:pr-[100px] phablet:pl-[40px] phablet:pr-[100px] sm:pl-[20px] sm:pr-[20px]">
                                     <div className="inner-content h-full flex flex-wrap flex-col justify-end">
                                         <div className={`${style.bodyWrap} body-wrap pb-[151px] phablet:pb-[120px] sm:pb-[10rem] transition-opacity duration-300`}>
