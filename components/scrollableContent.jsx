@@ -55,9 +55,9 @@ const ScrollableContent = () => {
 
             const isSticky = window.scrollY > previousSectionsHeight;
             const isShowSecond = window.scrollY > previousSectionsHeight + dash;
-            const isShowThird = window.scrollY > previousSectionsHeight + (dash*2);
-            const removesticky = window.scrollY > previousSectionsHeight + (dash*3);
-            setIsSticky(isSticky);
+            const isShowThird = window.scrollY > previousSectionsHeight + (dash * 2);
+            const removesticky = window.scrollY > previousSectionsHeight + (dash * 3);
+            // setIsSticky(isSticky);
             console.log(isSticky);
             const innerWrapElements = document.querySelectorAll(`.${style.innerWrap}`);
             if (isSticky) {
@@ -152,40 +152,9 @@ const ScrollableContent = () => {
 
     return (
         <>
-            {/* <section className={`content-with-img no-padding  set-2 bg-gray h-[100vh]`} id="our-process" ref={scrollableContentRef}>
-            <div className={`${style.scrollerContainer}`}>
-                <div className={`${isSticky ? style.stickTop : ''} h-[100vh] w-full column-wrapper`}>
-                    <div className="relative w-full h-auto z-[1]">
-                        {contentData.map((content, index) => (
-                            <div key={index} className="title-wrap absolute top-0 left-0 w-1/2 h-auto z-[4] pt-[300px] pl-[95px] pb-[50px] phablet:pt-[120px] sm:pt-[80px]">
-                                <h6 className="mb-[19px] subtitle">{content.subHeadibng}</h6>
-                                {content.heading && <h2 className="" dangerouslySetInnerHTML={{ __html: content.heading }} />}
-                            </div>
-                        ))}
-                        {sections.map((content, index) => (
-                        <div className={`${style.innerWrap} inner-wrap flex flex-wrap relative`}>
-                            <div className="text-holder w-1/2 pl-[95px] pr-[135px] lg:w-[100%] tablet:pl-[40px] tablet:pr-[100px] phablet:pl-[40px] phablet:pr-[100px] sm:pl-[20px] sm:pr-[20px]">
-                                <div className="inner-content h-full flex flex-wrap flex-col justify-end">
-                                    <div className={`${style.bodyWrap} body-wrap pb-[151px] phablet:pb-[120px] sm:pb-[10rem] transition-opacity duration-300`}>
-                                        <h4>{sections[i].title}</h4>
-                                        <p className="mt-[19px]">{sections[i].description}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className={`${style.imageholder} h-[100vh] ${style.imgWrap} w-1/2 lg:w-[100%] transition-opacity duration-300`}>
-                                <div className={`${style.imgWrap} img-wrap h-full`}>
-                                    <Image width={800} height={1090} className='w-full h-full' src={sections[i].imageSrc} alt="pulvinar" />
-                                </div>
-                            </div>
-                        </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-        </section> */}
-            <section className={`content-with-img no-padding  set-2 bg-gray h-[180vh]`} id="our-process" ref={scrollableContentRef}>
-                <div className={`${style.scrollerContainer}`}>
-                    <div className={`${isSticky ? style.stickTop : ''} h-[180vh] z-[5] w-full column-wrapper`}>
+            <section className={`${style.contentWithImg} content-with-img no-padding block set-2 bg-gray h-[200vh]`} id="our-process" ref={scrollableContentRef}>
+                <div className={`${style.scrollerContainer} sticky top-0`}>
+                    <div className={`${isSticky ? style.stickTop : ''} sticky top-0 h-[100vh] z-[5] w-full column-wrapper`}>
                         <div className="relative w-full h-auto z-[1]">
                             {contentData.map((content, index) => (
                                 <div key={index} className="title-wrap absolute top-0 left-0 w-1/2 h-auto z-[4] pt-[300px] pl-[95px] pb-[50px] phablet:pt-[120px] sm:pt-[80px]">

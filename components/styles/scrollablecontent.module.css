@@ -120,3 +120,6 @@
   visibility: visible;
   height: 100vh;
 }
+.contentWithImg{
+  overflow: unset;
+}

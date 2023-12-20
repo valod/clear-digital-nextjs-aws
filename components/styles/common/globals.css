@@ -5,8 +5,7 @@
 html,
 body {
   max-width: 100vw;
-  /* overflow-x: hidden; */
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 html {
@@ -453,6 +452,33 @@ section {
   background: url(/images/marker-underline-white.svg) no-repeat;
   background-size: contain;
 }
+
+.underline-white,
+.underline-black {
+  position: relative;
+}
+
+.underline-white:after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  height: 41%;
+  width: 102%;
+  background: url(/white_marker_underline.png) no-repeat;
+  background-size: contain;
+}
+.underline-black:after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  height: 41%;
+  width: 102%;
+  background: url(/black_marker_underline.png) no-repeat;
+  background-size: contain;
+}
+
 
 .eyebrow__text {
   font-weight: 100;
