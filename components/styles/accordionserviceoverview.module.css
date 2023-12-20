@@ -5,10 +5,38 @@
     transition: max-height 0.3s ease-out;
 }
 
-.accordioncontent.open  {
-    max-height: 570px;
-  } 
+
 
   .accordioncontent.closed {
     max-height: 0;
   } */
+  .accordioncontent.open::after  {
+     content: '';
+     position: absolute;
+     background-image: url('/expend.png');
+  } 
+  .accordioncontent::after{
+         content:'';
+         position: absolute;
+         right:39px;
+         top:62px;
+         width: 8.2rem;
+         height: 8.2rem;
+         background-image: url('/Cursor.png');
+         background-size: cover;
+         cursor: pointer;
+  }
+  @media screen and (max-width: 1280px) and (min-width: 992px) {
+    .accordioncontent::after{
+      width: 7.2rem;
+      height: 7.2rem;
+}
+  }
+  @media screen and (max-width: 991px)  {
+    .accordioncontent::after{
+      width: 6rem;
+      height: 6rem;
+      top:60px;
+      right:0;
+}
+  }
