@@ -83,10 +83,10 @@ const Logowithcontent = ({ contentName }) => {
     const content = contentData[contentName] || [];
 
     return (
-        <section className="logowithcontent min-h-[1/3] py-0 " id='case-studies'>
+        <section className="logowithcontent py-0 " id='case-studies'>
 
             {content.map((wrap, index) => (
-                <div key={index} className={`${style.wrapper} group ${wrap.border === true ? `border-t border-gray` : ''} area  w-full relative border-darkGray`}>
+                <div key={index} className={`${style.wrapper} group ${wrap.border === true ? `border-t border-gray` : ''} area height__one_third flex padding_flow_small w-full relative border-darkGray`}>
                     {/* Your existing code for background image */}
                     {wrap.bgimg && (
                         <div className={`absolute top-0 left-0 w-full h-full ${style.bgimg} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
@@ -95,7 +95,7 @@ const Logowithcontent = ({ contentName }) => {
                     )}
 
                     <div className="container">
-                        <div className={`w-full relative flex items-center flex-wrap h-[36.3rem] laptop:h-[350px] lg:h-[350px] sm:h-[320px]`}>
+                        <div className={`w-full relative h-full flex items-center flex-wrap`}>
                             <div className="imgwrapper w-[50%] pl-[120px] desktop:pl-[120px] laptop:pl-[60px] largedesktop:pl-[120px] tablet:pl-[50px] phablet:pl-[30px] md:w-full md:pl-0 ">
                                 <div className="logowrapper relative w-[19rem] h-[6.9rem] md:w-[160px] md:h-[60px] sm:w-[150px] sm:h-[50px] ">
                                     <Image className="absolute transition-opacity group-hover:opacity-0 duration-300 left-0 object-contain top-0 w-full h-full" width={100} height={100} src={wrap.logo} alt="image" />

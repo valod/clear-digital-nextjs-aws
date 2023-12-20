@@ -498,6 +498,13 @@ section {
   min-height: var(--blade-view-height);
 }
 
+.height__one_third {
+  min-height: calc(var(--blade-view-height) / 3);
+}
+.padding_flow_small{
+  padding: var(--flow-space-small) 0;
+}
+
 .blade-height {
   height: var(--blade-view-height);
 }

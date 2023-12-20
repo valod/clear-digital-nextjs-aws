@@ -25,8 +25,8 @@ const ColTwoImageSlider = () => {
     const logos = [
         { img: "/forbus.png" },
         { img: "/medium.png" },
-        { img: "/ipsum.png" },
-        { img: "/group.png" },
+        { img: "/ipsum.svg" },
+        { img: "/group.svg" },
     ];
 
     const slides = [
@@ -118,9 +118,9 @@ const ColTwoImageSlider = () => {
                             <div className="imgwrapcase max-w-[16.9rem] max-h-[7.7rem] w-full h-full tablet:px-[20px] md:px-[20px] lg:mb-[30px] md:mb-[30px] " key={index}>
                                 <Image
                                     src={logo.img}
-                                    width={169}
-                                    height={77}
-                                    className="w-full h-full object-none lg:object-contain"
+                                    width={1000}
+                                    height={1000}
+                                    className="w-full h-full object-contain lg:object-contain"
                                     alt="img"
                                 />
                             </div>

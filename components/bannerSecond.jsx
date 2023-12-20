@@ -36,7 +36,7 @@ export default function BannerSecond({ content }) {
                        {vector && <div className={`bg-img !z-0 ${vector === true ? '!top-auto !w-[1400px] !h-[1017px] !left-[13%]' : ''}`}>
                 <Image src={backgroundImage} width={1600} height={1090} alt="vector" />
             </div>}
-            {backgroundImage && <div className={`bg-img z-0 ${vector === true ? 'hidden' : ''}`}>
+            {backgroundImage && <div className={`bg-img !z-0 ${vector === true ? 'hidden' : ''}`}>
                 <Image src={backgroundImage} width={1600} height={1090} alt="vector" />
             </div>}
             <div className="container">
