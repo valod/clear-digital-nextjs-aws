@@ -4,10 +4,10 @@
   .star_logo::after{
       content: '';
       position: absolute;
-      top:-4.5rem;
-      right:-10rem;
-      width: 9.7rem;
-      height: 8rem;
+      top: -4.5rem;
+    right: -11rem;
+    width: 7.7rem;
+    height: 7rem;
       transform: rotate(14.594deg);
       background-image: url('/Star.png');
       background-size: cover;

@@ -118,9 +118,9 @@ const ColTwoImageSlider = () => {
                             <div className="imgwrapcase max-w-[16.9rem] max-h-[7.7rem] w-full h-full tablet:px-[20px] md:px-[20px] lg:mb-[30px] md:mb-[30px] " key={index}>
                                 <Image
                                     src={logo.img}
-                                    width={100}
-                                    height={100}
-                                    className="w-full h-full object-contain"
+                                    width={169}
+                                    height={77}
+                                    className="w-full h-full object-none"
                                     alt="img"
                                 />
                             </div>

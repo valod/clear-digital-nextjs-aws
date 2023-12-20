@@ -28,7 +28,7 @@ export default function Cta({ contentName }) {
                 <div className="content relative max-w-[129rem]">
 
                     <h2 className='h1 text-white mb-[20px]'>{content.heading} <span className="circle">.</span></h2>
-                    <p className='text-white mb-[30px] max-w-[81rem] font-normal'>{content.para}</p>
+                    <p className='text-white mb-[3rem] max-w-[81rem] font-normal'>{content.para}</p>
                     <div>
                         <Link className="pink-btn" href="#">{content.link}</Link>
                     </div>

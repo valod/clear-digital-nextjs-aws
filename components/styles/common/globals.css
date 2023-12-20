@@ -638,8 +638,8 @@ section {
 .colTwoSlider__right::before{
   content: '';
   position: absolute;
-  left: -5rem;
-  top:0;
+  left: -5.1rem;
+  top:5px;
   width: 7rem;
   height: 6rem;
   transform: rotate(2.864deg);
