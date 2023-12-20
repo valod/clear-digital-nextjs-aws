@@ -4,10 +4,10 @@
 .imgone::after {
   content: "";
   position: absolute;
-  top: 441px;
-  left: -240px;
-  width: 324px;
-  height: 164px;
+  top: 44.1rem;
+  left: -24rem;
+  width: 36rem;
+  height: 18.3rem;
   z-index: 2;
   background-image: url("/Illustrations.png");
   background-size: cover;
@@ -34,10 +34,10 @@
 .imgtwo::after {
   content: "";
   position: absolute;
-  top: 441px;
-  left: -240px;
-  width: 666px;
-  height: 366px;
+  top: 44.1rem;
+  left: -24rem;
+  width: 74rem;
+  height: 40.7rem;
   z-index: 2;
   background-image: url("/Illustrations_two.png");
   background-size: cover;
@@ -66,10 +66,10 @@
 .imgthree::after {
   content: "";
   position: absolute;
-  top: 314px;
-  left: -240px;
-  width: 305px;
-  height: 225px;
+  top: 31.4rem;
+  left: -24rem;
+  width: 33.9rem;
+  height: 25rem;
   z-index: 2;
   background-image: url("/Illustrations_three.png");
   background-size: cover;

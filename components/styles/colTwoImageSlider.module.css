@@ -4,8 +4,8 @@
   .star_logo::after{
       content: '';
       position: absolute;
-      top:-45px;
-      right:-100px;
+      top:-4.5rem;
+      right:-10rem;
       width: 9.7rem;
       height: 8rem;
       transform: rotate(14.594deg);

@@ -22,7 +22,7 @@ const ContentGrid = () => {
                 <div className='w-mainRow flex flex-wrap mt-[3.3rem] -ml-[10px]'>
                     <div className='w-threeCard relative pr-[10rem] mx-[10px] md:w-full laptop:pr-[50px] lg:pr-[0] tablet:w-halfWidth tablet:mb-[50px] md:mb-[50px] sm:pr-[0]'>
                         <Link href="/" className="redirect">.</Link>
-                        <div className='max-w-[79px] max-h-[85px] mb-[30px] w-full sm:max-w-[60px] sm:h-[60px]'>
+                        <div className='max-w-[7.9rem] max-h-[8.5rem] mb-[3rem] w-full sm:max-w-[60px] sm:h-[60px]'>
                             <Image src={"/overview-1.png"} alt='img' className='w-full h-full object-contain' width={80} height={80} />
                         </div>
                         <h4 className='mb-[10px]'>Lorem ipsum amet dolor sit.</h4>
@@ -31,7 +31,7 @@ const ContentGrid = () => {
                     </div>
                     <div className='w-threeCard relative pr-[10rem] mx-[10px] md:w-full laptop:pr-[50px] lg:pr-[0]  tablet:w-halfWidth tablet:mb-[50px] md:mb-[50px] sm:pr-[0]'>
                         <Link href={'#'} className='redirect'>  .  </Link>
-                        <div className='max-w-[79px] max-h[85px] mb-[30px] w-full sm:h-[60px]'>
+                        <div className='max-w-[7.9rem] max-h-[8.5rem] mb-[3rem] w-full sm:h-[60px]'>
                             <Image src={"/overview-2.png"} alt='img' className='w-full h-full object-contain' width={80} height={80} />
                         </div>
                         <h4 className='mb-[10px]'>Lorem ipsum amet dolor sit.</h4>
@@ -40,7 +40,7 @@ const ContentGrid = () => {
                     </div>
                     <div className='w-threeCard relative pr-[10rem] mx-[10px] md:w-full laptop:pr-[50px] lg:pr-[0]  tablet:w-halfWidth sm:pr-[0]'>
                         <Link href={'#'} className='redirect'>  .  </Link>
-                        <div className='max-w-[79px] max-h[85px] mb-[30px] w-full sm:h-[60px]'>
+                        <div className='max-w-[7.9rem] max-h-[8.5rem] mb-[3rem] w-full sm:h-[60px]'>
                             <Image src={"/overview-3.svg"} alt='img' className='w-full h-full object-contain' width={80} height={80} />
                         </div>
                         <h4 className='mb-[10px]'>Lorem ipsum amet dolor sit.</h4>

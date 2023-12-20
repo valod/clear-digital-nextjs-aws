@@ -587,14 +587,14 @@ section {
 }
 
 .counter-arrow{
-  padding-left: 70px;
+  padding-left: 7rem;
 }
 
 .counter-arrow::before {
   content: "";
   position: absolute;
-  width: 52px;
-  height: 102px;
+  width: 5rem;
+  height: 10rem;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -624,7 +624,7 @@ section {
 
 .colTwoSlider__right{
   position: relative;
-  margin-left: 70px;
+  margin-left: 7rem;
 }
 @media (max-width: 991px) {
 
@@ -638,10 +638,10 @@ section {
 .colTwoSlider__right::before{
   content: '';
   position: absolute;
-  left: -50px;
+  left: -5rem;
   top:0;
-  width: 72px;
-  height: 60px;
+  width: 7rem;
+  height: 6rem;
   transform: rotate(2.864deg);
   background-image: url('/Quotations.png');
   background-size: cover;

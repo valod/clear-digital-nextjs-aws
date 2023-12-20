@@ -24,7 +24,7 @@ const QuoteCarousel = ({ imageSrc, heading, author, designation, url, linkText, 
                         }
                     </div>
                 ) : null}
-                <div className='colTwoSlider__right lg:mt-[4rem] pt-[20px]'>
+                <div className='colTwoSlider__right lg:mt-[4rem] pt-[2rem]'>
                     {heading &&
                         <h3>{heading}</h3>
                     }
@@ -32,8 +32,8 @@ const QuoteCarousel = ({ imageSrc, heading, author, designation, url, linkText, 
                         <span className='block text-[16px] xl-up:text-[1.6rem] text-pink mt-[4rem]'><strong>{author}</strong> {designation}</span>
                     }
                     {logo &&
-                        <div className='colTwoSlider__logo mt-[2rem]'>
-                            <Image src={logo} alt="img" width={166} height={24} />
+                        <div className='colTwoSlider__logo mt-[2rem] max-w-[15rem] max-h-[2rem]'>
+                            <Image src={logo} alt="img" className='w-full h-full object-contain' width={166} height={24} />
                         </div>
                     }
                     {url &&
