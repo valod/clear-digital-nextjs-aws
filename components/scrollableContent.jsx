@@ -47,22 +47,39 @@ const ScrollableContent = () => {
     const handleScroll = () => {
         const section = document.querySelector(".content-with-img");
         const screenHeight = window.innerHeight;
+        const dash = screenHeight / 3;
         // console.log('Screen Height:', screenHeight);
 
         if (section) {
             const distanceFromTop = section.getBoundingClientRect().top;
 
             const isSticky = window.scrollY > previousSectionsHeight;
-            const isShowSecond = window.scrollY > previousSectionsHeight + 100;
-            const isShowThird = window.scrollY > isShowSecond + 100;
+            const isShowSecond = window.scrollY > previousSectionsHeight + dash;
+            const isShowThird = window.scrollY > previousSectionsHeight + (dash*2);
+            const removesticky = window.scrollY > previousSectionsHeight + (dash*3);
             setIsSticky(isSticky);
             console.log(isSticky);
             const innerWrapElements = document.querySelectorAll(`.${style.innerWrap}`);
+            if (isSticky) {
+                innerWrapElements.forEach((element) => {
+                    element.classList.remove(`${style.show}`);
+                });
+                innerWrapElements[0].classList.add(`${style.show}`);
+            }
             if (isShowSecond) {
                 innerWrapElements.forEach((element) => {
                     element.classList.remove(`${style.show}`);
                 });
                 innerWrapElements[1].classList.add(`${style.show}`);
+            }
+            if (isShowThird) {
+                innerWrapElements.forEach((element) => {
+                    element.classList.remove(`${style.show}`);
+                });
+                innerWrapElements[2].classList.add(`${style.show}`);
+            }
+            if (removesticky) {
+                setIsSticky(false);
             }
 
             // if (isSticky) {
@@ -166,9 +183,9 @@ const ScrollableContent = () => {
                 </div>
             </div>
         </section> */}
-            <section className={`content-with-img no-padding  set-2 bg-gray h-[100vh]`} id="our-process" ref={scrollableContentRef}>
+            <section className={`content-with-img no-padding  set-2 bg-gray h-[180vh]`} id="our-process" ref={scrollableContentRef}>
                 <div className={`${style.scrollerContainer}`}>
-                    <div className={`${isSticky ? style.stickTop : ''} h-[100vh] w-full column-wrapper`}>
+                    <div className={`${isSticky ? style.stickTop : ''} h-[180vh] z-[5] w-full column-wrapper`}>
                         <div className="relative w-full h-auto z-[1]">
                             {contentData.map((content, index) => (
                                 <div key={index} className="title-wrap absolute top-0 left-0 w-1/2 h-auto z-[4] pt-[300px] pl-[95px] pb-[50px] phablet:pt-[120px] sm:pt-[80px]">
