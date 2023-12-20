@@ -34,9 +34,6 @@
   }
   @media screen and (max-width: 991px)  {
     .accordioncontent::after{
-      width: 6rem;
-      height: 6rem;
-      top:60px;
-      right:0;
+     display: none;
 }
   }

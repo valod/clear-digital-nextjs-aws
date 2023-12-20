@@ -88,7 +88,7 @@ export default function introWithCards({ content }) {
                         <div key={index} className={`w-threeCard bg-white border border-darkGray mx-2.5 mb-5 laptop:w-halfWidth tablet:w-halfWidth phablet:w-halfWidth sm:w-[100%]`}>
                             <div className="card relative pt-[6.6rem] group px-[5rem] pb-[11.6rem] laptop:pt-[50px] laptop:px-[40px] laptop:pb-[80px] tablet:pt-[40px] tablet:px-[40px] tablet:pb-[40px] phablet:p-[30px] sm:p-[30px]">
                                 <Link href="/" className="redirect">.</Link>
-                                <div class="logo-wrap mb-7 w-full max-w-[10rem] h-[10rem] max-h-[10rem] tablet:max-w-[75px] tablet:max-h-[75px] tablet:h-[75px] sm:max-h-[70px] sm:h-[70px]">
+                                <div class="logo-wrap mb-7 w-full max-w-[10rem] h-[10rem] max-h-[10rem] tablet:max-w-[75px] tablet:max-h-[75px] tablet:h-[75px] phablet:max-w-[75px] phablet:max-h-[75px] phablet:h-[75px]  sm:max-h-[70px] sm:h-[70px]">
                                     <Image className="h-full w-full object-contain" width={100} height={100} src={data.img} alt="image" />
                                 </div>
                                 <h4 className='mb-[22px]'>{data.title}</h4>

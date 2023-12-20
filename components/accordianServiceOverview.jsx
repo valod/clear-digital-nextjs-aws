@@ -34,7 +34,7 @@ const Accordion = ({ items }) => {
         </div>
         <div className="accordionWrap">
           {accordionItems.map((item, index) => (
-            <div key={index} className="accordion-item relative py-[5rem] border-b border-black" onClick={() => toggleAccordion(index)}>
+            <div key={index} className="accordion-item relative py-[5rem] border-b border-black sm:py-[3rem]" onClick={() => toggleAccordion(index)}>
               <div
                 className={`accordion-header ${activeIndex === index ? 'active' : ''} cursor-pointer max-w-[123.9rem]`}
               >
@@ -47,7 +47,7 @@ const Accordion = ({ items }) => {
               >
                 <p className='mb-[10px] medium'>{item.content}</p>
                 <p className='medium'>{item.contentagain}</p>
-                <div className="btnWrap mt-8">
+                <div className="btnWrap mt-8 sm:mt-[1rem]">
                   <a href="#" className="pink-btn">
                     Learn more
                   </a>

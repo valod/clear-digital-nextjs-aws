@@ -36,9 +36,9 @@ module.exports = {
         "xs-up": { min: "376px" },
       },
       width: {
-        mainRow: "calc(100% + 20px)",
-        threeCard: "calc(33.33% - 20px)",
-        halfWidth: "calc(50% - 20px)",
+        mainRow: "calc(100% + 2rem)",
+        threeCard: "calc(33.33% - 2rem)",
+        halfWidth: "calc(50% - 2rem)",
       },
       colors: {
         black: "#000",
