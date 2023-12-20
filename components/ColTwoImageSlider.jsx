@@ -120,7 +120,7 @@ const ColTwoImageSlider = () => {
                                     src={logo.img}
                                     width={169}
                                     height={77}
-                                    className="w-full h-full object-none"
+                                    className="w-full h-full object-none lg:object-contain"
                                     alt="img"
                                 />
                             </div>

@@ -94,7 +94,7 @@ export default function introWithCards({ content }) {
                                 <h4 className='mb-[22px]'>{data.title}</h4>
                                 <p className="medium">{data.blurb}</p>
                                 <div class="btn-wrap mt-[26px]">
-                                    <Link href="#" class="link-btn group-hover:after:right-[-5px] font-bold pink black">Learn more</Link>
+                                    <Link href="#" class="link-btn group-hover:after:right-[-0.5rem] font-bold pink black">Learn more</Link>
                                 </div>
                             </div>
                         </div>

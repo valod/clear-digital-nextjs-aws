@@ -16,7 +16,7 @@
      background-image: url('/expend.png');
   } 
   .accordioncontent::after{
-         content:'';
+         /* content:'';
          position: absolute;
          right:39px;
          top:62px;
@@ -24,16 +24,16 @@
          height: 8.2rem;
          background-image: url('/Cursor.png');
          background-size: cover;
-         cursor: pointer;
+         cursor: pointer; */
   }
   @media screen and (max-width: 1280px) and (min-width: 992px) {
     .accordioncontent::after{
-      width: 7.2rem;
-      height: 7.2rem;
+      /* width: 7.2rem;
+      height: 7.2rem; */
 }
   }
   @media screen and (max-width: 991px)  {
     .accordioncontent::after{
-     display: none;
+     /* display: none; */
 }
   }
