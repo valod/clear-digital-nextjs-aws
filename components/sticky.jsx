@@ -21,7 +21,7 @@ function Sticky() {
         },
         {
             id: "4",
-            title: "related-services",
+            title: "Related services",
             url: "related-services",
         },
         {
